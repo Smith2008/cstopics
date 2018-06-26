@@ -10,13 +10,19 @@ Bla bla bla...
 
 This site offers you the theoretical concepts and practical examples to involve you in the world of computer science.
 
-# Contents
-
-The main pages are:
+# Page Map
 
 [Programming](/cstopics/programming)
 
+* [C/C++](/cstopics/programming/c-c++)
+* [Python](/cstopics/programming/python)
+* [Operating Systems](/cstopics/programming/operating-systems)
+
 [Artificial Intelligence](/cstopics/artificial-intelligence)
+
+* [Artificial Vision](/cstopics/programming/artificial-vision)
+
+    * [Image Processing](/cstopics/programming/image-processing)
 
 # About the authors
 
