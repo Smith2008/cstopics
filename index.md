@@ -14,9 +14,9 @@ This site offers you the theoretical concepts and practical examples to involve 
 
 The main pages are:
 
-Programming
+[Programming](/cstopics/programming)
 
-Artificial Intelligence
+[Artificial Intelligence](/cstopics/artificial-intelligence)
 
 # About the authors
 
