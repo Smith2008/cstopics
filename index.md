@@ -13,15 +13,13 @@ This site offers you the theoretical concepts and practical examples to involve 
 # Page Map
 
 [Programming](/cstopics/programming)
-
 * [C/C++](/cstopics/programming/c-c++)
 * [Python](/cstopics/programming/python)
 * [Operating Systems](/cstopics/programming/operating-systems)
+    * [Introduction to Linux](/cstopics/programming/operating-systems/into-linux)
 
 [Artificial Intelligence](/cstopics/artificial-intelligence)
-
 * [Artificial Vision](/cstopics/programming/artificial-vision)
-
     * [Image Processing](/cstopics/programming/image-processing)
 
 # About the authors
