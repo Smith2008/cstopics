@@ -12,11 +12,12 @@ GNU/Linux is an operating system, as Microsoft Windows or macOS, with the main d
 
 Likewise, as in other operating systems, GNU/Linux is divided in two main sections:
 
-**Kernel**
+**Kernel** performs direct control over hardware, and abstract it for the high level applications.
+In addition, it manage the resources, in order to guarantee that running programs can access the hardware.
 
-**El núcleo**, o kernel, encargado de realizar el control directo del harware, gestionarlo, y abstraerlo para las aplicaciones de alto nivel. Adicionalmente, administra los recursos, con el fin de garantizar que los programas ejecutados en el ordenador puedan acceder al hardware.
+**Applications** of the OS allow the user to use the computer in a easy way, without having to understand the internal processes that are taking place inside the processor. This set of applications includes the Graphical User Interface (GUI), the file manager, text editors, etc. The majority of the programs developed for this operating system was build by the [GNU](https://www.gnu.org/home.en.html) project.
 
-**Las aplicaciones** del sistema operativo permiten al usuario el uso del ordenador de una forma sencilla, sin tener que comprender los procesos internos que están ocurriendo dentro del procesador. Éstas aplicaciones incluyen la interfaz gráfica, gestores de archivos, editores de texto, etc. La mayoría de los programas desarrollados para éste sistema operativo fueron realizados por el proyecto [GNU](https://www.gnu.org/home.en.html)
+del sistema operativo permiten al usuario el uso del ordenador de una forma sencilla, sin tener que comprender los procesos internos que están ocurriendo dentro del procesador. Éstas aplicaciones incluyen la interfaz gráfica, gestores de archivos, editores de texto, etc. La mayoría de los programas desarrollados para éste sistema operativo fueron realizados por el proyecto [GNU](https://www.gnu.org/home.en.html)
 
 ## Distribuciones de Linux
 
