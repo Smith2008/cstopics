@@ -10,9 +10,9 @@ permalink: /programming/operating-systems/into-linux
 
 GNU/Linux is an operating system, as Microsoft Windows or macOS, with the main difference that it is open, free and build by a community of contributing programmers and users.
 
-Likewise, as in other operating systems, GNU/Linux is divided in two main sections:
+GNU/Linux es un sistema operativo, así como Microsoft Windows o macOS, con la diferencia fundamental de que es libre y gratuito, desarrollado por una comunidad de programadores de forma voluntaria.
 
-**Kernel**
+De igual manera que con los demás sistemas operativos, GNU/Linux se divide en dos secciones fundamentales:
 
 **El núcleo**, o kernel, encargado de realizar el control directo del harware, gestionarlo, y abstraerlo para las aplicaciones de alto nivel. Adicionalmente, administra los recursos, con el fin de garantizar que los programas ejecutados en el ordenador puedan acceder al hardware.
 
