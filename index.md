@@ -19,8 +19,9 @@ This site offers you the theoretical concepts and practical examples to involve 
     * [Introduction to Linux](/cstopics/programming/operating-systems/into-linux)
 
 [Artificial Intelligence](/cstopics/artificial-intelligence)
-* [Artificial Vision](/cstopics/programming/artificial-vision)
-    * [Image Processing](/cstopics/programming/image-processing)
+* [Introduction to AI](/cstopics/artificial-intelligence/syllabusAI)
+* [Artificial Vision](/cstopics/artificial-intelligence/artificial-vision)
+    * [Image Processing](/cstopics/artificial-intelligence/image-processing)
 
 # About the authors
 

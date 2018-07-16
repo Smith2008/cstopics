@@ -6,7 +6,7 @@ permalink: /programming
 
 # Programming
 
-HOla Carolina
+Programming topics
 
 * [C/C++](/cstopics/programming/c-c++)
 * [Python](/cstopics/programming/python)
