@@ -99,4 +99,33 @@ But, there are also ways to act rationally without involving inference -e.g: _bl
     <img src ="/cstopics/IntroAI/figures/neuronSNAC.jpg" style="width:30%"/>
     <span style="font-size:70%">http://cyberneticzoo.com/mazesolvers/1951-maze-solver-minsky-edmonds-american/</span>
   </div>
-  - 
+  - (1950) Turing Test: article "Computing Machinery and Intelligence" [read more](http://phil415.pbworks.com/f/TuringComputing.pdf)
+
+- <font color="orange">1950-1970: Great expectations: "Look, Ma, no hands!" </font>
+  - (1952) Early demonstrations about "machines can do X" (Samuel's checkers program, Galernter's Geometry Theorem Prover)
+  - (1956) Dartmouth meeting: birthplace of AI
+  - (1962) Widrow and Hoff: perceptron convergence Theorem
+
+- <font color="orange">1966-1973: A dose of reality" </font>
+  >It is not my aim to surprise or shock you--but the simplest way I can summarize is to say that there are now in the word machines that think, that learn and that create. Moreover, their ability to do these things is going to increase rapidly until--in a visible future--the range of problems they can handle will be coextensive with the range to which the human mind has been applied. Herbert Simon, 1957
+
+  - Early programs knew nothing of their subject matter. No background knowledge
+  - Most early AI programmers solved problems by trying out different combinations until solution was found. <font color="red">Combinatorial explosion!</font>
+  - Limitations on the basic structures being used to generate intelligent behavior. (Perceptrons by itself can represent very little)
+  - (1969) Bryson and Ho: proposed back-propagation algorithm for multilayer NN
+
+- <font color="orange">1969-1990: Knowledge-based systems: The key to power? </font>
+  - Early development of knowledge-intensive systems: its expertise derived from large numbers of special-purpose rules
+  - Expert systems: MYCIN to diagnose blood infections with 450 rules
+  - (1982) Expert systems in industry: specialized for commercial, vision, robotics purposes
+  - AI winter
+
+- <font color="orange">1990-Present: The emergence of intelligent systems </font>
+  - (mid 1980) Resurgence of back-propagation learning algorithm
+  - Increase in technical depth: approaches based on Hidden Markov Models and statistical approaches (Bayesian network formalism)
+  - Main subject of study: algorithm or data?
+
+  <div style="text-align:center">
+    <img src ="/cstopics/IntroAI/figures/historyAI.jpg" />
+    <span style="font-size:70%">Google</span>
+  </div>
