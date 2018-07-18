@@ -8,11 +8,14 @@ permalink: /artificial-intelligence/introduction_AI
 
 ## What is AI?
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=b-bW0xcrsOo
-" target="_blank"><img src="http://img.youtube.com/vi/b-bW0xcrsOo/0.jpg"
-alt="Sophia robot" width="240" height="180" border="10" /></a>
-
 > The science of making machines?
+
+<div style="text-align:center">
+  <iframe width="420" height="345" src="https://www.youtube.com/embed/b-bW0xcrsOo">
+  </iframe>
+</div>
+
+
 
 Four main approaches:
 
@@ -22,14 +25,78 @@ Four main approaches:
 | **Acting Humanly** 	| **Acting Rationally** 	|
 | "The study of how to make computers do things at which, at the moment, people are better."(Rich and Knight, 1991) 	| "AI...is concerned with intelligent behavior in artifacts."(Nilsson, 1998) 	|
 
-#### Acting humanly: The Turing test approach
+### Acting humanly: The Turing test approach
 
-Turing test (Alan Turing, 1950) --> _Imitation Game:_ can a human interrogator tell the difference between human's or computer's response?.
+Turing test (Alan Turing, 1950) --> _Imitation Game:_ can a human interrogator tell the difference between human's or computer's response?
 
-![hola](/cstopics/artificial-intelligence/introduction_AI/turingtest.png)
+<div style="text-align:center">
+  <img src ="/cstopics/IntroAI/figures/turingtest.png" />
+  <span style="font-size:70%">http://aima.eecs.berkeley.edu/slides-pdf/chapter01.pdf</span>
+</div>
 
 Intelligent systems would need the following capabilities:
 * Natural language processing
 * Knowledge representation
 * Automated reasoning
 * Machine learning
+
+### Thinking humanly: The cognitive modeling approach
+Given a program that thinks like a human, we must have some way of determining how humans think. Then,  we need to get _inside_ the human mind in order to obtain its abstraction and make better AI systems.
+
+Requires scientific theories of internal activities of the brain:
+- What level of abstraction? "Knowledge" or "Circuits"?
+- How to validate the model?
+  - Psychological: output of computer program matches human behaviors
+  - Cognitive science: identification from neurological data
+
+Brains are not as modular as software, so hard to reverse engineer!
+
+
+### Thinking rationally: The "Laws of thought" approach
+Search for argument structures to yield correct conclusions when given correct premises.
+
+Based on **logicist** tradition: statements or rules or derivation.
+
+<div style="text-align:center">
+  <img src ="/cstopics/IntroAI/figures/think_rational.jpg" />
+  <span style="font-size:70%">https://www.tutorialspoint.com/artificial_intelligence/artificial_intelligence_expert_systems.htm</span>
+</div>
+
+Main obstacles:
+- It is not easy to take informal knowledge and state it in logical notation
+- _What is the purpose  of thinking?_   Thoughts that I **should** have out of all the thoughts that I **could** have?
+
+### Acting rationally: The rational agent approach
+**Agent:** just something that acts.
+
+However, intelligent agents must do more, such as:
+   - Operate autonomously
+   - Perceive their environment
+   - Adapt to change
+   - Create and pursue goals
+
+But, there are also ways to act rationally without involving inference -e.g: _blinking reflex_
+
+#### Rational agents
+* A rational agent acts to **maximize** chances to achieve pre-defined goals.
+* Only concerns with the actions taken (not the thought process)
+* Effectiveness of actions can be assess based on utility functions
+<div style="text-align:center"> Being rational means <b>maximize your expected utility</b> </div>
+
+> "Every art and every inquiry, and similarly every action and pursuit, is thought to aim at some good",
+> Nicomachean Ethics, Aristotle
+
+## The (short) history of Artificial Intelligence
+<div style="text-align:center">
+  <iframe width="420" height="345" src="https://www.youtube.com/embed/aygSMgK3BEM">
+  </iframe>
+</div>
+
+- <font color="orange">1940-1950: Early days </font>
+  - (1943) McCulloch & Pitts: brain model with Boolean logic
+  - (1950) Minsky and Edmonds: build of first neural network computer (SNARC) [read more](http://cyberneticzoo.com/mazesolvers/1951-maze-solver-minsky-edmonds-american/)
+  <div style="text-align:center">
+    <img src ="/cstopics/IntroAI/figures/neuronSNAC.jpg" style="width:30%"/>
+    <span style="font-size:70%">http://cyberneticzoo.com/mazesolvers/1951-maze-solver-minsky-edmonds-american/</span>
+  </div>
+  - 
