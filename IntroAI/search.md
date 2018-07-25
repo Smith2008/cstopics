@@ -144,4 +144,8 @@ In summary:
 </div>
 
 **Data structures for search trees**
-The fringe needs to be store in a way such that the search algorithm can easily choose the next node to expand.oiuytre
+
+The fringe needs to be store in a way such that the search algorithm can easily choose the next node to expand. Some appropriate data structures are:
+- Queue: Python
+- Stack:
+- Priority queue:
