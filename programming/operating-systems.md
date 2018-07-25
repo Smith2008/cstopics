@@ -15,3 +15,7 @@ permalink: /programming/operating-systems
 ## Course resources
 
 ## Course schedule
+
+Hola
+
+{% include tables/programming/os/0_schedule.md %}

@@ -31,34 +31,8 @@ El sistema de archivos manejado por Linux maneja una organización diferente a l
 
 Las unidades o particiones realizadas en las unidades de almacenamiento son "montadas" en directorios, y se acceden a través del sistema de archivos. A continuación se presenta de forma gráfica la jerarquía de directorios, y una breve descripción.
 
-```
-/                     Root
-  bin/                Essential user command binaries
-  boot/               Boot files
-  dev/                System devices files
-  home/               User home directories
-    pepito/           pepito's home directory
-      Downloads/      pepito's downloads
-      Documents/      pepito's documents
-      Music/          pepito's music
-      Pictures/       pepito's pictures
-      ...
-    otherUsers/       otherUsers' home directories
-      ...
-  media/              Mount point for removable media
-  opt/                Add-on application software package
-  usr/                User utilities and applications
-    local/            Local user data
-      bin/            Local user binaries
-      include/        Local include files
-      lib/            Local libraries
-      ...
-    share/            Shared general files
-    bin/              Shared binaries
-    lib/              Shared libraries
-    ...
-  ...
-```
+{% include code/programming/os/0_file_system.md %}
+
 Algunos directorios tienen alias para abreviar su escritura, a continuación se presentan algunos (no incluyen las comillas):
 * '~' /home/pepito (o el usuario actual).
 * '.' directorio actual
@@ -79,128 +53,7 @@ Adicionalmente, se pueden adicional comentarios a los comandos ingresados por co
 
 A continuación, se presentan algunos comandos básicos de Linux, en forma de tutorial, así que pueden ser ejecutados en el orden correspondiente para obtener los resultados finales. En el ejemplo, el usuario se llama 'rocio'. (las líneas que únicamente contienen comentarios no necesitan ser ingresadas, las que comienzan con '$' son los comandos a ejecutar (sin el '$'), y las demás son la salida que debe entregar la terminal).
 
-``` bash
-# 'pwd': Muestra el directorio actual o de trabajo.
-$ pwd
-/home/rocio
-
-# 'ls': Muestra el contenido de un directorio.
-$ ls # Muestra únicamente el nombre de los elementos contenidos en el directorio actual.
-...
-$ ls -l # Muestra el contenido del directorio actual con detalles.
-...
-$ ls -lh # Muestra el contenido del directorio actual con detalles, mostrando el tamaño de los archivos en formato amigable (kB, MB, GB, etc.).
-...
-$ ls /usr/local # Muestra el contenido de un directorio específico (utilizando una dirección absoluta).
-...
-$ ls Downloads # Muestra el contenido del directorio 'Downloads' (utilizando una dirección relativa, 'Descargas' si el OS está en español).
-...
-$ ls ./Downloads # Muestra el contenido del directorio 'Downloads' (utilizando el alias de directorio actual).
-...
-$ ls ../../usr/bin # Muestra el contenido de un directorio usando el alias de directorio superior.
-...
-
-# 'cd': Cambia el directorio actual de trabajo
-$ cd Downloads # Dirección relativa
-$ pwd
-/home/rocio/Downloads
-$ cd .. # Alias de directorio superior
-$ pwd
-/home/rocio
-$ cd . # Alias de directorio actual
-$ pwd
-/home/rocio
-$ cd /usr/local/bin # Dirección absoluta
-$ pwd
-/usr/local/bin
-$ cd ../.. # Directorio superior del directorio superior
-$ pwd
-/usr
-$ cd # Es equivalente a 'cd ~' o 'cd /home/rocio'
-$ pwd
-/home/rocio
-
-# 'mkdir': Crea un directorio
-$ mkdir linuxTutorial # Crea el directorio linuxTutorial en el home de rocio
-$ ls
-... (se debe encontrar el directorio creado)
-$ mkdir linuxTutorial/folder1 # Crea el directorio folder1 dentro de linuxTutorial (dirección relativa)
-$ mkdir /home/rocio/linuxTutorial/folder2 # Dirección absoluta
-$ cd linuxTutorial
-$ mkdir folder3 # Entra a la carpeta linuxTutorial y crea el folder3
-
-# 'echo': Imprime un mensaje por pantalla
-# '>': Redirecciona la salida de un comando a un archivo (reemplazando contenido).
-# '>>': Redirecciona la salida de un comando a un archivo (concatenando).
-# 'cat': Imprime el contenido de un archivo en pantalla.
-$ cd folder1
-$ echo 'Hola a todos'
-Hola a todos
-$ echo 'Hola a todos' > file1.txt # Guarda la salida en file1.txt
-$ cat file1.txt
-Hola a todos
-$ echo 'Adiós' > file1.txt # Reemplaza el contenido de file1.txt
-Adiós
-$ echo 'Hola' > file2.txt # Guarda la salida en file2.txt
-$ cat file2.txt
-Hola
-$ echo 'a' >> file2.txt # Agrega una nueva línea
-$ cat file2.txt
-Hola
-a
-$ echo 'todos!' >> file2.txt # Agrega una nueva línea
-$ cat file2.txt
-Hola
-a
-todos!
-$ cat file2.txt >> file3.txt # Guarda el contenido de file2.txt en file3.txt
-$ echo 'Copia' >> file3.txt # Agrega una nueva línea
-$ cat file3.txt
-Hola
-a
-todos!
-Copia
-
-# 'cp': Crea una copia de un archivo o un directorio, con la opción '-r' copia directorios.
-$ cp file1.txt ../folder2/ # Copia file1.txt a folder2 con el mismo nombre
-$ ls ../folder2/
-...
-$ cp file1.txt ../folder3/file100.txt # Copia file1.txt a folder3 con el nombre file100.txt
-$ ls ../folder3/
-...
-$ cd ..
-$ cp -r ./folder1/ ./folder2/ # Crea una copia de folder1 dentro de folder2
-$ ls ../folder2/
-...
-$ cp -r folder1 folder3/newFolder # Crea una copia de folder1 dentro de folder2 con nuevo nombre
-$ ls ../folder3/
-...
-$ cp -r folder1 folder4 # Crea una copia de folder1 en la carpeta actual (linuxTutorial) con un nuevo nombre.
-$ ls
-...
-
-# 'mv': Mueve un archivo o directorio (no necesita '-r' para mover directorios)
-$ mv ./folder1/file1.txt . # Mueve el archivo file1.txt del directorio folder1 a linuxTutorial
-$ ls folder1
-...
-$ ls
-...
-$ mv folder4 folder1/ # Mueve folder4 de linuxTutorial a folder1
-$ ls folder1
-...
-
-# 'rm': Elimina un archivo o directorio, con la opción '-r' borra directorios. (los archivos eliminaros con este comando no se pueden recuperar)
-$ ls folder2
-...
-$ rm folder2/file1.txt
-$ ls folder2
-...
-$ ls
-...
-$ rm -r ./folder3
-$ ls
-...
-```
+{% include code/programming/os/0_basic_commands.md %}
 
 ## COMANDOS DEL TECLADO
 
@@ -214,14 +67,7 @@ A continuación, algunos comandos útiles del teclado para la terminal de Linux:
 
 Al ingresar el comando 'ls -l' para observar el contenido de un directorio en detalle, se obtiene el siguiente resultado:
 
-``` sh
-$ cd
-$ ls -l linuxTutorial/folder1/
-total 12
--rw-rw-r-- 1 camilo camilo   15 feb 17 17:36 file2.txt
--rw-rw-r-- 1 camilo camilo   21 feb 17 17:44 file3.txt
-drwxrwxr-x 2 camilo camilo 4096 feb 17 17:50 folder4
-```
+{% include code/programming/os/0_file_properties.md %}
 
 La primera línea de salida presenta la cantidad de bloque de 1KB utilizados por el directorio, su significado exacto se sale del objetivo de éste tutorial.
 
@@ -240,32 +86,7 @@ A continuación, existe una línea por cada archivo o directorio contenido, cada
 
 El comodín más utilizado en Linux es el carácter asterisco ' * ', y se puede usar de las siguientes maneras:
 
-``` sh
-$ cd ~/linuxTutorial/folder1/folder4
-$ ls
-...
-$ rm * # Borra todos los archivos de la carpeta actual
-$ ls
-...
-$ cd ../../
-$ ls folder2/folder1/
-...
-$ rm folder2/folder1/*.txt # Borra todos los archivos del directorio folder2/folder1 con extensión .txt
-$ ls folder2/folder1/
-...
-$ cd folder1
-$ ls
-...
-$ rm fi* # Elimina los archivos que empiezan por los caracteres 'fi'
-$ ls
-...
-$ cd ..
-$ ls
-...
-$ rm -r * #Elimina todo el contenido de linuxTutorial, la bandera '-r' hace que incluya las carpetas
-$ ls
-...
-```
+{% include code/programming/os/0_wildcards.md %}
 
 ## EDITORES DE TEXTO
 
@@ -302,23 +123,7 @@ El comando 'sudo' otorga permisos de administrador o superusuario a otro comando
 
 Con el fin de automatizar algunos procesos, es posible crear scripts de comandos de Linux, para luego ser ejecutados secuencialmente en un solo comando. Cree un archivo en la carpeta 'linuxTutorial' con el siguiente contenido:
 
-``` SH
-#!/bin/bash
-echo ''
-echo 'Universidad Pedagógica y Tecnológica de Colombia'
-echo 'Tutorial de Linux'
-echo ''
-echo 'Creando carpets'
-mkdir folder101 folder102 folder103 folder104
-echo 'Creado archivos'
-echo 'Hola' >> folder101/file.txt
-echo 'Hola' >> folder102/file.txt
-echo 'Hola' >> folder103/file.txt
-echo 'Hola' >> folder104/file.txt
-echo ''
-echo 'Fin'
-echo ''
-```
+{% include code/programming/os/0_bash_script.md %}
 
 La primera línea indica la ubicación del intérprete que va a ejecutar el script, en éste caso, el programa 'bash' es el encargado. Cuando se guarde el archivo, ésta va a tener los siguientes permisos 'rw-rw-r--', es necesario agregar el permiso de ejecución, por lo menos al usuario dueño, para poder lanzar el script. Los permisos se pueden ver como tres dígitos en sistema octal, y cada bit en 1 indica que el permiso está activo, es decir, nuestro archivo tiene permisos 664, y queremos convertirlo a 764. Ésto se realiza a partir del comando 'chmod', como se observa a continuación:
 
@@ -453,6 +258,10 @@ $ ln -s archivo.txt nuevo_nombre.txt
 ```
 
 Aparecerá como un archivo más en el directorio, y cualquier cambio, tanto a 'archivo.txt' como a 'nuevo_nombre.txt' será reflejado a los mismos datos. A un enlace se pueden aplicar todos los comandos básicos (mv, cp, rm, etc.), sin embargo, si el archivo original es eliminado o movido, el enlace dejará de funcionar o se romperá.
+
+## Usuarios
+
+...
 
 ## SSH
 

@@ -1,0 +1,26 @@
+``` sh
+$ cd ~/linuxTutorial/folder1/folder4
+$ ls
+...
+$ rm * # Borra todos los archivos de la carpeta actual
+$ ls
+...
+$ cd ../../
+$ ls folder2/folder1/
+...
+$ rm folder2/folder1/*.txt # Borra todos los archivos del directorio folder2/folder1 con extensión .txt
+$ ls folder2/folder1/
+...
+$ cd folder1
+$ ls
+...
+$ rm fi* # Elimina los archivos que empiezan por los caracteres 'fi'
+$ ls
+...
+$ cd ..
+$ ls
+...
+$ rm -r * #Elimina todo el contenido de linuxTutorial, la bandera '-r' hace que incluya las carpetas
+$ ls
+...
+```
