@@ -279,8 +279,8 @@ $ nano textFile.txt
 La terminal cambiará, mostrando el software 'nano'. Se puede escribir normalmente, y el contenido aparecerá en la parte superior. En la parte inferior aparecen los comandos del teclado disponibles, donde el símbolo '^' significa la tecla ctrl.
 
 <div style="text-align:center">
-  <img src ="/cstopics/assets/img/programming/os/turingtest.png" />
-  <span style="font-size:70%">http://aima.eecs.berkeley.edu/slides-pdf/chapter01.pdf</span>
+  <img src ="/cstopics/assets/img/programming/os/0_nano_editor.png" />
+  <div style="font-size:70%">Nano Editor</div>
 </div>
 
 Al terminar de ingresar el texto deseado, se presiona ctrl+O para guardar. Pedirá confirmar el nombre (aquí se podría cambiarlo), se presiona enter y ctrl+X para salir. Se puede confirmar el contenido del archivo:
