@@ -19,6 +19,8 @@ In addition, it manages the resources, in order to guarantee that running progra
 
 ## Linux Distributions
 
+A distribution is a precompiled version of Linux, that includes a set of packages and needed programs to allow the end user to use it in a easy way. Throughout Linux history, there have been tree main distriutions: Debian, Slackware y Red Hat,
+
 Una distribución es una versión precompilada de Linux, en conjunto con paquetes y programas necesarios para permitir el uso de ésto por el usuario final. A lo largo de la historia de Linux han existido tres grandes distribuciones, Debian, Slackware y Red Hat, cada una de las cuales, a su vez, ha desencadenado el desarrollo de distribuciones basadas en ellas. En este link se encuentra esquematizada la jerarquía de la mayoría de distribuciones conocidas de Linux.
 
 El desarrollo de éste curso se llevará a cabo bajo Ubuntu (se recomienda la versión 16.04.3 LTS), una distribución libre de GNU/Linux basada en Debian. Sin embargo, la mayoría de las herramientas y procesos que se realicen, funcionarán de manera correcta en cualquier distribución basada en Debian.
@@ -276,7 +278,10 @@ $ nano textFile.txt
 
 La terminal cambiará, mostrando el software 'nano'. Se puede escribir normalmente, y el contenido aparecerá en la parte superior. En la parte inferior aparecen los comandos del teclado disponibles, donde el símbolo '^' significa la tecla ctrl.
 
-<span style="color:red">Nano Image</span>
+<div style="text-align:center">
+  <img src ="/cstopics/assets/img/programming/os/turingtest.png" />
+  <span style="font-size:70%">http://aima.eecs.berkeley.edu/slides-pdf/chapter01.pdf</span>
+</div>
 
 Al terminar de ingresar el texto deseado, se presiona ctrl+O para guardar. Pedirá confirmar el nombre (aquí se podría cambiarlo), se presiona enter y ctrl+X para salir. Se puede confirmar el contenido del archivo:
 
