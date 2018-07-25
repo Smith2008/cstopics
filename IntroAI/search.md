@@ -40,7 +40,7 @@ The initial state, actions and transition model defines the **state space**, whi
 Imagine an agent in the city of Arad, Romania. He wants to go to Bucharest, traveling the shortest path as possible.
 
 <div style="text-align:center">
-  <img src ="/cstopics/IntroAI/figures/romania.png" />
+  <img src ="/cstopics/assets/img/AI/introAI/romania.png" />
   <span style="font-size:70%">Russerl, Norvig. Artificial Intelligence, a modern approach. 2010</span>
 </div>
 
@@ -55,7 +55,7 @@ Imagine an agent in the city of Arad, Romania. He wants to go to Bucharest, trav
 The 8-puzzle is a 3x3 board with eight numbered tiles an a blank space. A tile adjacent to the blank space can slide into the space. The objective is to reach a specified a goal state, like this:
 
 <div style="text-align:center">
-  <img src ="/cstopics/IntroAI/figures/8puzzle.png" />
+  <img src ="/cstopics/assets/img/AI/introAI/8puzzle.png" />
   <span style="font-size:70%">Russerl, Norvig. Artificial Intelligence, a modern approach. 2010</span>
 </div>
 
@@ -68,7 +68,7 @@ The 8-puzzle is a 3x3 board with eight numbered tiles an a blank space. A tile a
 #### What about state space sizes?
 Consider this PACMAN game:
 <div style="text-align:center">
-  <img src ="/cstopics/IntroAI/figures/pacman1.png" />
+  <img src ="/cstopics/assets/img/AI/introAI/pacman1.png" />
   <span style="font-size:70%">http://ai.berkeley.edu/search.html</span>
 </div>
 
@@ -100,21 +100,21 @@ They are representations of possible action sequences, with some initial state a
 The _root node_ of the search tree corresponds to Arad, because is our initial city or state. But, are we in Bucharest? No, that's why we have to _expand_ the current state, generating a new set of states or _child nodes_.
 
 <div style="text-align:center">
-  <img src ="/cstopics/IntroAI/figures/search_tree1.png" />
+  <img src ="/cstopics/assets/img/AI/introAI/search_tree1.png" />
   <span style="font-size:70%">http://aima.eecs.berkeley.edu/slides-pdf/chapter03.pdf</span>
 </div>
 
 The expanding leads to three new child nodes: Sibiu, Timisoara and Zerind. Now we must choose which of these possibilities consider further.
 
 <div style="text-align:center">
-  <img src ="/cstopics/IntroAI/figures/search_tree2.png" />
+  <img src ="/cstopics/assets/img/AI/introAI/search_tree2.png" />
   <span style="font-size:70%">http://aima.eecs.berkeley.edu/slides-pdf/chapter03.pdf</span>
 </div>
 
 Suppose we choose Sibiu first. Again, are we in Bucharest? No! Let's expand the parent node:
 
 <div style="text-align:center">
-  <img src ="/cstopics/IntroAI/figures/search_tree3.png" />
+  <img src ="/cstopics/assets/img/AI/introAI/search_tree3.png" />
   <span style="font-size:70%">http://aima.eecs.berkeley.edu/slides-pdf/chapter03.pdf</span>
 </div>
 
@@ -126,7 +126,7 @@ The search tree has a repeated state (Arad) an that can cause a _loopy path_. Th
 
 Consider this state space graph:
 <div style="text-align:center">
-  <img src ="/cstopics/IntroAI/figures/search_tree4.png" />
+  <img src ="/cstopics/assets/img/AI/introAI/search_tree4.png" />
   <span style="font-size:70%">https://www.youtube.com/watch?v=bSv4CWMTeR0</span>
 </div>
 
@@ -139,7 +139,7 @@ By intuition, no. Because path cost are additive and step cost are nonnegative, 
 In summary:
 
 <div style="text-align:center">
-  <img src ="/cstopics/IntroAI/figures/algTreeSearch.png" />
+  <img src ="/cstopics/assets/img/AI/introAI/algTreeSearch.png" />
   <span style="font-size:70%">http://aima.eecs.berkeley.edu/slides-pdf/chapter03.pdf</span>
 </div>
 

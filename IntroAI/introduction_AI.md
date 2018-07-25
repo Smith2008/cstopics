@@ -30,7 +30,7 @@ Four main approaches:
 Turing test (Alan Turing, 1950) --> _Imitation Game:_ can a human interrogator tell the difference between human's or computer's response?
 
 <div style="text-align:center">
-  <img src ="/cstopics/IntroAI/figures/turingtest.png" />
+  <img src ="/cstopics/assets/img/AI/introAI/turingtest.png" />
   <span style="font-size:70%">http://aima.eecs.berkeley.edu/slides-pdf/chapter01.pdf</span>
 </div>
 
@@ -58,7 +58,7 @@ Search for argument structures to yield correct conclusions when given correct p
 Based on **logicist** tradition: statements or rules or derivation.
 
 <div style="text-align:center">
-  <img src ="/cstopics/IntroAI/figures/think_rational.jpg" />
+  <img src ="/cstopics/assets/img/AI/introAI/think_rational.jpg" />
   <span style="font-size:70%">https://www.tutorialspoint.com/artificial_intelligence/artificial_intelligence_expert_systems.htm</span>
 </div>
 
@@ -96,7 +96,7 @@ But, there are also ways to act rationally without involving inference -e.g: _bl
   - (1943) McCulloch & Pitts: brain model with Boolean logic
   - (1950) Minsky and Edmonds: build of first neural network computer (SNARC) [read more](http://cyberneticzoo.com/mazesolvers/1951-maze-solver-minsky-edmonds-american/)
   <div style="text-align:center">
-    <img src ="/cstopics/IntroAI/figures/neuronSNAC.jpg" style="width:30%"/>
+    <img src ="/cstopics/assets/img/AI/introAI/neuronSNAC.jpg" style="width:30%"/>
     <span style="font-size:70%">http://cyberneticzoo.com/mazesolvers/1951-maze-solver-minsky-edmonds-american/</span>
   </div>
   - (1950) Turing Test: article "Computing Machinery and Intelligence" [read more](http://phil415.pbworks.com/f/TuringComputing.pdf)
@@ -126,6 +126,6 @@ But, there are also ways to act rationally without involving inference -e.g: _bl
   - Main subject of study: algorithm or data?
 
   <div style="text-align:center">
-    <img src ="/cstopics/IntroAI/figures/historyAI.jpg" />
+    <img src ="/cstopics/assets/img/AI/introAI/historyAI.jpg" />
     <span style="font-size:70%">Google</span>
   </div>
