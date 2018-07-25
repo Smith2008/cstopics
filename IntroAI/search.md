@@ -139,7 +139,7 @@ By intuition, no. Because path cost are additive and step cost are nonnegative, 
 In summary:
 
 <div style="text-align:center">
-  <img src ="/cstopics/assets/img/AI/introAI/algTreeSearch.png" />
+  <img src ="/cstopics/assets/img/AI/introAI/algTreeSearch.png" style="width:30%"/>
   <span style="font-size:70%">http://aima.eecs.berkeley.edu/slides-pdf/chapter03.pdf</span>
 </div>
 
@@ -151,4 +151,5 @@ The fringe needs to be store in a way such that the search algorithm can easily 
 - Priority queue: pops the element in the queue with the highest priority according to some ordering function. Implemented as heaps by Python.
 
 More information about queues [here](https://docs.python.org/2/tutorial/datastructures.html?highlight=queue)
+
 More information about priority queues [here](https://docs.python.org/2/library/heapq.html)
