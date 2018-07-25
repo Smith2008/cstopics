@@ -136,8 +136,12 @@ How deep is the search tree?...
 
 By intuition, no. Because path cost are additive and step cost are nonnegative, a loopy path to any given state is never better that the same path with the loop removed.
 
+In summary:
 
 <div style="text-align:center">
   <img src ="/cstopics/IntroAI/figures/algTreeSearch.png" />
   <span style="font-size:70%">http://aima.eecs.berkeley.edu/slides-pdf/chapter03.pdf</span>
 </div>
+
+**Data structures for search trees**
+The fringe needs to be store in a way such that the search algorithm can easily choose the next node to expand.oiuytre
