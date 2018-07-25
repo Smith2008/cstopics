@@ -88,3 +88,56 @@ Consider this PACMAN game:
 
 
 ### Searching for solutions
+<p><font color="blue"><i>What is a solution?:</i></font> a sequence of actions </p>
+
+**Search trees**
+
+They are representations of possible action sequences, with some initial state as its root.
+- Branches: are actions
+- Nodes: are states in the space state of the problem
+
+<font color="orange"><i>Example: Arad to Bucharest</i></font>
+The _root node_ of the search tree corresponds to Arad, because is our initial city or state. But, are we in Bucharest? No, that's why we have to _expand_ the current state, generating a new set of states or _child nodes_.
+
+<div style="text-align:center">
+  <img src ="/cstopics/IntroAI/figures/search_tree1.png" />
+  <span style="font-size:70%">http://aima.eecs.berkeley.edu/slides-pdf/chapter03.pdf</span>
+</div>
+
+The expanding leads to three new child nodes: Sibiu, Timisoara and Zerind. Now we must choose which of these possibilities consider further.
+
+<div style="text-align:center">
+  <img src ="/cstopics/IntroAI/figures/search_tree2.png" />
+  <span style="font-size:70%">http://aima.eecs.berkeley.edu/slides-pdf/chapter03.pdf</span>
+</div>
+
+Suppose we choose Sibiu first. Again, are we in Bucharest? No! Let's expand the parent node:
+
+<div style="text-align:center">
+  <img src ="/cstopics/IntroAI/figures/search_tree3.png" />
+  <span style="font-size:70%">http://aima.eecs.berkeley.edu/slides-pdf/chapter03.pdf</span>
+</div>
+
+To keep seaching, we can choose between Arad, Fagaras, Oradea and Rimnicu Vilcea, or go back to explore Timisoara or Zerind. Note thas these nodes haven't been explore yet, that means they do not have children. They are _leaf nodes_ and conform our _frontier_ or _fringe_.
+
+<font color="blue"><i>What's tricky in this search tree?...</i></font>
+
+The search tree has a repeated state (Arad) an that can cause a _loopy path_. That means that the complete search tree for this problem in infinite.
+
+Consider this state space graph:
+<div style="text-align:center">
+  <img src ="/cstopics/IntroAI/figures/search_tree4.png" />
+  <span style="font-size:70%">https://www.youtube.com/watch?v=bSv4CWMTeR0</span>
+</div>
+
+How deep is the search tree?...
+
+<font color="blue"><i>Do we have to worry about loopy paths?...</i></font>
+
+By intuition, no. Because path cost are additive and step cost are nonnegative, a loopy path to any given state is never better that the same path with the loop removed.
+
+
+<div style="text-align:center">
+  <img src ="/cstopics/IntroAI/figures/algTreeSearch.png" />
+  <span style="font-size:70%">http://aima.eecs.berkeley.edu/slides-pdf/chapter03.pdf</span>
+</div>
