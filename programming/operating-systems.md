@@ -4,7 +4,7 @@ title: Programming
 permalink: /programming/operating-systems
 ---
 
-# Operating Systems
+# Operating Systems 2
 
 ## Course description
 
