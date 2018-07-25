@@ -146,6 +146,9 @@ In summary:
 **Data structures for search trees**
 
 The fringe needs to be store in a way such that the search algorithm can easily choose the next node to expand. Some appropriate data structures are:
-- Queue: Python
-- Stack:
-- Priority queue:
+- Queue: implemented as FIFO queues by Python.
+- Stack:  implemented as LIFO queues by Python.
+- Priority queue: pops the element in the queue with the highest priority according to some ordering function. Implemented as heaps by Python.
+
+More information about queues [here](https://docs.python.org/2/tutorial/datastructures.html?highlight=queue)
+More information about priority queues [here](https://docs.python.org/2/library/heapq.html)
