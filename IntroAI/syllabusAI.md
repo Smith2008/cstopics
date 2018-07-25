@@ -22,9 +22,9 @@ Below is a sample schedule for the course 2018-2
 | Week 	| Topic 	| Optional Reading 	|
 |:-----:	|:-----------------------------------------------------------------------:	|:----------------------------------------------------------------------------------------------------------------------------------------------------------------:	|
 | 1 	| [Introduction to AI](/cstopics/artificial-intelligence/introduction_AI) 	| [Russell10] Chap 1 ([slides](http://aima.eecs.berkeley.edu/slides-pdf/chapter01.pdf)) and Chap 2 ([slides](http://aima.eecs.berkeley.edu/slides-pdf/chapter02.pdf))  	|
-|  	| **Agents and Search** 	|  	|
-| 1 	| [Uninformed Search](/cstopics/artificial-intelligence/search) 	| [Russell10] Chap 3 ([slides](http://aima.eecs.berkeley.edu/slides-pdf/chapter03.pdf)) 	|
-| 2 	| [Informed Search](/cstopics/artificial-intelligence/search) 	| [Russell10] Chap 4 ([slides](http://aima.eecs.berkeley.edu/slides-pdf/chapter04.pdf)) 	|
+|  	| [**Agents and Search**](/cstopics/artificial-intelligence/search/search) 	|  	|
+| 1 	| [Uninformed Search](/cstopics/artificial-intelligence/search/unsearch) 	| [Russell10] Chap 3 ([slides](http://aima.eecs.berkeley.edu/slides-pdf/chapter03.pdf)) 	|
+| 2 	| [Informed Search](/cstopics/artificial-intelligence/search/insearch) 	| [Russell10] Chap 4 ([slides](http://aima.eecs.berkeley.edu/slides-pdf/chapter04.pdf)) 	|
 | 3 	| [Constraint Satisfaction Problems I]() 	| [Russell10] Chap 5 ([slides](http://aima.eecs.berkeley.edu/slides-pdf/chapter05.pdf)) 	|
 | 4 	| [Constraint Satisfaction Problems II]() 	| [Russell10] Chap 5 ([slides](http://aima.eecs.berkeley.edu/slides-pdf/chapter05.pdf)) 	|
 | 5 	| [Game Trees: Minimax]() 	| [Russell10] Chap 6 ([slides](http://aima.eecs.berkeley.edu/slides-pdf/chapter06.pdf)) 	|

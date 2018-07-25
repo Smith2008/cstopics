@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Search
-permalink: /artificial-intelligence/search
+permalink: /artificial-intelligence/search/search
 ---
 
 # Search
@@ -40,7 +40,7 @@ The initial state, actions and transition model defines the **state space**, whi
 Imagine an agent in the city of Arad, Romania. He wants to go to Bucharest, traveling the shortest path as possible.
 
 <div style="text-align:center">
-  <img src ="/cstopics/assets/img/AI/introAI/romania.png" />
+  <img src ="/cstopics/assets/img/AI/introAI/romania.png" style="width:70%"/>
   <span style="font-size:70%">Russerl, Norvig. Artificial Intelligence, a modern approach. 2010</span>
 </div>
 
@@ -55,7 +55,7 @@ Imagine an agent in the city of Arad, Romania. He wants to go to Bucharest, trav
 The 8-puzzle is a 3x3 board with eight numbered tiles an a blank space. A tile adjacent to the blank space can slide into the space. The objective is to reach a specified a goal state, like this:
 
 <div style="text-align:center">
-  <img src ="/cstopics/assets/img/AI/introAI/8puzzle.png" />
+  <img src ="/cstopics/assets/img/AI/introAI/8puzzle.png" style="width:50%"/>
   <span style="font-size:70%">Russerl, Norvig. Artificial Intelligence, a modern approach. 2010</span>
 </div>
 
@@ -68,7 +68,7 @@ The 8-puzzle is a 3x3 board with eight numbered tiles an a blank space. A tile a
 #### What about state space sizes?
 Consider this PACMAN game:
 <div style="text-align:center">
-  <img src ="/cstopics/assets/img/AI/introAI/pacman1.png" />
+  <img src ="/cstopics/assets/img/AI/introAI/pacman1.png" style="width:30%"/>
   <span style="font-size:70%">http://ai.berkeley.edu/search.html</span>
 </div>
 
@@ -139,7 +139,7 @@ By intuition, no. Because path cost are additive and step cost are nonnegative, 
 In summary:
 
 <div style="text-align:center">
-  <img src ="/cstopics/assets/img/AI/introAI/algTreeSearch.png" style="width:30%"/>
+  <img src ="/cstopics/assets/img/AI/introAI/algTreeSearch.png" style="width:80%"/>
   <span style="font-size:70%">http://aima.eecs.berkeley.edu/slides-pdf/chapter03.pdf</span>
 </div>
 
