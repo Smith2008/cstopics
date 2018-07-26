@@ -1,18 +1,10 @@
-| Week | Topic | Optional Reading |
-|:----:|:-----:|:----------------:|
-|   1  |       |                  |
-|   2  |       |                  |
-|   3  |       |                  |
-|   4  |       |                  |
-|   5  |       |                  |
-|   6  |       |                  |
-|   7  |       |                  |
-|   8  |       |                  |
-|   9  |       |                  |
-|   0  |       |                  |
-|  11  |       |                  |
-|  12  |       |                  | 
-|  13  |       |                  |
-|  14  |       |                  |
-|  15  |       |                  |
-|  16  |       |                  |
+|  Week |                                          Topic                                          |                           Optional Reading                          |                                    Assignments                                   |
+|:-----:|:---------------------------------------------------------------------------------------:|:-------------------------------------------------------------------:|:--------------------------------------------------------------------------------:|
+|  1-2  | [Introduction to Operating Systems](/cstopics/programming/operating-systems/0_intro_os) | [Silberschatz12] Chap 1. <br> [Tanenbaum15] Sections 1.1, 1.2 & 1.4 | [Introduction to Linux](/cstopics/programming/operating-systems/0_z0_into_linux) |
+|  3-4  |    [Hardware-Software Relationship](/cstopics/programming/operating-systems/1_hw-sw)    |                      [Tanenbaum15] Sections 1.3                     |                                                                                  |
+|  5-6  |  [Interruptions and System Calls](/cstopics/programming/operating-systems/2_ints_calls) |    [Silberschatz12] Chap 2. <br> [Tanenbaum15] Sections 1.5 & 1.6   |                                                                                  |
+|  7-8  |             [Processes](/cstopics/programming/operating-systems/3_processes)            |       [Silberschatz12] Chap 3. <br> [Tanenbaum15] Sections 2.1      |                                                                                  |
+|  9-10 |               [Threads](/cstopics/programming/operating-systems/4_threads)              |       [Silberschatz12] Chap 4. <br> [Tanenbaum15] Sections 2.2      |                                                                                  |
+| 11-12 |            [Synchronization](/cstopics/programming/operating-systems/5_sync)            |       [Silberschatz12] Chap 5. <br> [Tanenbaum15] Sections 2.3      |                                                                                  |
+| 13-14 |            [Scheduling](/cstopics/programming/operating-systems/6_scheduling)           |       [Silberschatz12] Chap 6. <br> [Tanenbaum15] Sections 2.4      |                                                                                  |
+| 15-16 |          [Memory Management](/cstopics/programming/operating-systems/7_memory)          |       [Silberschatz12] Chap 8 & 9. <br> [Tanenbaum15] Chap 3.       |                                                                                  |

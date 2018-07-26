@@ -1,10 +1,12 @@
 ---
 layout: default
-title: Programming
-permalink: /programming/operating-systems/into-linux
+title: Introduction to Linux
+permalink: /programming/operating-systems/0_z0_into_linux
 ---
 
 # Introduction to Linux
+
+Before developing this guide, install Linux in your computer (Ubuntu 18.04 or 16.04 are recommended).
 
 ## What is GNU/LINUX?
 

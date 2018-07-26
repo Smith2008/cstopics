@@ -25,10 +25,10 @@ This site offers you the theoretical concepts and practical examples to involve 
 
 # About the authors
 
-## [Edgar Camilo Camacho Poveda](https://scholar.google.com/citations?hl=en&user=tJG988kAAAAJ){:target="_blank"}
+## [Edgar Camilo Camacho Poveda](https://scholar.google.com/citations?hl=en&user=tJG988kAAAAJ){:target="blank"}
 
 Bla bla Bla
 
-## [Carolina Higuera Arias](https://scholar.google.com/citations?user=ZaxycbsAAAAJ&hl=en){:target="_blank"}
+## [Carolina Higuera Arias](https://scholar.google.com/citations?user=ZaxycbsAAAAJ&hl=en){:target="blank"}
 
 Bla bla bla bla

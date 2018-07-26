@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Programming
-permalink: /programming/operating-systems/into-linux
+title: Introduction to Linux
+permalink: /programming/operating-systems/0_z0_into_linux_es
 ---
 
 # Introduction to Linux
