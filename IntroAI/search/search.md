@@ -120,6 +120,13 @@ Suppose we choose Sibiu first. Again, are we in Bucharest? No! Let's expand the 
 
 To keep seaching, we can choose between Arad, Fagaras, Oradea and Rimnicu Vilcea, or go back to explore Timisoara or Zerind. Note thas these nodes haven't been explore yet, that means they do not have children. They are _leaf nodes_ and conform our _frontier_ or _fringe_.
 
+In summary:
+
+<div style="text-align:center">
+  <img src ="/cstopics/assets/img/AI/introAI/algTreeSearch.png" style="width:80%"/>
+  <span style="font-size:70%">http://aima.eecs.berkeley.edu/slides-pdf/chapter03.pdf</span>
+</div>
+
 <font color="blue"><i>What's tricky in this search tree?...</i></font>
 
 The search tree has a repeated state (Arad) an that can cause a _loopy path_. That means that the complete search tree for this problem in infinite.
@@ -136,11 +143,12 @@ How deep is the search tree?...
 
 By intuition, no. Because path cost are additive and step cost are nonnegative, a loopy path to any given state is never better that the same path with the loop removed.
 
-In summary:
+_Algorithms that forget their history are doomed to repeat it_
+
+We ca avoid redundant paths using the **graph-search algorithm** to build the search tree. It grows the tree directly in the state-space graph, therefore, it contains at most one copy of each state.
 
 <div style="text-align:center">
-  <img src ="/cstopics/assets/img/AI/introAI/algTreeSearch.png" style="width:80%"/>
-  <span style="font-size:70%">http://aima.eecs.berkeley.edu/slides-pdf/chapter03.pdf</span>
+  <img src ="/cstopics/assets/img/AI/introAI/graphSearch.png" style="width:60%"/>  
 </div>
 
 **Data structures for search trees**
