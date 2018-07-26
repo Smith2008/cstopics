@@ -10,4 +10,4 @@ permalink: /artificial-intelligence/search/unsearch
 **Strategy:** expand the deepest node first in the current fringe of the search tree.
 **Implementation:** fringe is a LIFO stack
 
-[Python notebook](/cstopics/assets/img/AI/introAI/search_methods.ipynb)
+[Python notebook](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/introAI/search_methods.ipynb)
