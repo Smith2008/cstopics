@@ -32,7 +32,7 @@ MSc in Electronic Enginnering (Universidad Nacional de Colombia, 2017)
 Current position as lecturer in Universidad Santo Tomás. Member of research group in robotics GED.
 
 ### [Carolina Higuera Arias](https://scholar.google.com/citations?user=ZaxycbsAAAAJ&hl=en){:target="blank"}
-[edgarcamacho@usantotomas.edu.co](mailto:carolinahiguera@usantotomas.edu.co)
+[carolinahiguera@usantotomas.edu.co](mailto:carolinahiguera@usantotomas.edu.co)
 
 Electronic Engineer (Universidad Pedagógica y Tecnológica de Colombia - UPTC, 2015)
 
