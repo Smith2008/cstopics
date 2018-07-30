@@ -4,11 +4,9 @@ title: Introduction to Linux
 permalink: /programming/operating-systems/0_z0_into_linux_es
 ---
 
-# Introduction to Linux
+# Introducción a Linux
 
-## What is GNU/LINUX?
-
-GNU/Linux is an operating system, as Microsoft Windows or macOS, with the main difference that it is open, free and build by a community of contributing programmers and users.
+## ¿Qué es GNU/LINUX?
 
 GNU/Linux es un sistema operativo, así como Microsoft Windows o macOS, con la diferencia fundamental de que es libre y gratuito, desarrollado por una comunidad de programadores de forma voluntaria.
 
@@ -20,55 +18,29 @@ De igual manera que con los demás sistemas operativos, GNU/Linux se divide en d
 
 ## Distribuciones de Linux
 
-Una distribución es una versión precompilada de Linux, en conjunto con paquetes y programas necesarios para permitir el uso de ésto por el usuario final. A lo largo de la historia de Linux han existido tres grandes distribuciones, Debian, Slackware y Red Hat, cada una de las cuales, a su vez, ha desencadenado el desarrollo de distribuciones basadas en ellas. En este link se encuentra esquematizada la jerarquía de la mayoría de distribuciones conocidas de Linux.
+Una distribución es una versión precompilada de Linux, en conjunto con paquetes y programas necesarios para permitir el uso de éstos por el usuario final. A lo largo de la historia de Linux han existido tres grandes distribuciones, Debian, Slackware y Red Hat, cada una de las cuales, a su vez, ha desencadenado el desarrollo de distribuciones basadas en ellas. En este [enlace](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg){:target="blank"} se encuentra esquematizada la jerarquía de la mayoría de distribuciones conocidas de Linux.
 
-El desarrollo de éste curso se llevará a cabo bajo Ubuntu (se recomienda la versión 16.04.3 LTS), una distribución libre de GNU/Linux basada en Debian. Sin embargo, la mayoría de las herramientas y procesos que se realicen, funcionarán de manera correcta en cualquier distribución basada en Debian.
+El desarrollo de éste curso se llevará a cabo bajo Ubuntu (se recomiendan las versiónes 18.04 LTS o 16.04 LTS), una distribución libre de GNU/Linux basada en Debian. Sin embargo, la mayoría de las herramientas y procesos que se realicen, funcionarán de manera correcta en cualquier distribución basada en Debian.
 
 ## Sistema de Archivos y Árbol de Directorios
 
-El sistema de archivos manejado por Linux maneja una organización diferente a la acostumbrada en sistemas basados en Windows, en dónde las carpetas más altas en la jerarquía corresponden a las unidades de almacenamiento (C:\, D:\, etc.). En Linux todos los archivos están contenidos en un directorio denominado raíz, y representado por el símbolo "/".
+El sistema de archivos manejado por Linux emplea una organización diferente a la acostumbrada en sistemas basados en Windows, en dónde las carpetas más altas en la jerarquía corresponden a las unidades de almacenamiento (C:\, D:\, etc.). En Linux todos los archivos están contenidos en un directorio denominado raíz, y representado por el símbolo "/".
 
 Las unidades o particiones realizadas en las unidades de almacenamiento son "montadas" en directorios, y se acceden a través del sistema de archivos. A continuación se presenta de forma gráfica la jerarquía de directorios, y una breve descripción.
 
-```
-/                     Root
-  bin/                Essential user command binaries
-  boot/               Boot files
-  dev/                System devices files
-  home/               User home directories
-    pepito/           pepito's home directory
-      Downloads/      pepito's downloads
-      Documents/      pepito's documents
-      Music/          pepito's music
-      Pictures/       pepito's pictures
-      ...
-    otherUsers/       otherUsers' home directories
-      ...
-  media/              Mount point for removable media
-  opt/                Add-on application software package
-  usr/                User utilities and applications
-    local/            Local user data
-      bin/            Local user binaries
-      include/        Local include files
-      lib/            Local libraries
-      ...
-    share/            Shared general files
-    bin/              Shared binaries
-    lib/              Shared libraries
-    ...
-  ...
-```
+{% include code/programming/os/0_file_system.md %}
+
 Algunos directorios tienen alias para abreviar su escritura, a continuación se presentan algunos (no incluyen las comillas):
 * '~' /home/pepito (o el usuario actual).
 * '.' directorio actual
 * '..' directorio superior
 
-## TERMINAL Y COMANDOS BÁSICOS
+## Terminal y Comandos Básicos
 
-La terminal, consola o línea de comandos de Linux es una ventana que permite ingresar comandos del sistema operativo. A través de esta herramienta se pueden realizar tareas que la interfaz gráfica no permite, o que implica una dificultad mayor. En la mayoría de los casos, éstos comandos entregan resultados en la misma terminal.
+La terminal, consola o línea de comandos de Linux permite ingresar comandos del sistema operativo. A través de esta herramienta se pueden realizar tareas que la interfaz gráfica no permite, o que implica una dificultad mayor. En la mayoría de los casos, éstos comandos entregan resultados en la misma terminal.
 La terminal se puede abrir en algunas distribuciones de Linux (incluida Ubunbu), con la combinación de teclas ctrl+alt+T. Cuando se inicia una terminal desde la interfaz gráfica de Ubuntu, el directorio de trabajo por defecto es el home del usuario actual.
 
-El prompt corresponde a el conjunto de caracteres que aparecen al inicio de cada línea de la consola, a la espera de ingresar un comando.En el caso de ubuntu, el prompt tiene el siguiente formato:
+El prompt corresponde al conjunto de caracteres que aparecen al inicio de cada línea de la consola, a la espera de ingresar un comando. En el caso de ubuntu, el prompt tiene el siguiente formato:
 
 * nombreDelUsuaio@nombreDeLaMáquina:directorioActual$
 
@@ -76,132 +48,11 @@ Con el fin de simplificar, en los siguientes ejemplos el prompt será abreviado 
 
 Adicionalmente, se pueden adicional comentarios a los comandos ingresados por consola, a través del carácter '#'. Todos los caracteres escritos después de éste símbolo serán descartados por la terminal.
 
-A continuación, se presentan algunos comandos básicos de Linux, en forma de tutorial, así que pueden ser ejecutados en el orden correspondiente para obtener los resultados finales. En el ejemplo, el usuario se llama 'rocio'. (las líneas que únicamente contienen comentarios no necesitan ser ingresadas, las que comienzan con '$' son los comandos a ejecutar (sin el '$'), y las demás son la salida que debe entregar la terminal).
+A continuación, se presentan algunos comandos básicos de Linux, en forma de tutorial, así que pueden ser ejecutados en el orden correspondiente para obtener los resultados finales. En el ejemplo, el usuario se llama 'pepito'. (las líneas que únicamente contienen comentarios no necesitan ser ingresadas, las que comienzan con '$' son los comandos a ejecutar (sin el '$'), y las demás son la salida que debe entregar la terminal).
 
-``` bash
-# 'pwd': Muestra el directorio actual o de trabajo.
-$ pwd
-/home/rocio
+{% include code/programming/os/0_basic_commands.md %}
 
-# 'ls': Muestra el contenido de un directorio.
-$ ls # Muestra únicamente el nombre de los elementos contenidos en el directorio actual.
-...
-$ ls -l # Muestra el contenido del directorio actual con detalles.
-...
-$ ls -lh # Muestra el contenido del directorio actual con detalles, mostrando el tamaño de los archivos en formato amigable (kB, MB, GB, etc.).
-...
-$ ls /usr/local # Muestra el contenido de un directorio específico (utilizando una dirección absoluta).
-...
-$ ls Downloads # Muestra el contenido del directorio 'Downloads' (utilizando una dirección relativa, 'Descargas' si el OS está en español).
-...
-$ ls ./Downloads # Muestra el contenido del directorio 'Downloads' (utilizando el alias de directorio actual).
-...
-$ ls ../../usr/bin # Muestra el contenido de un directorio usando el alias de directorio superior.
-...
-
-# 'cd': Cambia el directorio actual de trabajo
-$ cd Downloads # Dirección relativa
-$ pwd
-/home/rocio/Downloads
-$ cd .. # Alias de directorio superior
-$ pwd
-/home/rocio
-$ cd . # Alias de directorio actual
-$ pwd
-/home/rocio
-$ cd /usr/local/bin # Dirección absoluta
-$ pwd
-/usr/local/bin
-$ cd ../.. # Directorio superior del directorio superior
-$ pwd
-/usr
-$ cd # Es equivalente a 'cd ~' o 'cd /home/rocio'
-$ pwd
-/home/rocio
-
-# 'mkdir': Crea un directorio
-$ mkdir linuxTutorial # Crea el directorio linuxTutorial en el home de rocio
-$ ls
-... (se debe encontrar el directorio creado)
-$ mkdir linuxTutorial/folder1 # Crea el directorio folder1 dentro de linuxTutorial (dirección relativa)
-$ mkdir /home/rocio/linuxTutorial/folder2 # Dirección absoluta
-$ cd linuxTutorial
-$ mkdir folder3 # Entra a la carpeta linuxTutorial y crea el folder3
-
-# 'echo': Imprime un mensaje por pantalla
-# '>': Redirecciona la salida de un comando a un archivo (reemplazando contenido).
-# '>>': Redirecciona la salida de un comando a un archivo (concatenando).
-# 'cat': Imprime el contenido de un archivo en pantalla.
-$ cd folder1
-$ echo 'Hola a todos'
-Hola a todos
-$ echo 'Hola a todos' > file1.txt # Guarda la salida en file1.txt
-$ cat file1.txt
-Hola a todos
-$ echo 'Adiós' > file1.txt # Reemplaza el contenido de file1.txt
-Adiós
-$ echo 'Hola' > file2.txt # Guarda la salida en file2.txt
-$ cat file2.txt
-Hola
-$ echo 'a' >> file2.txt # Agrega una nueva línea
-$ cat file2.txt
-Hola
-a
-$ echo 'todos!' >> file2.txt # Agrega una nueva línea
-$ cat file2.txt
-Hola
-a
-todos!
-$ cat file2.txt >> file3.txt # Guarda el contenido de file2.txt en file3.txt
-$ echo 'Copia' >> file3.txt # Agrega una nueva línea
-$ cat file3.txt
-Hola
-a
-todos!
-Copia
-
-# 'cp': Crea una copia de un archivo o un directorio, con la opción '-r' copia directorios.
-$ cp file1.txt ../folder2/ # Copia file1.txt a folder2 con el mismo nombre
-$ ls ../folder2/
-...
-$ cp file1.txt ../folder3/file100.txt # Copia file1.txt a folder3 con el nombre file100.txt
-$ ls ../folder3/
-...
-$ cd ..
-$ cp -r ./folder1/ ./folder2/ # Crea una copia de folder1 dentro de folder2
-$ ls ../folder2/
-...
-$ cp -r folder1 folder3/newFolder # Crea una copia de folder1 dentro de folder2 con nuevo nombre
-$ ls ../folder3/
-...
-$ cp -r folder1 folder4 # Crea una copia de folder1 en la carpeta actual (linuxTutorial) con un nuevo nombre.
-$ ls
-...
-
-# 'mv': Mueve un archivo o directorio (no necesita '-r' para mover directorios)
-$ mv ./folder1/file1.txt . # Mueve el archivo file1.txt del directorio folder1 a linuxTutorial
-$ ls folder1
-...
-$ ls
-...
-$ mv folder4 folder1/ # Mueve folder4 de linuxTutorial a folder1
-$ ls folder1
-...
-
-# 'rm': Elimina un archivo o directorio, con la opción '-r' borra directorios. (los archivos eliminaros con este comando no se pueden recuperar)
-$ ls folder2
-...
-$ rm folder2/file1.txt
-$ ls folder2
-...
-$ ls
-...
-$ rm -r ./folder3
-$ ls
-...
-```
-
-## COMANDOS DEL TECLADO
+## Comandos del Teclado
 
 A continuación, algunos comandos útiles del teclado para la terminal de Linux:
 
@@ -209,7 +60,13 @@ A continuación, algunos comandos útiles del teclado para la terminal de Linux:
 * ctrl+C: Cancelar el proceso actual.
 * ctrl+D: Cerrar sesión actual.
 
-## PROPIEDADES Y PERMISOS DE ARCHIVOS
+## Uso de la Tecla de Tabulación (TAB) para Autocompletar
+
+La tecla de tabulación permite autocompletar los comandos de Linux, con los archivos y carpetas del sistema. Por ejemplo, se tiene está en una carpeta con el siguiente contenido (carpeta, folder102 y folder202 son directorios, los demás sosn archivos regulares):
+
+{% include code/programming/os/0_tab.md %}
+
+## Propiedades y Permisos de Archivos
 
 Al ingresar el comando 'ls -l' para observar el contenido de un directorio en detalle, se obtiene el siguiente resultado:
 
@@ -222,7 +79,7 @@ total 12
 drwxrwxr-x 2 camilo camilo 4096 feb 17 17:50 folder4
 ```
 
-La primera línea de salida presenta la cantidad de bloque de 1KB utilizados por el directorio, su significado exacto se sale del objetivo de éste tutorial.
+La primera línea de salida presenta la cantidad de bloques de 1KB utilizados por el directorio, su significado exacto se sale del objetivo de éste tutorial.
 
 A continuación, existe una línea por cada archivo o directorio contenido, cada columna tiene un significado:
 
@@ -277,7 +134,10 @@ $ nano textFile.txt
 
 La terminal cambiará, mostrando el software 'nano'. Se puede escribir normalmente, y el contenido aparecerá en la parte superior. En la parte inferior aparecen los comandos del teclado disponibles, donde el símbolo '^' significa la tecla ctrl.
 
-<span style="color:red">Nano Image</span>
+<div style="text-align:center">
+  <img src ="/cstopics/assets/img/programming/os/0_nano_editor.png" />
+  <div style="font-size:70%">Nano Editor</div>
+</div>
 
 Al terminar de ingresar el texto deseado, se presiona ctrl+O para guardar. Pedirá confirmar el nombre (aquí se podría cambiarlo), se presiona enter y ctrl+X para salir. Se puede confirmar el contenido del archivo:
 
@@ -319,7 +179,7 @@ echo ''
 La primera línea indica la ubicación del intérprete que va a ejecutar el script, en éste caso, el programa 'bash' es el encargado. Cuando se guarde el archivo, ésta va a tener los siguientes permisos 'rw-rw-r--', es necesario agregar el permiso de ejecución, por lo menos al usuario dueño, para poder lanzar el script. Los permisos se pueden ver como tres dígitos en sistema octal, y cada bit en 1 indica que el permiso está activo, es decir, nuestro archivo tiene permisos 664, y queremos convertirlo a 764. Ésto se realiza a partir del comando 'chmod', como se observa a continuación:
 
 ``` sh
-sudo chmod 764 testScript.sh # Solicitará la contraseña
+$ sudo chmod 764 testScript.sh # Solicitará la contraseña
 ```
 
 Se pueden comprobar los permisos con el comando 'ls -l'. El script se ejecuta se la siguiente manera:
@@ -340,7 +200,7 @@ Las impresiones por pantalla correspondientes a los comandos 'echo' se realizaro
 
 ## GESTOR DE PAQUETES DE UBUNTU
 
-La forma más común de instalar nuevo software en Ubuntu es através del gestor de paquetes 'apt'. Para comprobar su funcionamiento, se va a instalar un software llamado 'tree', el cual permite ver el contenido de un directorio, de forma gráfica y jerárquica. Se ejecuta el siguiente comando (se necesita conexión a internet):
+La forma más común de instalar nuevo software en Ubuntu es a través del gestor de paquetes 'apt'. Para comprobar su funcionamiento, se va a instalar un software llamado 'tree', el cual permite ver el contenido de un directorio, de forma gráfica y jerárquica. Se ejecuta el siguiente comando (se necesita conexión a internet):
 
 ``` sh
 $  sudo apt-get install tree
@@ -400,7 +260,7 @@ $ mkdir folder_${VAR1}_01
 * USER: nombre del usuario actual.
 * Adicionalmente, se pueden conocer todas las variables de entorno disponibles con el comando 'env'.
 
-Existe una variable de entorno llamada 'PATH', la cual tiene una tarea específica: establecer los directorios (separados por dos puntos ':') dónde el sistema operativo busca los comandos que se ejecuta desde consola, ésto quiere decir que todos los comandos vistos anteriormente (cp, mkdir, mv, etc.) son realmente programas que están en una de las carpetas descritas en 'PATH'.
+Existe una variable de entorno llamada 'PATH', la cual tiene una tarea específica: establecer los directorios (separados por dos puntos ':') donde el sistema operativo busca los comandos que se ejecutan desde consola, esto quiere decir que todos los comandos vistos anteriormente (cp, mkdir, mv, etc.) son realmente programas que están en una de las carpetas descritas en 'PATH'.
 
 Si se quisiera que el script 'testScript.sh', creado en secciones anteriores, se pudiera ejecutar desde cualquier directorio (sin tener que escribir './testScript.sh' o '/home/rocio/tutorialLinux/testScript.sh'), basta con agregar el directorio que lo contiene al path de alguna de las siguientes maneras:
 
@@ -415,6 +275,7 @@ Luego de ésto, se comprueba el funcionamiento ejecutando el script desde otra c
 ``` sh
 $ cd ..
 $ mkdir linuxTutorial2/
+$ cd linuxTutorial2/
 $ ls
 $ testScript.sh
 

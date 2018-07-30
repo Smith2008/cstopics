@@ -1,7 +1,7 @@
 ``` bash
 # 'pwd': Muestra el directorio actual o de trabajo.
 $ pwd
-/home/rocio
+/home/pepito
 
 # 'ls': Muestra el contenido de un directorio.
 $ ls # Muestra únicamente el nombre de los elementos contenidos en el directorio actual.
@@ -22,31 +22,33 @@ $ ls ../../usr/bin # Muestra el contenido de un directorio usando el alias de di
 # 'cd': Cambia el directorio actual de trabajo
 $ cd Downloads # Dirección relativa
 $ pwd
-/home/rocio/Downloads
+/home/pepito/Downloads
 $ cd .. # Alias de directorio superior
 $ pwd
-/home/rocio
+/home/pepito
 $ cd . # Alias de directorio actual
 $ pwd
-/home/rocio
+/home/pepito
 $ cd /usr/local/bin # Dirección absoluta
 $ pwd
 /usr/local/bin
 $ cd ../.. # Directorio superior del directorio superior
 $ pwd
 /usr
-$ cd # Es equivalente a 'cd ~' o 'cd /home/rocio'
+$ cd # Es equivalente a 'cd ~' o 'cd /home/pepito'
 $ pwd
-/home/rocio
+/home/pepito
 
 # 'mkdir': Crea un directorio
-$ mkdir linuxTutorial # Crea el directorio linuxTutorial en el home de rocio
+$ mkdir linuxTutorial # Crea el directorio linuxTutorial en el home de pepito
 $ ls
 ... (se debe encontrar el directorio creado)
 $ mkdir linuxTutorial/folder1 # Crea el directorio folder1 dentro de linuxTutorial (dirección relativa)
-$ mkdir /home/rocio/linuxTutorial/folder2 # Dirección absoluta
+$ mkdir /home/pepito/linuxTutorial/folder2 # Dirección absoluta
 $ cd linuxTutorial
 $ mkdir folder3 # Entra a la carpeta linuxTutorial y crea el folder3
+$ ls
+folder1  folder2  folder3
 
 # 'echo': Imprime un mensaje por pantalla
 # '>': Redirecciona la salida de un comando a un archivo (reemplazando contenido).
