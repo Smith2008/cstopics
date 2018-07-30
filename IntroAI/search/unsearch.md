@@ -81,14 +81,35 @@ Find the path from state S to G in the following space-state graph.
 
 ### Problem-solving performance
   - **Completeness:** yes, if all arc cost are positive and the best solution has a finite cost
-  - **Optimality** yes!
+  - **Optimality:** yes!
   - **Time complexity:**
 
   <div style="text-align:center">
-    <img src ="/cstopics/assets/img/AI/introAI/complexityUC.png" style="width:50%"/>  
+    <img src ="/cstopics/assets/img/AI/introAI/complexityUC.png" style="width:35%"/>  
   </div>
 
   If cheapest solution has a cost
   <a href="https://www.codecogs.com/eqnedit.php?latex=C^*" target="_blank"><img src="https://latex.codecogs.com/gif.latex?C^*" title="C^*" /></a>, then it processes all nodes with <a href="https://www.codecogs.com/eqnedit.php?latex=c<C^*" target="_blank"><img src="https://latex.codecogs.com/gif.latex?c<C^*" title="c<C^*" /></a>
 
   If the minimum arc cost is <a href="https://www.codecogs.com/eqnedit.php?latex=\epsilon" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\epsilon" title="\epsilon" /></a>, then the "effective depth" is roughly <a href="https://www.codecogs.com/eqnedit.php?latex=C^*/\epsilon" target="_blank"><img src="https://latex.codecogs.com/gif.latex?C^*/\epsilon" title="C^*/\epsilon" /></a>
+
+  Takes in the worst case <a href="https://www.codecogs.com/eqnedit.php?latex=O(b^{C^*/\epsilon})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?O(b^{C^*/\epsilon})" title="O(b^{C^*/\epsilon})" /></a>
+
+
+<p><font color="blue">The good: </font> UCS is optimal and complete</p>
+
+<p><font color="blue">The bad: </font> explores options in every direction. Does not have any information about the goal.</p>
+
+<div style="text-align:center">
+<video width="478" height="505" controls>
+  <source src="/cstopics/assets/videos/introAI/ucs_allcostequal.mp4" type="video/mp4">
+</video>
+</div>
+
+## Guess the search algorithm ...
+
+<div style="text-align:center">
+<video width="486" height="508" controls>
+  <source src="/cstopics/assets/videos/introAI/unsearch.mp4" type="video/mp4">
+</video>
+</div>
