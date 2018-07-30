@@ -6,9 +6,7 @@ permalink: /
 
 # Computer Science
 
-Bla bla bla...
-
-This site offers you the theoretical concepts and practical examples to involve you in the world of computer science.
+This site offers you the theoretical concepts and practical examples to start involving you in the world of computer science. We will cover basic topics for different programming languages and useful concepts and tools for managing operating systems. Then, we will introduce you to the field of Artificial Intelligence, in which we will learn how to design and program intelligent agents for several tasks. Also, there would be some artificial vision methods to give the agent the possibility to interpret its world through image acquisition.
 
 # Page Map
 
@@ -18,16 +16,15 @@ This site offers you the theoretical concepts and practical examples to involve 
 * [Operating Systems](/cstopics/programming/operating-systems)
 
 [Artificial Intelligence](/cstopics/artificial-intelligence)
-* [Introduction to AI](/cstopics/artificial-intelligence/syllabusAI)
 * [Artificial Vision](/cstopics/artificial-intelligence/artificial-vision)
-    * [Image Processing](/cstopics/artificial-intelligence/image-processing)
+* [Introduction to AI](/cstopics/artificial-intelligence/syllabusAI)
 
 # About the authors
 
-## [Edgar Camilo Camacho Poveda](https://scholar.google.com/citations?hl=en&user=tJG988kAAAAJ){:target="blank"}
+### [Edgar Camilo Camacho Poveda](https://scholar.google.com/citations?hl=en&user=tJG988kAAAAJ){:target="blank"}
 
 Bla bla Bla
 
-## [Carolina Higuera Arias](https://scholar.google.com/citations?user=ZaxycbsAAAAJ&hl=en){:target="blank"}
+### [Carolina Higuera Arias](https://scholar.google.com/citations?user=ZaxycbsAAAAJ&hl=en){:target="blank"}
 
 Bla bla bla bla

@@ -17,7 +17,9 @@ Likewise, as in other operating systems, GNU/Linux is divided in two main sectio
 **Kernel** performs direct control over hardware, and abstracts it for the high level applications.
 In addition, it manages the resources, in order to guarantee that running programs can access the hardware.
 
+<p align="justify">
 **Applications** of the OS allow the user to use the computer in a easy way, without having to understand the internal processes that are taking place inside the processor. This set of applications includes the Graphical User Interface (GUI), the file manager, text editors, etc. The majority of the programs developed for this operating system was build by the [GNU](https://www.gnu.org/home.en.html) project.
+</p>
 
 ## Linux Distributions
 
