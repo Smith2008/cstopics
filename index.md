@@ -16,7 +16,6 @@ This site offers you the theoretical concepts and practical examples to involve 
 * [C/C++](/cstopics/programming/c-c++)
 * [Python](/cstopics/programming/python)
 * [Operating Systems](/cstopics/programming/operating-systems)
-    * [Introduction to Linux](/cstopics/programming/operating-systems/into-linux)
 
 [Artificial Intelligence](/cstopics/artificial-intelligence)
 * [Introduction to AI](/cstopics/artificial-intelligence/syllabusAI)
