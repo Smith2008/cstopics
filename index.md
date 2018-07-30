@@ -27,4 +27,8 @@ Bla bla Bla
 
 ### [Carolina Higuera Arias](https://scholar.google.com/citations?user=ZaxycbsAAAAJ&hl=en){:target="blank"}
 
-Bla bla bla bla
+Electronic Engineer (Universidad Pedagógica y Tecnológica de Colombia - UPTC, 2015)
+
+MSc in Electronic Enginnering and Computers (Universidad de los Andes, 2017)
+
+Current position as lecturer in Universidad Santo Tomás. Member of research group in robotics GED.
