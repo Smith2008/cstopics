@@ -23,7 +23,11 @@ This site offers you the theoretical concepts and practical examples to start in
 
 ### [Edgar Camilo Camacho Poveda](https://scholar.google.com/citations?hl=en&user=tJG988kAAAAJ){:target="blank"}
 
-Bla bla Bla
+Electronic Engineer (Universidad Pedagógica y Tecnológica de Colombia - UPTC, 2015)
+
+MSc in Electronic Enginnering and Computers (Universidad de los Andes, 2017)
+
+Current position as lecturer in Universidad Santo Tomás. Member of research group in robotics GED.
 
 ### [Carolina Higuera Arias](https://scholar.google.com/citations?user=ZaxycbsAAAAJ&hl=en){:target="blank"}
 
