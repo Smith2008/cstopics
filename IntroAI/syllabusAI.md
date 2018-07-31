@@ -13,6 +13,10 @@ Although Artificial Intelligence has several interpretations around academics, w
 
 {% include tables/artificial_intelligence/introAI/0_evaluation.md %}
 
+- Groups of maximum 2 students
+- Every group is the same for the assignments and Final Project
+- Deadline for presenting the proposal for Final Project: 30/08 23:00
+
 ## Course resources
 * [Russell10] Russell, S and Norvig, P. [Artificial Intelligence: a Modern Approach](http://aima.cs.berkeley.edu/),  3rd Ed, Prentice-Hall, 2010
 * [Sutton98] Sutton, R. and Barto, A. [Reinforcement Learning: An Introduction](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf), The MIT Press, 1998
