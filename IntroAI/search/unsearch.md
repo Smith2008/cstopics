@@ -11,7 +11,7 @@ permalink: /artificial-intelligence/search/unsearch
 
 **Implementation:** fringe is a LIFO stack
 
-Review this [Python notebook](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/introAI/search_methods.ipynb) to check an example of DFS
+Review this [Python notebook](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/introAI/unsearch.ipynb) to check an example of DFS
 
 <font color="orange"><i>Exercise</i></font>
 Find the path from state S to G in the following space-state graph.
@@ -53,7 +53,7 @@ Find the path from state S to G in the following space-state graph.
 
   **Implementation:** fringe is a FIFO queue
 
-  Review this [Python notebook](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/introAI/search_methods.ipynb) to check an example of BFS
+  Review this [Python notebook](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/introAI/unsearch.ipynb) to check an example of BFS
 
 ### Problem-solving performance
   - **Completeness:** yes, if the goal node is at some finite depth.
@@ -61,7 +61,8 @@ Find the path from state S to G in the following space-state graph.
   - **Time complexity:**
 
   <div style="text-align:center">
-    <img src ="/cstopics/assets/img/AI/introAI/complexityBFS.png" style="width:50%"/>  
+    <img src ="/cstopics/assets/img/AI/introAI/complexityBFS.png" style="width:50%"/>
+    <span style="font-size:70%">http://ai.berkeley.edu/search.html</span>
   </div>
 
   BFS processes all nodes above shallowest solution.
@@ -77,7 +78,7 @@ Find the path from state S to G in the following space-state graph.
 
   **Implementation:** fringe is a priority queue in terms of cumulative cost
 
-  Review this [Python notebook](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/introAI/search_methods.ipynb) to check an example of uniform cost search
+  Review this [Python notebook](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/introAI/unsearch.ipynb) to check an example of uniform cost search
 
 ### Problem-solving performance
   - **Completeness:** yes, if all arc cost are positive and the best solution has a finite cost
@@ -86,6 +87,7 @@ Find the path from state S to G in the following space-state graph.
 
   <div style="text-align:center">
     <img src ="/cstopics/assets/img/AI/introAI/complexityUC.png" style="width:35%"/>  
+    <span style="font-size:70%">http://ai.berkeley.edu/search.html</span>
   </div>
 
   If cheapest solution has a cost
