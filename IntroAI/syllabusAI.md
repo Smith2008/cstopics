@@ -22,6 +22,9 @@ Although Artificial Intelligence has several interpretations around academics, w
 * [Sutton98] Sutton, R. and Barto, A. [Reinforcement Learning: An Introduction](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf), The MIT Press, 1998
 * [CS188] Abbeel, P and Klein, D. [UC Berkeley CS188 Intro to AI](http://ai.berkeley.edu/home.html), 2014.
 
+## Office hours
+Monday, whole day.
+
 ## Course schedule
 Below is a sample schedule for the course 2018-2
 
