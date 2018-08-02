@@ -10,13 +10,13 @@ This site offers you the theoretical concepts and practical examples to start in
 
 # Page Map
 
-[Programming](/cstopics/programming)
+[Programming](/programming)
 * [C/C++](/cstopics/programming/c-c++)
 * [Python](/cstopics/programming/python)
 * [Operating Systems](/cstopics/programming/operating-systems)
 
-[Artificial Intelligence](/cstopics/artificial-intelligence)
-* [Artificial Vision](/cstopics/artificial-intelligence/artificial-vision)
+[Artificial Intelligence](/artificial-intelligence)
+* [Artificial Vision](/cstopics/vision)
 * [Introduction to AI](/cstopics/artificial-intelligence/syllabusAI)
 
 # About the authors

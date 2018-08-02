@@ -6,6 +6,5 @@ permalink: /artificial-intelligence
 
 # Artificial Intelligence
 
+* [Artificial Vision](/cstopics/vision)
 * [Introduction to AI](/cstopics/artificial-intelligence/syllabusAI)
-* [Artificial Vision](/cstopics/artificial-intelligence/artificial-vision)
-    * [Image Processing](/cstopics/artificial-intelligence/image-processing)
