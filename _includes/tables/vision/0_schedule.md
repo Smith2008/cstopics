@@ -6,5 +6,5 @@
 |  7-8  |                        [Geometrical Transformations and Resampling]()                       |                         |                                  |
 |  9-10 |        [Segmentation, Edge and Region Detection, <br> and Morphological Processing]()       | [Gonzalez02] Cap 9 & 10 |                                  |
 | 11-12 |                          [Feature Extraction and Classification]()                          |                         |                                  |
-| 13-14 |                       [Video: Objects Tracking and Motion Detection]()                      |                         |                                  |
+| 13-14 |         [Video: Background subtraction, <br>Object Tracking and Motion Detection]()         |                         |                                  |
 | 15-16 |                          [3D: Introduction to Augmented Reality]()                          |                         |                                  |
