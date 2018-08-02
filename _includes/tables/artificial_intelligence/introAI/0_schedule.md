@@ -1,6 +1,6 @@
 | Week 	| Topic 	| Optional Reading 	| Assignments 	|
 |:-----:	|:------------------------------------------------------------------------:	|:----------------------------------------------------------------------------------------------------------------------------------------------------------------:	|--------------------------	|
-| 1 	| [Introduction to AI](/cstopics/artificial-intelligence/introduction_AI) 	| [Russell10] Chap 1 ([slides](http://aima.eecs.berkeley.edu/slides-pdf/chapter01.pdf)) and 2 ( [slides](http://aima.eecs.berkeley.edu/slides-pdf/chapter02.pdf))  	| [HW0: Python tutorial]() 	|
+| 1 	| [Introduction to AI](/cstopics/artificial-intelligence/introduction_AI) 	| [Russell10] Chap 1 ([slides](http://aima.eecs.berkeley.edu/slides-pdf/chapter01.pdf)) and 2 ( [slides](http://aima.eecs.berkeley.edu/slides-pdf/chapter02.pdf))  	| [HW0: Python tutorial](/cstopics/assets/assignments/introAI/hw0/hw0_pythonIntro.pdf) 	|
 |  	| [**Agents and Search**](/cstopics/artificial-intelligence/search/search) 	|  	|  	|
 | 1 	| [Uninformed Search](/cstopics/artificial-intelligence/search/unsearch) 	| [Russell10] Chap 3 ([slides](http://aima.eecs.berkeley.edu/slides-pdf/chapter03.pdf)) 	|  	|
 | 2 	| [Informed Search](/cstopics/artificial-intelligence/search/insearch) 	| [Russell10] Chap 4 ([slides](http://aima.eecs.berkeley.edu/slides-pdf/chapter04.pdf)) 	|  	|
