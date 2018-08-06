@@ -9,3 +9,5 @@ permalink: /programming/python
 ### [Tutorial 1](http://cs231n.github.io/python-numpy-tutorial/){:target="blank"}
 
 ### [Tutorial 2](http://ai.berkeley.edu/tutorial.html){:target="blank"}
+
+### [Miniconda Instalation](a)

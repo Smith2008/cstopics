@@ -126,7 +126,7 @@ Los eventos pueden ser externos o internos al sistema, y siempre generan una int
 * **Hardware**: La CPU salta de inmediato a un lugar específico de memoria.
 * **Software**: Se ejecuta un llamado a sistema o *system call*.
 
-## Estructura de almacenamiento
+### Estructura de almacenamiento
 
 Los computadores tienen dos tipos de memoria de almacenamiento, la memoria principal, que es volátil pero rápida, y memoria secundaria, que es no volátil pero lenta. La CPU maneja una jerarquía de memoria, en la cual, almacena los datos más usados en la memoria más rápida, y los menos usados en la más lenta, dicha jerarquía se observa a continuación. Al subir en la pirámide, se incrementa la velocidad, pero incrementa el precio por unidad de almacenamiento, razón por la cual, los computadores tienen menos caché que RAM, o menos discos de estado sólido que discos duros.
 
@@ -146,7 +146,7 @@ A continuación se presenta una comparación cuantitativa entre algunos tipos de
 
 No olvidar el hecho de que los medios de almacenamiento no volátiles, son vistos por el sistema operativo como un periférico o dispositivo I/O.
 
-## Sistemas mononúcleo
+### Sistemas mononúcleo
 
 En la actualidad, los sistemas mononúcleo se utilizan únicamente en sistemas de cómputo específicos, como pueden ser:
 
@@ -159,7 +159,7 @@ En la actualidad, los sistemas mononúcleo se utilizan únicamente en sistemas d
 
 La principal implementación de sistemas mononúcleo en la actualidad son los microcontroladores.
 
-## Sistemas multinúcleo
+### Sistemas multinúcleo
 
 Los sistemas de más de un procesador o núcleo aparecieron en aplicaciones que ameritaban alto rendimiento, como servidores, pero lentamente fueron abriendo camino hacia commputadores de mesa, teléfonos celulares, y, con el Internet de las Cosas, todo tipo de dispoositivo.
 
@@ -186,6 +186,62 @@ El procesamiento multinúcleo se puede realizar de dos diferentes formas:
     * Todos los núcleos realizan tareas del OS.
     * Todos tienen sus propios registros internos y caché.
     * Comparten bus de datos y memoria física.
+
+## Estructura del sistema operativo
+
+A continuación se exponen algunas de las principales características de un OS.:
+
+### Habilidad multiprograma
+
+Permite correr varios programas, incrementando el uso de CPU al tener siempre un trabajo para ejecutar.
+
+<div style="text-align:center">
+  <img style="width: 40%;" src ="/cstopics/assets/img/programming/os/0_multiprogram.png" />
+</div>
+
+* OS selecciona un trabajo (job1) y se asigna a CPU para ejecución.
+* Si job1 tiene que esperar otra operación (ej. lectura I/O), OS selecciona otro trabajo (job2).
+* Si job2 tiene que esperar otra operación (ej. lectura I/O), OS selecciona otro trabajo (job3).
+* ...
+* Eventualmente, job1 termina operación de espera y vuelve a ser asignado por el OS a CPU.
+
+**En general, la idea es:** Maximizar el uso de la CPU realizando siempre la asignaciónd e trabajos de diferentes procesos, de tal manera que nunca este libre (idle).
+
+### Habilidad multitarea (Time sharing ):
+
+CPU ejecuta multiples trabajos, intercalándolos a alta frecuencia, de tal
+forma que el ususario pueda interectuar con cada programa.
+
+**Tareas del sistema operativo para soportar multiprograma y multitarea**:
+
+* Job scheduling : decisión de cuál trabajo enviar a memoria.
+* Admin de memoria : ubicación del trabajo en memoria.
+* CPU scheduling : decición de cuál trabajo de los que están en memoria es el siguiente a ejecutar.
+
+### Manejo de procesos:
+
+Un programa en ejecución es un **proceso**.
+
+Recursos que necesita un proceso:
+
+* Tiempo en CPU
+* Acceso a archivos
+* Espacio en memoria
+* Acceso a dispositivos I/O
+
+<div style="text-align:center">
+  <img style="width:75%;" src ="/cstopics/assets/img/programming/os/0_process.png" />
+</div>
+
+El OS es responsable de:
+
+* Planificar los procesos e hilos en CPUs.
+* Crear/borrar procesos de usuario y de sistema.
+* Suspender/retomar procesos.
+* Proveer mecanismos de sincronización de procesos.
+* Proveer mecanismos de comunicación de procesos.
+
+
 
 ## Referencias
 

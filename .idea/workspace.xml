@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6a00ad5-19b8-4dbc-b3d5-e479dc9a1abb" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/notebooks/vision/test.ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="a6a00ad5-19b8-4dbc-b3d5-e479dc9a1abb" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +15,7 @@
         <entry file="file://$PROJECT_DIR$/assets/notebooks/vision/test.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="0" />
+              <selected id="1" />
             </state>
           </provider>
         </entry>
@@ -118,7 +116,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="61" y="25" width="1859" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959655" />
       <window_info anchor="bottom" id="TODO" order="6" />
