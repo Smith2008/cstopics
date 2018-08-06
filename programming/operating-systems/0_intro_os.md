@@ -241,7 +241,81 @@ El OS es responsable de:
 * Proveer mecanismos de sincronización de procesos.
 * Proveer mecanismos de comunicación de procesos.
 
+### Manejo de memoria
 
+La memoria debe ser compartida entre el OS y los programas.
+
+El OS es responsable de:
+* Mantener registro de cuales posiciones de memoria están ocupadas y cuál proceso las está usando.
+* Decidir cuál proceso y datos deben ser transferidos hacia/desde la memoria.
+* Asignar/liberar espacio de memoria.
+
+## Sistemas Operativos Open Source
+
+**UNIX**
+* OS multiusuario multitarea.
+* Desarrollado a inicios de 1970 en los laboratorios Bell por Ken Thompson , Dennis Ritchie y otros.
+* Introdujo la jerarquı́a del sistema de archivos.
+
+**LINUX**
+* OS basado en UNIX
+* Su kernel fue creado en 1991 por Linus Torvalds, estudiante finlandés.
+* Sus actualizaciones son contribuciones de programadores de todo el mundo.
+* Principales distribuciones: RedHat, SUSE, Fedora, Debian Slackware y Ubuntu.
+
+**BSD UNIX**
+* Desarrollado a inicios de 1978 en la Universidad de Berkeley en California
+* Principales distribuciones: freeBSD, netBSD ,openBSD, dragonflyBSD
+* Principales contribuciones: manejo de memoria virtual y protocolo TCP/IP
+
+**SOLARIS**
+* OS comercial de SunMicrosystems (Oracle) lanzado en 1992
+* Basado en BSD-UNIX
+* Distribución libre openSolaris (2005-2010)
+
+## Servicios de un Sistema Operativos
+
+<div style="text-align:center">
+  <img style="width:75%;" src ="/cstopics/assets/img/programming/os/0_osServices.png" />
+</div>
+
+* **Interfaz de usuario:** lı́nea de comandos, interfaz batch, GUI.
+* **Ejecución de programas:** cargar programa en memoria y ejecución del proceso.
+* **Operaciones I/O:** comunicación con archivos y periféricos
+* **Manipulación del sistema de archivos:** permiso de acceso a archivos  directorios.
+* **Comunicaciones:** memoria compartida y transmisión de mensajes.
+* **Detección de errores:** detección y correcicón de errores en CPU, memoria, dispositivos I/O y programas de usuario.
+* **Asignación de recursos:** códigos de asignación especiales para CPU, memoria y almacenamiento.
+* **Contabilidad:** seguimiento a cantidad/tipos de recursos utilizados.
+* **Protección y seguridad:** protección de información del usuario y de procesos concurrentes
+
+### Intérprete de comandos
+
+Es un programa espcial que se ejecuta al iniciar un proceso o cuando el usuario inicia sesión por primera vez (si es un sistema interactivo). Función principal: recibir y ejecutar los comandos especificados por el usuario.
+
+En UNIX: la mayorı́a de los comandos son implementados como programas del sistema. Ejemplo:
+
+``` bash
+rm file.txt
+```
+
+<div style="text-align:center">
+  <img style="width:60%;" src ="/cstopics/assets/img/programming/os/0_command_line.png" />
+</div>
+
+### GUI
+
+* 1ra GUI Xerox Alto computer en 1993. Adopción generalizada en 1980 con Apple Macintosh.
+
+<div style="text-align:center">
+  <img style="width:60%;" src ="/cstopics/assets/img/programming/os/0_gui_mac.png" />
+</div>
+
+* GUI Ubuntu
+
+<div style="text-align:center">
+  <img style="width:60%;" src ="/cstopics/assets/img/programming/os/0_gui_ubuntu.png" />
+</div>
 
 ## Referencias
 
