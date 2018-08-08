@@ -325,7 +325,7 @@ Write a *C/C++* program that reads a text file (*hw1.txt*), and generates a new 
 
 Create a new folder in your repository, and upload the files below:
 
-* Pseudocode with the system calls.
+* **pseudo.txt**: pseudocode with the system calls.
 * *hw1.c* or *hw1.cpp* with the *c/c++* code.
 * An *hw1.txt* sample file.
 * A *Makefile* with the rules *compile* and *run*. (Refer to the [C/C++ in Linux](/cstopics/programming/c-c++/c_c++_in_linux) guide)
