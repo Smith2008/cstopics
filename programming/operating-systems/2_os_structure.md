@@ -323,7 +323,7 @@ To consider from technical specs side:
 
 Write a *C/C++* program that reads a text file (*hw1.txt*), and generates a new file (*HW1.txt*) with the same content but is capital letters.
 
-Create a new folder in your repository, and upload the files below:
+Create a new **private** Bitbucket repository named *hw1_lastname_firstname* (E.g. *hw1_camacho_camilo*),  share it with the account *"camilocamachousta"*, and add the files below:
 
 * *pseudo.txt*: pseudocode with the system calls.
 * *hw1.c* or *hw1.cpp* with the *c/c++* code.

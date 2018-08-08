@@ -10,4 +10,4 @@ permalink: /programming/python
 
 ### [Tutorial 2](http://ai.berkeley.edu/tutorial.html){:target="blank"}
 
-### [Miniconda Instalation](a)
+### [Miniconda Instalation](/cstopics/programming/python/miniconda)
