@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Artificial Vision
+title: Digital Image Fundamentals
 permalink: /vision/0_fundamentals
 ---
 
@@ -254,67 +254,6 @@ Isopreference curve (Subjective test results, where people choose the preferred 
   <img style="width:30%;" src ="/cstopics/assets/img/vision/0_isopreference.png" />
   <div>Typical isopreference curves for the three types of images[Gonzalez02]</div>
 </div>
-
-## Basic Relationships between Pixels
-
-### Neighbors of a Pixel
-
-The pixel *p=f(x,y)*, has two vertical and two horizontal neighbors, that are the *4-neighbors* of *p*, and their distance from *p* is always *1*:
-
-<img class="eq" src="https://latex.codecogs.com/gif.latex?
-  N_4(p) = f(x+1,y),f(x-1,y),f(x,y+1),f(x,y-1)
-"/>
-
-The diagonal neighbors of *p* are:
-
-<img class="eq" src="https://latex.codecogs.com/gif.latex?
-  N_D(p) = f(x+1,y+1),f(x+1,y-1),f(x-1,y+1),f(x-1,y-1)
-"/>
-
-This two sets together are the *8-neighbors*:
-
-<img class="eq" src="https://latex.codecogs.com/gif.latex?
-  N_8(p) = N_4(p) \cup N_D(p)
-"/>
-
-If one of more of the *8-neighbors* pixels are outside the image, it means that *p* is on the border.
-
-### Adjacency, Connectivity, Regions, and Boundaries
-
-Let's define *V* as the set of intensity values that define adjacency. For a binary image (it has only intensity 0 or 1):
-
-<img class="eq" src="https://latex.codecogs.com/gif.latex?
-  V = \{1\}
-"/>
-
-There are three types of adjacency:
-
-1. **4-adjacency**. Two pixels *p* and *q* with values from *V* are 4-adjacent if *q* is in the set *N<sub>4</sub>(p)*.ftp://ftp.videolan.org/pub/debian/videolan-apt.asc
-2. **8-adjacency**. Two pixels *p* and *q* with values from *V* are 8-adjacent if *q* is in the set *N<sub>8</sub>(p)*.
-3. **m-adjacency** (mixed adjacency). Two pixels *p* and *q* with values from *V* are m-adjacent if:
-    * *q* is in *N<sub>4</sub>(p)*, or
-    * *q* is in *N<sub>D</sub>(p)* and the set *N<sub>4</sub>(p) &cap; N<sub>4</sub>(q)* has no pixels whose values are from *V*.
-
-Difference between **8-adjacency** and **m-adjacency**:
-
-<div class="picture">
-  <img style="width:60%;" src ="/cstopics/assets/img/vision/0_8vsS.png" />
-</div>
-
-A *path* from *p=(x,y)* to *q=(s,t)*, is a sequence of adjacent pixels that are in *V*:
-
-<img class="eq" src="https://latex.codecogs.com/gif.latex?
-  P = (x_0,y_0),(x_1,y_1),...,(x_n,y_n)
-"/>
-
-Where *n* is the length of the path, and:
-
-<img class="eq" src="https://latex.codecogs.com/gif.latex?
-  (x_0,y_0) = (x,y)
-"/>
-<img class="eq" src="https://latex.codecogs.com/gif.latex?
-  (x_n,y_n) = (s,t)
-"/>
 
 ## References
 
