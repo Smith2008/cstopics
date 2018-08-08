@@ -196,7 +196,7 @@ A continuación se exponen algunas de las principales características de un OS.
 Permite correr varios programas, incrementando el uso de CPU al tener siempre un trabajo para ejecutar.
 
 <div style="text-align:center">
-  <img style="width: 40%;" src ="/cstopics/assets/img/programming/os/0_multiprogram.png" />
+  <img style="width: 30%;" src ="/cstopics/assets/img/programming/os/0_multiprogram.png" />
 </div>
 
 * OS selecciona un trabajo (job1) y se asigna a CPU para ejecución.

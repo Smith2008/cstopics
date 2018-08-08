@@ -49,7 +49,7 @@ You can check the value of an environment variable with the *echo* command:
 ```sh
 $ echo $HOME
 /user/camilo
-```
+```/programming/c-c++/c_c++_in_linux
 
 In addition, you can set variables as below:
 
@@ -185,6 +185,149 @@ Advantages of performing system calls through APIs:
 
 # Types of Calls
 
-## Process Control
+## 1. Process Control
 
-Control the
+Control the program execution:
+
+* Creation / Elimination.
+* Start / Stop (normal or forzed).
+* CPU time assign.
+* Waiting for events.
+* Assign / Release of memory.
+* Assign / Get parameters.
+
+<div style="text-align:center">
+  <img style="width: 75%;" src ="/cstopics/assets/img/programming/os/2_calls_control.png" />
+</div>
+
+Mono-task systems:
+
+<div style="text-align:center">
+  <img style="width: 70%;" src ="/cstopics/assets/img/programming/os/2_monotask.png" />
+</div>
+
+Multi-task systems:
+
+<div style="text-align:center">
+  <img style="width: 70%;" src ="/cstopics/assets/img/programming/os/2_multitask.png" />
+</div>
+
+## 2. File Handling
+
+They are the most used system calls used by the user.
+
+* Creation / Elimination
+* Opening / Closing
+* Writing / Reading
+* Attribute edition
+
+<div style="text-align:center">
+  <img style="width: 75%;" src ="/cstopics/assets/img/programming/os/2_calls_files.png" />
+</div>
+
+## 3. Devices Management
+
+Handling of the hardware resources (Similar to file management.).
+
+* Opening / Closing
+* Reading / Writing
+* Request / Return
+
+<div style="text-align:center">
+  <img style="width: 75%;" src ="/cstopics/assets/img/programming/os/2_calls_devices.png" />
+</div>
+
+## 4. Information Handling
+
+* User - OS information transfer.
+* System information.
+* Time profiles.
+* Debug.
+* General information about processes.
+
+<div style="text-align:center">
+  <img style="width: 75%;" src ="/cstopics/assets/img/programming/os/2_calls_info.png" />
+</div>
+
+## 5. Communication
+
+Used to transfer information between processes.
+
+*Through messages:* Direct communication between processes or indirect, through message mailbox.
+
+* Open connection
+* hostID, processID
+* Read / Write cycles
+* Close connection
+
+*Through shared memory:*
+
+* Processes &rarr; Calls &rarr; Access to memory data from other processes.
+* Processes with a section of shared memory &rarr; Access Synchronization.
+
+## 6. Security
+
+* Resources access control.
+* Files and devices permissions assignment.
+
+<div style="text-align:center">
+  <img style="width: 75%;" src ="/cstopics/assets/img/programming/os/2_calls_security.png" />
+</div>
+
+# OS Structure
+
+## Simple Structure
+
+* MS-DOS did not have a 'gap' between HW and SW through interfaces.
+* It could involve security problems and user programs errors.
+* The old hardware did not have protection options.
+
+<div style="text-align:center">
+  <img style="width: 40%;" src ="/cstopics/assets/img/programming/os/2_msdos.png" />
+</div>
+
+* UNIX separated the kernel and system programs.
+* The Kernel provides functionality for each HW component.
+
+<div style="text-align:center">
+  <img style="width: 55%;" src ="/cstopics/assets/img/programming/os/2_kernel.png" />
+</div>
+
+The Kernel has a plenty of functionalities at the same level. *Monolithic Structure*.
+
+## Microkernels
+
+* They remove not essential elements from kernel, and include them as user level programs.
+* *Main function:* provide communication (through messages) between programs and services at the user space.
+* *Example:* Mach microkernel system, developed in Carnegie Mellon University in the mid-80s.
+
+## Modules
+
+* **Core kernel:** microkernel function.
+* Dynamic modules thar offer services to the core.
+* Link between kernel and modules &rarr; on boottime or runtime.
+
+# Designing an OS
+
+To consider from technical specs side:
+
+* HW specs (architecture, memory, etc.).
+* System type:
+    * Multitask / multiprogram
+    * Monouser / multiuser
+    * Distributed
+    * Real time
+    * General purpose
+
+<h1 style="color:Tomato;">Homework</h1>
+
+Write a *C/C++* program that reads a text file (*hw1.txt*), and generates a new file (*HW1.txt*) with the same content but is capital letters.
+
+Create a new folder in your repository, and upload the files below:
+
+* Pseudocode with the system calls.
+* *hw1.c* or *hw1.cpp* with the *c/c++* code.
+* An *hw1.txt* sample file.
+* A *Makefile* with the rules *compile* and *run*. (Refer to the [C/C++ in Linux](/cstopics/programming/c-c++/c_c++_in_linux) guide)
+
+When the repository is ready, download it as a *.zip* file and upload it to the appropriate link in moodle.
