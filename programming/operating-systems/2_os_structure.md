@@ -186,3 +186,5 @@ Advantages of performing system calls through APIs:
 # Types of Calls
 
 ## Process Control
+
+Control the
