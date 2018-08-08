@@ -319,7 +319,7 @@ To consider from technical specs side:
     * Real time
     * General purpose
 
-<h1 style="color:Tomato;">Homework</h1>
+<h1 style="color:Tomato;">Homework 1</h1>
 
 Write a *C/C++* program that reads a text file (*hw1.txt*), and generates a new file (*HW1.txt*) with the same content but is capital letters.
 
