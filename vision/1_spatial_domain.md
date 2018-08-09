@@ -8,5 +8,3 @@ permalink: /vision/1_spatial_domain
 
 <iframe src="https://raw.githubusercontent.com/cstopics/cstopics/gh-pages/assets/notebooks/vision/test.html">
 </iframe>
-
-<script src="http://gist-it.appspot.com/https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/test.html"></script>
