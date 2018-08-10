@@ -67,6 +67,21 @@ Where *n* is the length of the path, and:
   (x_n,y_n) = (s,t)
 "/>
 
+The condition to be a path, is that:
+
+<img class="eq" src="https://latex.codecogs.com/gif.latex?
+  (x_i,y_i) and (x_{i-1}, y_{i-1})
+"/>
+
+are adjacent for *1 &le; i &le; n*.
+
+<div class="picture">
+  <img style="width:40%;" src ="/cstopics/assets/img/vision/4_paths.png" />
+  <div>Paths with 8-adjacency vs m-adjacency</div>
+</div>
+
+Being *S* a subset of pixels in an image, *p* and *q* are connected when there is at least one path between them, and the path pixels belong to *S*.
+
 ## References
 
 * [Gonzalez02] Gonzalez R. C., Woods R. E. Digital Image Processing. 2nd Ed. Prentice Hall. 2002.
