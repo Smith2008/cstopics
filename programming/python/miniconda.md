@@ -42,7 +42,7 @@ So, when you want to use miniconda, start a terminal, and source the corresponde
 
 ``` sh
 $ # New terminal
-$ source .startConda2 # You can use dot '.' instead of the command 'source'
+$ source startConda2.sh # You can use dot '.' instead of the command 'source'
 $ python
 Python 2.7.15 |Anaconda, Inc.| (default, May  1 2018, 23:32:55)
 [GCC 7.2.0] on linux2
@@ -52,7 +52,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 ``` sh
 $ # New terminal
-$ source .startConda3 # You can use dot '.' instead of the command 'source'
+$ source startConda3.sh # You can use dot '.' instead of the command 'source'
 $ python
 Python 3.6.5 |Anaconda, Inc.| (default, Apr 29 2018, 16:14:56)
 [GCC 7.2.0] on linux
