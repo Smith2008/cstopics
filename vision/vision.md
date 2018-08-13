@@ -44,3 +44,11 @@ Monday, whole day.
 Below is a sample schedule for the course 2018-2.
 
 {% include tables/vision/0_schedule.md %}
+
+## Assignments
+
+
+
+## Python notebooks and code examples
+
+* [Importing Images](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/import_image.ipynb){:target="blank"}
