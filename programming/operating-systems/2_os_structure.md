@@ -331,3 +331,7 @@ Create a new **private** Bitbucket repository named *"2018_2_d3_hw1_lastname_fir
 * A *Makefile* with the rules *compile* and *run*. (Refer to the [C/C++ in Linux](/cstopics/programming/c-c++/c_c++_in_linux) guide)
 
 When the repository is ready, download it as a *.zip* file and upload it to the appropriate link in moodle.
+
+## References
+
+* [Silberschatz12] Silberschatz, A., Galvin, P. and Gagne G. Operating System Concepts, 8th Ed, Wiley, 2012
