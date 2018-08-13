@@ -283,9 +283,104 @@ int status;
 pid = wait(&status);
 ```
 
+Example:
+
+``` c
+#include <sys/wait.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+
+int main()
+{
+	pid_t pid_parent, pid_child, wpid;
+	int a, b, status;
+	pid_parent = getpid();
+	printf("[P] Parent process with pid %d \n", pid_parent);
+
+	printf("[P] This program creates a child process and performs the division of two numbers\n");
+	printf("[P] Operation: a / b\n");
+	printf("[P] Enter a: ");
+	scanf("%d", &a);
+	printf("[P] Enter b: ");
+	scanf("%d", &b);
+
+	pid_child = fork();
+
+	if(pid_child == 0){
+		// child
+		printf("[C] Child process with pid %d \n", getpid());
+		if(b!=0){
+			printf("[C] %d / %d = %d \n", a, b, a/b);
+			exit(EXIT_SUCCESS); // 0
+		}else{
+			printf("[C] Error: Division by zero can't be performed. \n");
+			exit(EXIT_FAILURE); // 1
+		}
+	}
+	else if(pid_child > 0){
+		// parent
+		wpid = wait(&status);
+		if(wpid == pid_child){
+			if(status==EXIT_SUCCESS)
+				printf("[P] Child exited normally\n");
+			else
+				printf("[P] Child process aborted\n");
+		}
+	}
+	else
+		fprintf(stderr, "Fork failed \n");
+		return 1;
+}
+
+```
+
 When a child process finishes, all its resources are deallocated from the main memory, but its *pid* will be in the process table of the OS until wait is called. This because the status value has to be stored until the parent read it. When a child process finishes but the parent have not called the *wait()* function yet, the child process goes to the **zombie** status, when parent calls *wait()*, the process disappears.
 
-If a parent process never calls the *wait()* function, and finished with zombie children, these becomes *orphan* processes, and become *init* children. The *init* process execute *wait()* periodically, deleting all the orphans. 
+If a parent process never calls the *wait()* function, and finished with zombie children, these becomes *orphan* processes, and become *init* children. The *init* process execute *wait()* periodically, deleting all the orphans. Run the following example and finish the program before the child finishes, then check if the child pid exists with the command 'ps -p {pid}'.
+
+``` c
+#include <sys/wait.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <time.h>
+
+//proceso padre: createProcessUnix
+int main()
+{
+	pid_t pid_parent, pid_child;
+	pid_parent = getpid();
+
+	printf("Parent process with pid %d \n", pid_parent);
+	pid_child = fork();
+
+	if(pid_child == 0){
+		//child
+		printf("Child process with pid %d \n", getpid());
+		clock_t before = clock();
+		int msec = 0, trigger = 5000;
+		do {
+		  /*
+		   * Do something to busy the CPU just here while you drink a coffee
+		   * Be sure this code will not take more than `trigger` ms
+		   */
+
+		  clock_t difference = clock() - before;
+		  msec = difference * 1000 / CLOCKS_PER_SEC;
+		} while ( msec < trigger );
+		printf("Child finished \n");
+
+	}
+	else if(pid_child > 0){
+		//parent
+		while(1){}
+	}
+	else
+		fprintf(stderr, "Fork failed \n");
+		return 1;
+}
+```
 
 # References
 
