@@ -47,7 +47,10 @@ Below is a sample schedule for the course 2018-2.
 
 ## Assignments
 
-
+* Lab 1
+    * [Homework 1](/cstopics/vision/assignments/hw1)
+    * [Homework 2](/cstopics/vision/assignments/hw2)
+* [Lab 2]()
 
 ## Python notebooks and code examples
 

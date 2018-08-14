@@ -148,7 +148,7 @@ As this is a linear transformation, the superposition principle is satisfied:
 
 ### Blend
 
-It is used to miColor transformsx two images:
+It is used to combine two images:
 
 <img class="eq" src="https://latex.codecogs.com/gif.latex?
   g(\mathbf{x}) = (1-\alpha)f_0(\mathbf{x})+\alpha f_1(\mathbf{x})
@@ -246,6 +246,175 @@ Image example:
   <div>alpha=1.0, beta=50</div>
 </div>
 
+## Histogram equalization
+
+The histogram is essentially a probability function, and the idea of the histogram equalization is to convert it in a flat function, using all the intensities. This operation can be done calculating the normalized distribution function, and multiplying it by *L-1*. This could be used as a LUT to map the new pixel values.
+
+<img class="eq" src="https://latex.codecogs.com/gif.latex?
+  c(I)=(L-1)\frac{1}{N}\sum^{i=0}_{I}{h(i)}
+"/>
+
+Where *h* is the original histogram, and *c* should be the LUT.
+
+Example:
+
+<div class="picture">
+  <img style="width:90%;" src ="/cstopics/assets/img/vision/1_histeq.png" />
+</div>
+
+Sometimes the histogram equalization does not work well enough, so you can parform blend between the original and the equalized image.
+
+<div class="picture">
+  <img style="width:90%;" src ="/cstopics/assets/img/vision/1_eqblend.png" />
+  <div>[Szeliski11]</div>
+</div>
+
+Other methods:
+
+<div class="picture">
+  <img style="width:90%;" src ="/cstopics/assets/img/vision/1_eqlocal.png" />
+  <div>[Szeliski11]</div>
+</div>
+
+# Linear filtering (neighborhood operator)
+
+Linear filters can be performed as a correlation operation:
+
+<img class="eq" src="https://latex.codecogs.com/gif.latex?
+  g = f \otimes h
+"/>
+
+<img class="eq" src="https://latex.codecogs.com/gif.latex?
+  g(i,j) = \sum_{k,l}f(i+k, j+l)h(k,l)
+"/>
+
+Where *g* is the filtered image, *f* is the original image and *h* is the filter, whose value are called *filter coefficients*, and **the sum of them must be *1.0***.
+
+<div class="picture">
+  <img style="width:90%;" src ="/cstopics/assets/img/vision/1_linear_filter.png" />
+  <div>[Szeliski11]</div>
+</div>
+
+The linear filter can also be executed as a convolution operation:
+
+<img class="eq" src="https://latex.codecogs.com/gif.latex?
+  g = f \ast h
+"/>
+
+<img class="eq" src="https://latex.codecogs.com/gif.latex?
+  g(i,j) = \sum_{k,l}f(i-k, j-l)h(k,l) = \sum_{k,l}f(k, l)h(i-k,j-l)
+"/>
+
+Correlation and convolution are shift-invariant operations, but a shift-variant version could be used:
+
+<img class="eq" src="https://latex.codecogs.com/gif.latex?
+  g(i,j) = \sum_{k,l}f(i-k, j-l)h(k,l;i,j)
+"/>
+
+## Padding (border effect)
+
+When border pixel are calculated, the filter need pixels that outside the image, there are some processes to face this problem:
+
+* ***zero***: read the outside pixels as zero.
+* ***constant***: read the outside pixels as a specific value, usually L/2.
+* ***clamp***: repeat the border pixels.
+* ***wrap***: loop “around” the image in a “toroidal” configuration.
+* ***mirror***: reflect the image.
+
+<div class="picture">
+  <img style="width:90%;" src ="/cstopics/assets/img/vision/1_padding.png" />
+  <div>[Szeliski11]</div>
+</div>
+
+## Typical filters
+
+### Average (mean) filter
+
+5x5 filter:
+
+| 1/25 | 1/25 | 1/25 | 1/25 | 1/25 |
+|------|------|------|------|------|
+| 1/25 | 1/25 | 1/25 | 1/25 | 1/25 |
+| 1/25 | 1/25 | 1/25 | 1/25 | 1/25 |
+| 1/25 | 1/25 | 1/25 | 1/25 | 1/25 |
+| 1/25 | 1/25 | 1/25 | 1/25 | 1/25 |
+
+Example:
+
+<div class="picture">
+  <img style="width:20%;" src ="/cstopics/assets/img/vision/1_filter_avg_0.gif" />
+  <img style="width:20%;" src ="/cstopics/assets/img/vision/1_filter_avg_1.gif" />
+  <img style="width:20%;" src ="/cstopics/assets/img/vision/1_filter_avg_2.gif" />
+  <img style="width:20%;" src ="/cstopics/assets/img/vision/1_filter_avg_3.gif" />
+  <div>Original, 3x3, 5x5, 7x7 (https://homepages.inf.ed.ac.uk/rbf/HIPR2/filtops.htm)</div>
+</div>
+
+<div class="picture">
+  <img style="width:20%;" src ="/cstopics/assets/img/vision/1_filter_avg2_0.gif" />
+  <img style="width:20%;" src ="/cstopics/assets/img/vision/1_filter_avg2_1.gif" />
+  <img style="width:20%;" src ="/cstopics/assets/img/vision/1_filter_avg2_2.gif" />
+  <div>Original, 3x3, 5x5, (https://homepages.inf.ed.ac.uk/rbf/HIPR2/filtops.htm)</div>
+</div>
+
+### Gaussian filter
+
+Modeled by:
+
+<div class="picture">
+  <img style="width:30%;" src ="/cstopics/assets/img/vision/1_gauss_eq.png" />
+</div>
+
+<div class="picture">
+  <img style="width:40%;" src ="/cstopics/assets/img/vision/1_gauss_plot.png" />
+</div>
+
+<div class="picture">
+  <img style="width:40%;" src ="/cstopics/assets/img/vision/1_gauss_table.png" />
+</div>
+
+Examples:
+
+<div class="picture">
+  <img style="width:20%;" src ="/cstopics/assets/img/vision/1_filter_gaus1_0.gif" />
+  <img style="width:20%;" src ="/cstopics/assets/img/vision/1_filter_gaus1_1.gif" />
+  <img style="width:20%;" src ="/cstopics/assets/img/vision/1_filter_gaus1_2.gif" />
+  <img style="width:20%;" src ="/cstopics/assets/img/vision/1_filter_gaus1_4.gif" />
+  <div>Original, 5x5, 9x9, 15x15 (https://homepages.inf.ed.ac.uk/rbf/HIPR2/filtops.htm)</div>
+</div>
+
+### Sobel filters
+
+Gradients in *x* and *y* are calculated.
+
+<div class="picture">
+  <img style="width:70%;" src ="/cstopics/assets/img/vision/1_sobel_eq.png" />
+</div>
+
+Then, the magnitude and direction can be computed:
+
+<div class="picture">
+  <img style="width:20%;" src ="/cstopics/assets/img/vision/1_sobel_mg.png" />
+  <img style="width:20%;" src ="/cstopics/assets/img/vision/1_sobel_ph.png" />
+</div>
+
+Examples:
+
+<div class="picture">
+  <img style="width:30%;" src ="/cstopics/assets/img/vision/1_sobel1_0.png" />
+  <img style="width:30%;" src ="/cstopics/assets/img/vision/1_sobel1_1.png" />
+  <img style="width:30%;" src ="/cstopics/assets/img/vision/1_sobel1_2.png" />
+</div>
+
+<br>
+
+<div class="picture">
+  <img style="width:45%;" src ="/cstopics/assets/img/vision/1_sobel2_0.jpg" />
+  <img style="width:45%;" src ="/cstopics/assets/img/vision/1_sobel2_1.jpg" />
+  <img style="width:45%;" src ="/cstopics/assets/img/vision/1_sobel2_2.jpg" />
+  <img style="width:45%;" src ="/cstopics/assets/img/vision/1_sobel2_3.jpg" />
+</div>
+
 # References
 
 * [Gonzalez02] Gonzalez R. C., Woods R. E. Digital Image Processing. 2nd Ed. Prentice Hall. 2002.
+* [Szeliski11] Szeliski R. Computer Vision, Algorithms and Applications. 1st Ed. Springer. 2011.
