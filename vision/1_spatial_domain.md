@@ -107,7 +107,25 @@ Whose parameters are:
 
 Examples:
 
-<span style="color:red">Image of contrast and brightness</span>
+<div class="picture">
+  <img style="width:50%;" src ="/cstopics/assets/img/vision/1_linear1.png" />
+  <div>Original image.</div>
+</div>
+
+<div class="picture">
+  <img style="width:50%;" src ="/cstopics/assets/img/vision/1_linear2.png" />
+  <div>alpha = 1.0, beta = 70.0</div>
+</div>
+
+<div class="picture">
+  <img style="width:50%;" src ="/cstopics/assets/img/vision/1_linear3.png" />
+  <div>alpha = 1.5, beta = 0.0</div>
+</div>
+
+<div class="picture">
+  <img style="width:50%;" src ="/cstopics/assets/img/vision/1_linear4.png" />
+  <div>alpha = 2.0, beta = -50.0</div>
+</div>
 
 The parameters can depend on the ***x*** location:
 <p style="background-color:hsl(240, 100%, 100%);">hsl(240, 100%, 100%)</p>
@@ -117,7 +135,10 @@ The parameters can depend on the ***x*** location:
 
 Example:
 
-<span style="color:red">Image of circular brightness</span>
+<div class="picture">
+  <img style="width:50%;" src ="/cstopics/assets/img/vision/1_linear5.png" />
+  <div>Alpha goes from 1 to 0 as y increases.</div>
+</div>
 
 As this is a linear transformation, the superposition principle is satisfied:
 
@@ -137,7 +158,25 @@ Where &alpha; goes from 0 to 1.
 
 Example:
 
-<span style="color:red">Blend of two images</span>
+<div class="picture">
+  <img style="width:70%;" src ="/cstopics/assets/img/vision/1_blend1.png" />
+  <div>alpha=0.25</div>
+</div>
+
+<div class="picture">
+  <img style="width:70%;" src ="/cstopics/assets/img/vision/1_blend2.png" />
+  <div>alpha=0.5</div>
+</div>
+
+<div class="picture">
+  <img style="width:70%;" src ="/cstopics/assets/img/vision/1_blend3.png" />
+  <div>alpha=0.75</div>
+</div>
+
+<div class="picture">
+  <img style="width:30%;" src ="/cstopics/assets/img/vision/1_blend4.png" />
+  <div>Alpha changes with x</div>
+</div>
 
 ### Gamma correction
 
@@ -147,11 +186,34 @@ Used to invert the gamma mapping applied by some cameras:
   g(\mathbf{x}) = f(\mathbf{x})^{\frac{1}{\gamma}}
 "/>
 
+<div class="picture">
+  <img style="width:60%;" src ="/cstopics/assets/img/vision/1_gamma_curve.png" />
+  <div>gamma=[1.0, 0.8, 2.2]</div>
+</div>
+
 When input image *f* is normalized in the range *[0, 1]*.
 
 Example:
 
-<span style="color:red">Gamma correction</span>
+<div class="picture">
+  <img style="width:70%;" src ="/cstopics/assets/img/vision/1_gamma.png" />
+  <div>gamma=[1.0, 0.8, 2.2]</div>
+</div>
+
+### Negative
+
+Output is:
+
+<img class="eq" src="https://latex.codecogs.com/gif.latex?
+  g(\mathbf{x}) = L-f(\mathbf{x})-1
+"/>
+
+Example:
+
+<div class="picture">
+  <img style="width:30%;" src ="/cstopics/assets/img/vision/1_negative.png" />
+  <div>gamma=[1.0, 0.8, 2.2]</div>
+</div>
 
 ## Color transforms
 
@@ -177,6 +239,13 @@ And adding 30 to value, you get:
 
 <p style="background-color:rgb(180, 97, 239); color: white;">rgb(180, 97, 239)</p>
 
+Image example:
 
+<div class="picture">
+  <img style="width:70%;" src ="/cstopics/assets/img/vision/1_rgb_linear.png" />
+  <div>alpha=1.0, beta=50</div>
+</div>
 
 # References
+
+* [Gonzalez02] Gonzalez R. C., Woods R. E. Digital Image Processing. 2nd Ed. Prentice Hall. 2002.
