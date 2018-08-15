@@ -35,3 +35,7 @@ Monday, whole day.
 Below is a sample schedule for the course 2018-2.
 
 {% include tables/programming/os/0_schedule.md %}
+
+## Assignments
+
+* [Homework](/cstopics/programming/operating-systems/0_homework)

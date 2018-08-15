@@ -100,3 +100,28 @@ Hello everyone
 # gcc/g++ Advanced
 
 # Makefiles Advanced
+
+Example of makefile with one rule per file to be generated:
+
+``` sh
+all: main1 main2 n_processes pi
+
+main1: main1.cpp
+	g++ -o main1 main1.cpp
+
+main2: main2.cpp
+	g++ -o main2 main2.cpp
+
+n_processes: n_processes.cpp
+	g++ -o n_processes n_processes.cpp
+
+pi: pi.cpp
+	g++ -o pi pi.cpp
+
+.PHONY: clean
+clean:
+	rm -rf main1 main2
+
+# rule: dependents
+# 	command
+```
