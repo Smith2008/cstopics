@@ -90,3 +90,17 @@ For example, consider the constraint Y=X², where the domain for each variable i
 - To make Y arc-consistent with respect to X, we reduce Y's domain to {0,1,4,9}
 
 With these domains, the whole CSP is arc-consistent
+
+
+<font color="blue"><i>Example: map coloring</i></font>
+<div style="text-align:center">
+  <img src ="/cstopics/assets/img/AI/introAI/arc_consistency.png" style="width:80%"/>  
+</div>
+
+**The most popular algorithm for arc consistency is AC-3**
+
+## Backtracking search for CSPs
+Backtracking search is a variation of DFS which chooses values for one variable at a time and backtracks when a variable has no legal values left to assign.
+
+- States: partial assignment
+- Actions: adding _var=value_ to the assignment
