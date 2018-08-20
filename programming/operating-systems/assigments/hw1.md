@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Processes
+title: Homework 1
 permalink: /programming/operating-systems/assigments/hw1
 ---
 

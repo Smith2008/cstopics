@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Processes
+title: Practice 1
 permalink: /programming/operating-systems/assigments/prc1
 ---
 
