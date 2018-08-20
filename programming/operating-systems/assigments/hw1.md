@@ -4,8 +4,6 @@ title: Processes
 permalink: /programming/operating-systems/assigments/hw1
 ---
 
-<h1 style="text-align: center;">Processes</h1>
-
 ## Homework 1
 
 Write a *C/C++* program that reads a text file (*hw1.txt*), and generates a new file (*HW1.txt*) with the same content but is capital letters.

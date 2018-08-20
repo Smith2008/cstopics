@@ -4,8 +4,6 @@ title: Processes
 permalink: /programming/operating-systems/assigments/prc1
 ---
 
-<h1 style="text-align: center;">Processes</h1>
-
 ## Practice 1
 
 Create a new **private** Bitbucket repository named *"2018_2_d3_prc1_Lastname1Firstname1_Lastname1Firstname1"* (E.g. *"2018_2_d3_prc1_CamachoCamilo"*),  share it with the account *"camilocamachousta"*, and add the files below:

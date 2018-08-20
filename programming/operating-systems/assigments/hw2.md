@@ -4,8 +4,6 @@ title: Processes
 permalink: /programming/operating-systems/assigments/hw2
 ---
 
-<h1 style="text-align: center;">Processes</h1>
-
 ## Homework 2
 
 Write a C/C++ programs that calculates the &pi; constant using the Monte Carlo Method method. The number of iterations must be provided via the first command line argument, and show the result on the terminal.
