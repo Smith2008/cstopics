@@ -38,4 +38,7 @@ Below is a sample schedule for the course 2018-2.
 
 ## Assignments
 
-* [Homework](/cstopics/programming/operating-systems/0_homework)
+* [Homework 1](/cstopics/programming/operating-systems/assigments/hw1)
+* [Homework 2](/cstopics/programming/operating-systems/assigments/hw2)
+
+* [Practice 1](/cstopics/programming/operating-systems/assigments/prc1)
