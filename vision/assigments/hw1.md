@@ -44,7 +44,7 @@ The program must show a 2x2 subplot grid, containing the original image, origina
 
 The folder have to include the *linear_process.py*, two sample images, and a pdf file that explain various combination of arguments and them result.
 
-Create a new **private** Bitbucket repository named *"2018_2_av_lab1_Lastname1Firstname1_Lastname2Firstname2"* (E.g. *"2018_2_av_lab1_CamiloCamacho_YeisonSuarez"*),  share it with the account *"camilocamachousta"*. Inside it, create a new folder named *"hw1"*, and add all your homework files.
+Create a new **private** Bitbucket repository named *"2018_2_av_lab1_Lastname1Firstname1_Lastname2Firstname2"* (E.g. *"2018_2_av_lab1_CamachoCamilo_SuarezYeison"*),  share it with the account *"camilocamachousta"*. Inside it, create a new folder named *"hw1"*, and add all your homework files.
 
 When the homework is ready, download the repository as a *.zip* file and upload it to the appropriate link in moodle.
 
