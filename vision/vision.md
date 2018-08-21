@@ -55,3 +55,9 @@ Below is a sample schedule for the course 2018-2.
 ## Python notebooks and code examples
 
 * [Importing Images](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/import_image.ipynb){:target="blank"}
+
+* [Fourier Analysis](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/fourier.ipynb){:target="blank"}
+
+* [Video in OpenCV](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/video.py){:target="blank"}
+
+* [Blue color detection in OpenCV](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/color.py){:target="blank"}
