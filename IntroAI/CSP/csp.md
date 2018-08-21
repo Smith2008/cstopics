@@ -104,3 +104,42 @@ Backtracking search is a variation of DFS which chooses values for one variable 
 
 - States: partial assignment
 - Actions: adding _var=value_ to the assignment
+
+<div style="text-align:center">
+  <img src ="/cstopics/assets/img/AI/introAI/backtracking.png" style="width:90%"/>  
+</div>
+
+- Backtracking-Search repeatedly chooses and unassigned variable ans tries all values in its domain.
+- If an inconsistency is detected, then the algorithm returns _failure_, causing the previous call to try another value.
+
+<div style="text-align:center">
+  <img src ="/cstopics/assets/img/AI/introAI/backtrack_example.png" style="width:80%"/>  
+</div>
+
+### Which variable should be assigned first?
+For example, after the assignments WA=red and NT=green, there is only one possible value for SA, so it makes sense to assign SA=blue. In fact, after SA is assigned, the choices for Q, NSW ad V are all forced.
+
+**Intuitive idea:** choose "the most constrained variable".
+
+This is, choose the variable with the **minimum-remaining-values** (MRV heuristic)
+
+
+### In what order should variable's values be tried?
+The **least-constrainig-value** heuristic can be effective, preferring the value that rules out the fewest choices for the neighboring variables in the constraint graph. The heuristic tries to leave the maximum flexibility for subsequent variables assignments.
+
+For example, if the next variable is Q in the partial assignment WA=red and NT=green, the heuristic would prefer red over blue, because blue eliminates the last legal assignment for SA.
+
+# Exercise: can you tell the difference in this backtrack-search?
+## Video 1
+<div style="text-align:center">
+<video width="486" height="508" controls>
+  <source src="/cstopics/assets/videos/introAI/backtracking.mp4" type="video/mp4">
+</video>
+</div>
+
+## Video 2
+<div style="text-align:center">
+<video width="486" height="508" controls>
+  <source src="/cstopics/assets/videos/introAI/backtracking_mac.mp4" type="video/mp4">
+</video>
+</div>
