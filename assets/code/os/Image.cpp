@@ -91,7 +91,6 @@ int Image::fromFile(char *fileName)
 	}
 	fclose(in_file);
 	return 0;
-	unsigned char * operator[](int index);
 }
 
 int Image::toFile(char *fileName)
@@ -162,3 +161,12 @@ char* Image::strrev(char* str)
 	}
 	return str;
 }
+
+unsigned char * Image::operator[](int index){
+	return data+(index*width);
+}
+
+
+
+
+

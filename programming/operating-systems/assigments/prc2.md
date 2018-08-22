@@ -79,34 +79,13 @@ Realice un programa secuencial en C++ para realizar la detección de bordes de i
 
 ## Librerías
 
-HOLAAAAA
+[Image.cpp](https://github.com/cstopics/cstopics/blob/gh-pages/assets/code/os/Image.cpp){:target="blank"} and [Image.h](https://github.com/cstopics/cstopics/blob/gh-pages/assets/code/os/Image.h){:target="blank"}
 
 Esta clase tiene los métodos para realizar lectura/escritura de imágenes .pgm y acceso a pixeles de la imagen.
 
-* Lectura de imagen:
-``` c
-Image myImage;
-char *in_path = "./imgs/Face.pgm"
-int i = myImage.fromFile(in_path);
-if(i==-1){
-    // Error en la lectura
-}
-```
+EJEMPLO
 
-* Escritura de imagen:
-``` c
-char *out_path = "./imgs/Face_filtrada.pgm"
-Image filteredImg;
-filteredImg = Image(myImage.width, myImage.height);
-unsigned char *filt = new unsigned char[myImage.width*myImage.height];
-filteredImg.data = filt;
-int i = filteredImg.toFile(out_path);
-if(i==-1){
-    // Error en la escritura
-}
-```
-
-* Acceso a pixel *(i,j)*: La imagen se almacena en en un arreglo lineal de tamaño *width x height*, así que se debe implementar la lógica para acceder al pixel correcto.
+Acceso a pixel *(i,j)*: La imagen se almacena en en un arreglo lineal de tamaño *width x height*, así que se debe implementar la lógica para acceder al pixel correcto.
 
 ## Editor de imágenes pgm
 

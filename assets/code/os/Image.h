@@ -17,7 +17,7 @@ class Image {
 
 	int flag;
 
-public:	
+public:
 	unsigned char* data;
 	int width;
 	int height;
@@ -31,6 +31,7 @@ public:
 	virtual ~Image();
 	int fromFile(char *fileName);
 	int toFile(char *fileName);
+	unsigned char * operator[](int index);
 	//unsigned char getPixel(int x,int y);
 
 private:
