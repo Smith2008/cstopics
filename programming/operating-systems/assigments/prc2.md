@@ -83,10 +83,22 @@ Realice un programa secuencial en C++ para realizar la detección de bordes de i
 
 Esta clase tiene los métodos para realizar lectura/escritura de imágenes .pgm y acceso a pixeles de la imagen.
 
-EJEMPLO
+[Ejemplo](https://github.com/cstopics/cstopics/blob/gh-pages/assets/code/os/copy_image.cpp){:target="blank"}
 
 Acceso a pixel *(i,j)*: La imagen se almacena en en un arreglo lineal de tamaño *width x height*, así que se debe implementar la lógica para acceder al pixel correcto.
 
 ## Editor de imágenes pgm
 
 Software GIMP (https://ubunlog.com/como-instalar-la-ultima-version-de-gimp-en-nuestro-ubuntu/ )
+
+## Entrega
+
+Create a new **private** Bitbucket repository named *"2018_2_d3_prc2_LastnameFirstname"* (E.g. *"2018_2_d3_prc2_CamachoCamilo"*), share it with the account *"camilocamachousta"*, and add the files below:
+
+* *sobel.cpp* with the *c++* code.
+* *Image.cpp* and *Image.h*, original libraries.
+* A *Makefile* with the rules *all*, *sobel* and *clean*. (Refer to the [C/C++ in Linux](/cstopics/programming/c-c++/c_c++_in_linux) guide)
+
+When the repository is ready, download it as a *.zip* file and upload it to the appropriate link in moodle.
+
+Deadline: Sep 30
