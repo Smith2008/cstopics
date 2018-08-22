@@ -11,7 +11,7 @@ Parallelize the [Homework 2](/cstopics/programming/operating-systems/assigments/
 Create a new **private** Bitbucket repository named *"2018_2_d3_hw3_LastnameFirstname"* (E.g. *"2018_2_d3_hw3_CamachoCamilo"*), share it with the account *"camilocamachousta"*, and add the files below:
 
 * *pi_montecarlo_processes.cpp* with the *c++* code.
-* A *Makefile* with the rules *all*, *pi_montacarlo* and *clean*. (Refer to the [C/C++ in Linux](/cstopics/programming/c-c++/c_c++_in_linux) guide)
+* A *Makefile* with the rules *all*, *pi_montecarlo_processes* and *clean*. (Refer to the [C/C++ in Linux](/cstopics/programming/c-c++/c_c++_in_linux) guide)
 
 When the repository is ready, download it as a *.zip* file and upload it to the appropriate link in moodle.
 
