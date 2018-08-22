@@ -32,3 +32,82 @@ Es usual que el filtro tenga las siguientes características:
 * Si la suma de los elementos del filtro es mayor a 1.0, la imagen resultante será más brillante. Si es menor a 1.0, será más opaca.
 
 Por ejemplo, el filtro Sobel permite detectar separadamente los bordes horizontales y verticales en una imagen en escala de grises. Para ello utiliza las siguientes máscaras o kernels de convolución:
+
+* Gradiente fila (detección de bordes horizontales):
+
+<img class="eq" src="https://latex.codecogs.com/gif.latex?
+    G_x = \frac{1}{2}
+    \begin{bmatrix}
+        +1 & 0 & -1 \\
+        +2 & 0 & -2 \\
+        +1 & 0 & -1
+    \end{bmatrix}
+"/>
+
+* Gradiente columna (detección de bordes verticales):
+
+<img class="eq" src="https://latex.codecogs.com/gif.latex?
+    G_y = \frac{1}{2}
+    \begin{bmatrix}
+        +1 & +2 & +1 \\
+        0 & 0 & 0 \\
+        -1 & -2 & -1
+    \end{bmatrix}
+"/>
+
+En cada punto de la imagen, el pixel resultante de la aplicación del filtro Sobel es:
+
+<img class="eq" src="https://latex.codecogs.com/gif.latex?
+    nuevo pixel = \sqrt{G_x^2 + G_y^2}
+"/>
+
+El resultado de este filtro suministra información valiosa sobre las fronteras (bordes) de los objetos en la imagen. Estos resultados pueden ser usados para segmentar la imagen, reconocer objetos, etc.
+
+<div class="picture">
+  <img style="width:90%;" src ="/cstopics/assets/img/programming/os/prc2_res.png" />
+  <div>Tomado de http://robologs.net/wp-content/uploads/2015/07/convolucion.png</div>
+</div>
+
+## Laboratorio
+
+Realice un programa secuencial en C++ para realizar la detección de bordes de imágenes con extensión *.pgm* a través del filtro Sobel. Debe cumplir los siguientes requerimientos:
+
+* El usuario debe ingresar por consola el nombre de la imagen que desea filtrar. Todas las imágenes deben guardarse en la misma ubicación del programa ejecutable, en un directorio llamado imgs.
+* No hay límite en el tamaño de la imagen a leer.
+* La imagen a leer debe tener extensión *.pgm*, estrictamente. (Estas imágenes las puede abrir en el visualizador de Ubuntu)
+* La imagen filtrada debe guardarse en el mismo directorio donde se encuentra la imagen original. El nombre del archivo debe ser *nombreOriginal_filtrada.pgm*
+
+## Librerías
+
+HOLAAAAA
+
+Esta clase tiene los métodos para realizar lectura/escritura de imágenes .pgm y acceso a pixeles de la imagen.
+
+* Lectura de imagen:
+``` c
+Image myImage;
+char *in_path = "./imgs/Face.pgm"
+int i = myImage.fromFile(in_path);
+if(i==-1){
+    // Error en la lectura
+}
+```
+
+* Escritura de imagen:
+``` c
+char *out_path = "./imgs/Face_filtrada.pgm"
+Image filteredImg;
+filteredImg = Image(myImage.width, myImage.height);
+unsigned char *filt = new unsigned char[myImage.width*myImage.height];
+filteredImg.data = filt;
+int i = filteredImg.toFile(out_path);
+if(i==-1){
+    // Error en la escritura
+}
+```
+
+* Acceso a pixel *(i,j)*: La imagen se almacena en en un arreglo lineal de tamaño *width x height*, así que se debe implementar la lógica para acceder al pixel correcto.
+
+## Editor de imágenes pgm
+
+Software GIMP (https://ubunlog.com/como-instalar-la-ultima-version-de-gimp-en-nuestro-ubuntu/ )
