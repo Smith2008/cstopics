@@ -4,7 +4,7 @@ title: Artificial Vision
 permalink: /vision
 ---
 
-# Artificial Vision
+<h1 style="text-align: center;">Artificial Vision</h1>
 
 ## Course Description
 
@@ -39,11 +39,13 @@ Others:
 
 Monday, whole day.
 
-## Course schedule
+## Course content
 
-Below is a sample schedule for the course 2018-2.
-
-{% include tables/vision/0_schedule.md %}
+* [Digital Image Fundamentals](/cstopics/vision/0_fundamentals)
+* [Processing in the Spatial Domain](/cstopics/vision/1_spatial_domain)
+* [Filtering in the Frequency Domain](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/fourier.ipynb){:target="blank"}
+* [Image Thresholding]()
+* [Morphological Operations](/cstopics/vision/4_morpho)
 
 ## Assignments
 

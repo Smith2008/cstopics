@@ -4,7 +4,7 @@ title: Segmentation, Edge and Region Detection, and Morphological Processing
 permalink: /vision/4_morpho
 ---
 
-# Segmentation, Edge and Region Detection, and Morphological Processing
+<h1 style="text-align: center;">Morphological Operations</h1>
 
 ## Basic Relationships between Pixels
 
