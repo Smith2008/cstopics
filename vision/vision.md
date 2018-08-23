@@ -60,6 +60,6 @@ Monday, whole day.
 
 * [Fourier Analysis](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/fourier.ipynb){:target="blank"}
 
-* [Video in OpenCV](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/code/video.py){:target="blank"}
+* [Video in OpenCV](https://github.com/cstopics/cstopics/blob/gh-pages/assets/code/vision/video.py){:target="blank"}
 
-* [Blue color detection in OpenCV](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/code/color.py){:target="blank"}
+* [Blue color detection in OpenCV](https://github.com/cstopics/cstopics/blob/gh-pages/assets/code/vision/color.py){:target="blank"}
