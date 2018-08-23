@@ -18,7 +18,7 @@ int main(int argc, char** argv){
 	// Copia de la imagen original
 	memcpy(newImage.data, myImage.data, myImage.width*myImage.height);
 	// Escritura de nuevo archivo
-	if(newImage.toFile(out_path)){
+	if(newImage.toFile(out_path) == -1){
 	  	printf("Error al escribir la imagen.\n");
 		exit(1);
 	}
