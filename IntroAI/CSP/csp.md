@@ -143,3 +143,14 @@ For example, if the next variable is Q in the partial assignment WA=red and NT=g
   <source src="/cstopics/assets/videos/introAI/backtracking_mac.mp4" type="video/mp4">
 </video>
 </div>
+
+# Additional material
+You can download this material for further study:
+- [Book chapter](http://aima.cs.berkeley.edu/newchap05.pdf)
+- [CSP code implementation](/cstopics/assets/code/introAI/csp_example.zip)
+
+# Exercise
+You are a famous entrepreneur of USTAcapital. You are opening a new dependency, which requires the development  of a supply chain. You have defined five workstations, which needs the good/service from the previous one. The workstations are: farming, design, manufacturing, packaging, and transportation.
+
+ You have 5 people available to be the chief of each workstation. However, they can be extremely arrogant with some of each other. You, as president of USTAcapital, want to guarantee harmonious relationships between consecutive workstations. The head of human resources have brought you the following chart that shows the level of compatibility between your personal:
+ 
