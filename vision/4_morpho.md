@@ -8,6 +8,142 @@ permalink: /vision/4_morpho
 
 # Morphological operations
 
+## Structuring element
+
+Defined by:
+
+<img class="eq" src="https://latex.codecogs.com/gif.latex?
+{\prod}_{xy}
+"/>
+
+It is usually square, and with odd dimensions.
+
+Examples [Stanford2013]:
+
+<div class="picture">
+  <img style="width:80%;" src ="/cstopics/assets/img/vision/4_structures.png" />
+</div>
+
+Neighborhood "window" operator:
+
+<img class="eq" src="https://latex.codecogs.com/gif.latex?
+W\{ f[x,y] \} = \{ f[x-x', y-y']:[x', y'] \in {\prod}_{xy} \}
+"/>
+
+## Dilation
+
+Given a structuring element, it is sweeped through the binary image, checking that ***at least one*** of the structure pixels are over a 1 in the original image, if yes, the center of the structuring element becomes 1 in the original image.
+
+Mathematical Definition:
+
+<img class="eq" src="https://latex.codecogs.com/gif.latex?
+g \left[ x,y \right] = OR \left[ W \{f \left[ x,y \right] \} \right] := dilate(f,W)
+"/>
+
+For example [Gonzalez02], consider the following image ans structuring element:
+
+<div class="picture">
+  <img style="width:40%;" src ="/cstopicat least ones/assets/img/vision/4_image_structure.png" />
+</div>
+
+The process:
+
+<div class="picture">
+  <img style="width:30%;" src ="/cstopics/assets/img/vision/4_ex1_process.png" />
+</div>
+
+And the result:
+
+<div class="picture">
+  <img style="width:30%;" src ="/cstopics/assets/img/vision/4_ex1_result.png" />
+</div>
+
+Example 2, it thickens the text:
+
+<div class="picture">
+  <img style="width:60%;" src ="/cstopics/assets/img/vision/4_ex2.png" />
+  <div>Original and dilated image. [Gonzalez02]</div>
+</div>
+
+Example 3 [Stanford2013]:
+
+* Expands the size of 1-valued objects.
+* Smoothes object boundaries.
+* Closes holes and gaps.
+
+<div class="picture">
+  <img style="width:80%;" src ="/cstopics/assets/img/vision/4_ex3.png" />
+</div>
+
+## Erosion
+
+Given a structuring element, it is sweeped through the binary image, checking that ***all of*** the structure pixels are over a 1 in the original image, if yes, the center of the structuring element becomes 1 in the original image, else,  it will be 0.
+
+Mathematical definition;
+
+<img class="eq" src="https://latex.codecogs.com/gif.latex?
+g \left[ x,y \right] = AND \left[ W \{f \left[ x,y \right] \} \right] := erode(f,W)
+"/>
+
+For example [Gonzalez02], consider the following image ans structuring element:
+
+<div class="picture">
+  <img style="width:40%;" src ="/cstopicat least ones/assets/img/vision/4_ex1ero_image.png" />
+</div>
+
+The process:
+
+<div class="picture">
+  <img style="width:30%;" src ="/cstopics/assets/img/vision/4_ex1ero_process.png" />
+</div>
+
+And the result:
+
+<div class="picture">
+  <img style="width:30%;" src ="/cstopics/assets/img/vision/4_ex1ero_result.png" />
+</div>
+
+Example 2, original image, disk of radius 10, 5 and 20:
+
+<div class="picture">
+    <img style="width:50%;" src ="/cstopics/assets/img/vision/4_ex2ero.png" />
+</div>
+
+Example 3 [Stanford2013]:
+
+* Shrinks the size of 1-valued objects.
+* Smoothes object boundaries.
+* Removes peninsulas, fingers, and small objects.
+
+<div class="picture">
+  <img style="width:80%;" src ="/cstopics/assets/img/vision/4_ex3ero.png" />
+</div>
+
+## Relationship between dilation and erosion
+
+* ***Duality***: erosion is dilation of the background.
+
+<img class="eq" src="https://latex.codecogs.com/gif.latex?
+dilate(f,W) = NOT[erode(NOT[f],W)]
+"/>
+
+<img class="eq" src="https://latex.codecogs.com/gif.latex?
+erode(f,W) = NOT[dilate(NOT[f],W)]
+"/>
+
+* ***But***: erosion is *not* the inverse of dilation
+
+<img class="eq" src="https://latex.codecogs.com/gif.latex?
+f[x,y] \neq erode \left( dilate \left( f,W \right) \right)
+"/>
+
+<img class="eq" src="https://latex.codecogs.com/gif.latex?
+f[x,y] \neq dilate \left( erode \left( f,W \right) \right)
+"/>
+
+
+
+
 
 
 # Basic Relationships between Pixels
@@ -89,3 +225,5 @@ Being *S* a subset of pixels in an image, *p* and *q* are connected when there i
 ## References
 
 * [Gonzalez02] Gonzalez R. C., Woods R. E. Digital Image Processing. 2nd Ed. Prentice Hall. 2002.
+
+* [Stanford2013] Morphological Image Processing. Stanford University. https://web.stanford.edu/class/ee368/Handouts/Lectures/2014_Spring/Combined_Slides/7-Morphological-Image-Processing-Combined.pdf
