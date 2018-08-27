@@ -11,7 +11,7 @@ greenUpper = (64, 255, 255)
 bufferSize = 64
 pts = deque(maxlen=bufferSize)
 # Object to read camera, 0 means first webcam
-vs = VideoStream(src=1).start()
+vs = VideoStream(src=0).start()
 
 while True:
 	# Wait for a frame
@@ -65,7 +65,7 @@ while True:
 		cv2.line(frame, pts[i - 1], pts[i], (0, 0, 255), thickness)
 
 	# show the frame to our screen
-	cv2.imshow("Frame", frame)
+	cv2.imshow("Frame", mask)
 	key = cv2.waitKey(1) & 0xFF
 
 	# if the 'q' key is pressed, stop the loop

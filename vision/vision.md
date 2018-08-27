@@ -45,7 +45,7 @@ Monday, whole day.
 * [Processing in the Spatial Domain](/cstopics/vision/1_spatial_domain)
 * [Filtering in the Frequency Domain](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/fourier.ipynb){:target="blank"}
 * [Image Thresholding](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/thresholding.ipynb){:target="blank"}
-* [Morphological Operations](/cstopics/vision/4_morpho)
+* [Morphological Processing](/cstopics/vision/4_morpho)
 
 ## Assignments
 
