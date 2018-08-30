@@ -88,7 +88,7 @@ g \left[ x,y \right] = AND \left[ W \{f \left[ x,y \right] \} \right] := erode(f
 For example [Gonzalez02], consider the following image ans structuring element:
 
 <div class="picture">
-  <img style="width:40%;" src ="/cstopicat least ones/assets/img/vision/4_ex1ero_image.png" />
+  <img style="width:40%;" src ="/cstopics/assets/img/vision/4_ex1ero_image.png" />
 </div>
 
 The process:
@@ -127,7 +127,7 @@ Example 3 [Stanford2013]:
 dilate(f,W) = NOT[erode(NOT[f],W)]
 "/>
 
-<img class="eq" src="https://latex.codecogs.com/gif.latex?
+<img class="eq" src="https://la/cstopicat least ones/assets/img/tex.codecogs.com/gif.latex?
 erode(f,W) = NOT[dilate(NOT[f],W)]
 "/>
 
@@ -140,6 +140,56 @@ f[x,y] \neq erode \left( dilate \left( f,W \right) \right)
 <img class="eq" src="https://latex.codecogs.com/gif.latex?
 f[x,y] \neq dilate \left( erode \left( f,W \right) \right)
 "/>
+
+### Examples [Stanford2013]
+
+ Blob separation/detection by erosion:
+
+<div class="picture">
+  <img style="width:100%;" src ="/cstopics/assets/img/vision/4_blob1.png" />
+</div>
+
+<div class="picture">
+  <img style="width:100%;" src ="/cstopics/assets/img/vision/4_blob2.png" />
+</div>
+
+Chain link fence hole detection:
+
+<div class="picture">
+  <img style="width:100%;" src ="/cstopics/assets/img/vision/4_chain.png" />
+</div>
+
+## Opening and closing
+
+* Open:
+
+Removes small 1-regions.
+
+<img class="eq" src="https://latex.codecogs.com/gif.latex?
+open(f, W) = dilate( erode( (f,W), W ) )
+"/>
+
+* Close:
+
+Removes small 0-regions.
+
+<img class="eq" src="https://latex.codecogs.com/gif.latex?
+close(f, W) = erode( dilate( (f,W), W ) )
+"/>
+
+### Examples [Stanford2013]
+
+Small hole removal by closing:
+
+<div class="picture">
+  <img style="width:100%;" src ="/cstopics/assets/img/vision/4_smallholes.png" />
+</div>
+
+Morphological edge detectors
+
+<div class="picture">
+  <img style="width:100%;" src ="/cstopics/assets/img/vision/4_borders.png" />
+</div>
 
 
 
