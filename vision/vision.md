@@ -14,7 +14,7 @@ permalink: /vision
 
 - Groups of maximum 2 students
 - Every group is the same for the assignments and Final Project
-- Deadline for presenting the proposal for Final Project: 30/08 23:00
+- Deadline for presenting the proposal for Final Project: 28/09 23:00
 
 ## Course resources
 
