@@ -191,10 +191,51 @@ Morphological edge detectors
   <img style="width:100%;" src ="/cstopics/assets/img/vision/4_borders.png" />
 </div>
 
+## Recognition by erosion
 
+You can use erosion to find patterns in binary images, using the pattern as the structuring element:
 
+<div class="picture">
+  <img style="width:100%;" src ="/cstopics/assets/img/vision/4_recog_e1.png" />
+  <div>[Stanford2013]</div>
+</div>
 
+Getting:
 
+<div class="picture">
+  <img style="width:100%;" src ="/cstopics/assets/img/vision/4_recog_e2.png" />
+  <div>[Stanford2013]</div>
+</div>
+
+But, when the pattern corresponds to sections of other patterns:
+
+<div class="picture">
+  <img style="width:100%;" src ="/cstopics/assets/img/vision/4_recog_l1.png" />
+  <div>[Stanford2013]</div>
+</div>
+
+So you get:
+
+<div class="picture">
+  <img style="width:100%;" src ="/cstopics/assets/img/vision/4_recog_l2.png" />
+  <div>[Stanford2013]</div>
+</div>
+
+### Hit-miss filter
+
+To fix the previous problem, you can use:
+
+<div class="picture">
+<img style="width:100%;" src ="/cstopics/assets/img/vision/4_recog_l3.png" />
+<div>[Stanford2013]</div>
+</div>
+
+Getting:
+
+<div class="picture">
+  <img style="width:100%;" src ="/cstopics/assets/img/vision/4_recog_l4.png" />
+  <div>[Stanford2013]</div>
+</div>
 
 # Basic Relationships between Pixels
 
