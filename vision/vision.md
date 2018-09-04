@@ -46,6 +46,7 @@ Monday, whole day.
 * [Filtering in the Frequency Domain](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/fourier.ipynb){:target="blank"}
 * [Image Thresholding](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/thresholding.ipynb){:target="blank"}
 * [Morphological Processing](/cstopics/vision/4_morpho)
+* [Template Matching](http://localhost:8888/notebooks/template_matching.ipynb)
 
 ## Assignments
 
