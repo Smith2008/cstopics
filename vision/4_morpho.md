@@ -43,25 +43,25 @@ g \left[ x,y \right] = OR \left[ W \{f \left[ x,y \right] \} \right] := dilate(f
 For example [Gonzalez02], consider the following image ans structuring element:
 
 <div class="picture">
-  <img style="width:40%;" src ="/cstopicat least ones/assets/img/vision/4_image_structure.png" />
+  <img style="width:60%;" src ="/cstopics/assets/img/vision/4_image_structure.png" />
 </div>
 
 The process:
 
 <div class="picture">
-  <img style="width:30%;" src ="/cstopics/assets/img/vision/4_ex1_process.png" />
+  <img style="width:50%;" src ="/cstopics/assets/img/vision/4_ex1_process.png" />
 </div>
 
 And the result:
 
 <div class="picture">
-  <img style="width:30%;" src ="/cstopics/assets/img/vision/4_ex1_result.png" />
+  <img style="width:40%;" src ="/cstopics/assets/img/vision/4_ex1_result.png" />
 </div>
 
 Example 2, it thickens the text:
 
 <div class="picture">
-  <img style="width:60%;" src ="/cstopics/assets/img/vision/4_ex2.png" />
+  <img style="width:70%;" src ="/cstopics/assets/img/vision/4_ex2.png" />
   <div>Original and dilated image. [Gonzalez02]</div>
 </div>
 
@@ -88,19 +88,19 @@ g \left[ x,y \right] = AND \left[ W \{f \left[ x,y \right] \} \right] := erode(f
 For example [Gonzalez02], consider the following image ans structuring element:
 
 <div class="picture">
-  <img style="width:40%;" src ="/cstopics/assets/img/vision/4_ex1ero_image.png" />
+  <img style="width:60%;" src ="/cstopics/assets/img/vision/4_ex1ero_image.png" />
 </div>
 
 The process:
 
 <div class="picture">
-  <img style="width:30%;" src ="/cstopics/assets/img/vision/4_ex1ero_process.png" />
+  <img style="width:50%;" src ="/cstopics/assets/img/vision/4_ex1ero_process.png" />
 </div>
 
 And the result:
 
 <div class="picture">
-  <img style="width:30%;" src ="/cstopics/assets/img/vision/4_ex1ero_result.png" />
+<img style="width:40%;" src ="/cstopics/assets/img/vision/4_ex1ero_result.png" />
 </div>
 
 Example 2, original image, disk of radius 10, 5 and 20:
@@ -127,7 +127,7 @@ Example 3 [Stanford2013]:
 dilate(f,W) = NOT[erode(NOT[f],W)]
 "/>
 
-<img class="eq" src="https://la/cstopicat least ones/assets/img/tex.codecogs.com/gif.latex?
+<img class="eq" src="https://latex.codecogs.com/gif.latex?
 erode(f,W) = NOT[dilate(NOT[f],W)]
 "/>
 

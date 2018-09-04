@@ -52,7 +52,8 @@ Monday, whole day.
 * Lab 1
     * [Homework 1](/cstopics/vision/assignments/hw1)
     * [Homework 2](/cstopics/vision/assignments/hw2)
-* [Lab 2]()
+    * [Homework 3](/cstopics/vision/assignments/hw3)
+* [Lab 2](/cstopics/vision/assignments/lab2)
 
 ## Python notebooks and code examples
 
