@@ -55,3 +55,18 @@ The next example shows the working of this schema.
 ***Consumer***: When user press enter, the program reads the last number from the queue (if it is possible), and show it.
 
 [Code here](https://github.com/cstopics/cstopics/blob/gh-pages/assets/code/os/queue_consumer.cpp){:target="blank"}
+
+##  Pipes
+
+Were one of the first methods used by UNIX to perform IPC, and provide one of the simpler ways to communicate two processes.
+
+When designing with pipes, you have to consider:
+
+* Is the communication bidirectional or unidirectional?
+* If bidirectional, is it half duplex or full duplex?
+* Must a relationship (as *parent-child*) exist between the processes?
+* Can pipes communicate between different host machines?
+
+There are two main types of pipes: *ordinary pipes* and *named pipes*.
+
+### Ordinary Pipes
