@@ -79,7 +79,7 @@ In this way, you can use *POSIX* functions to read and write in pipes as files, 
 Ordinary pipes can only be used by a process and its children (remember that when you do *fork()*, the child
 process inherits open files from its parent).
 
-Check the [example](https://github.com/cstopics/cstopics/blob/gh-pages/assets/code/os/ordinary_pipes.cpp) of using ordinary pipes in Linux.
+Check the [example](https://github.com/cstopics/cstopics/blob/gh-pages/assets/code/os/ordinary_pipes.cpp){:target="blank"} of using ordinary pipes in Linux.
 
 ### Named Pipes
 
@@ -95,4 +95,4 @@ In UNIX:
 * It behaves as a file.
 * Communicate processes in the same host system.
 
-Check the *chat* example, based on two processes. [User1](https://github.com/cstopics/cstopics/blob/gh-pages/assets/code/os/5namedPipe_p11.cpp) and [User2](https://github.com/cstopics/cstopics/blob/gh-pages/assets/code/os/5namedPipe_p22.cpp)
+Check the *chat* example, based on two processes. [User1](https://github.com/cstopics/cstopics/blob/gh-pages/assets/code/os/5namedPipe_p11.cpp){:target="blank"} and [User2](https://github.com/cstopics/cstopics/blob/gh-pages/assets/code/os/5namedPipe_p22.cpp){:target="blank"}
