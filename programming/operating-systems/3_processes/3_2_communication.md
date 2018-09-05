@@ -70,3 +70,29 @@ When designing with pipes, you have to consider:
 There are two main types of pipes: *ordinary pipes* and *named pipes*.
 
 ### Ordinary Pipes
+
+Ordinary pipes are unidirectional, and use the producer-consumer schema. The producer writes the pipe to one end of the pipe (the ***write-end***), and the consumer read from the other end (the ***read-end***). If you need ***bidirectional*** communication, you must create ***two pipes***, one for each direction.\
+
+Pipes are special types of files, when you create a pipe (with the function ***pipe()***), it creates the ***int fd[2]*** array with two file identifier, ***fd[0]*** is the read-end of the pipe, and ***fd[1]*** is the write-end.
+In this way, you can use *POSIX* functions to read and write in pipes as files, as *open()*, *close()*, *write()*, *read()*, etc.
+
+Ordinary pipes can only be used by a process and its children (remember that when you do *fork()*, the child
+process inherits open files from its parent).
+
+Check the [example]() of using ordinary pipes in Linux.
+
+### Named Pipes
+
+* Allow bidirectional communication
+* Parent-child relationship is not required.
+* Allow several writers.
+* Continue in the system even if the processes finish.
+
+In UNIX:
+
+* It is known as ***FIFO***.
+* Bidirectional and half-duplex communication.
+* It behaves as a file.
+* Communicate processes in the same host system.
+
+Check the *chat* example, based on two processes. [User1]() and [User2]()
