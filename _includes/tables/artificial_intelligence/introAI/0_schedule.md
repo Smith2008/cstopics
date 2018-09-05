@@ -6,7 +6,7 @@
 | 2 	| [Informed Search](/cstopics/artificial-intelligence/search/insearch) 	| [Russell10] Chap 4 ([slides](http://aima.eecs.berkeley.edu/slides-pdf/chapter04.pdf)) 	|  	|
 | 3 	| [Constraint Satisfaction Problems I](/cstopics/artificial-intelligence/CSP/csp) 	| [Russell10] Chap 5 ([slides](http://aima.eecs.berkeley.edu/slides-pdf/chapter05.pdf)) 	|  	|
 | 4 	| [Constraint Satisfaction Problems II](/cstopics/artificial-intelligence/CSP/csp) 	| [Russell10] Chap 5 ([slides](http://aima.eecs.berkeley.edu/slides-pdf/chapter05.pdf)) 	| [HW2: CSP in a job scheduling problem](/cstopics/assets/assignments/introAI/hw2/hw2_csp.pdf) 	|
-| 5 	| [Game Trees: Minimax]() 	| [Russell10] Chap 6 ([slides](http://aima.eecs.berkeley.edu/slides-pdf/chapter06.pdf)) 	|  	|
+| 5 	| [Game Trees: Minimax](/cstopics/artificial-intelligence/adv_search/minimax) 	| [Russell10] Chap 6 ([slides](http://aima.eecs.berkeley.edu/slides-pdf/chapter06.pdf)) 	|  	|
 | 6 	| [Game Trees: Expectimax and Utilities]() 	|  	|  	|
 |  	| **Reinforcement Learning** 	|  	|  	|
 | 7 	| [Markov Decision Processes]() 	| [Russell10] Chap 17 	|  	|
