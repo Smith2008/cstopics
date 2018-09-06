@@ -23,6 +23,7 @@ By default, a process has a unique thread, even you can create more, allowing th
 
 <div style="text-align:center">
   <img style="width: 80%;" src ="/cstopics/assets/img/programming/os/4_multithread.png" />
+  <div>[Silberschatz12]</div>
 </div>
 
 Some examples of multi thread utilization:
@@ -41,6 +42,59 @@ Some examples of multi thread utilization:
 
 * ***Scalability***: With multi core systems, a process can run in more than one core.
 
+
+## Multicore programming
+
+* ***Concurrency***: Ability to perform more that one task, managing them to allow the execution and progress of all of them.
+* ***Parallelism***: Multiple task can be performed simultaneously.
+
+On a system with a single core, the concurrency is based in scheduling or tasks, where are interleaved to be executed in the core. But in multicore systems, the concurrency is performed executing different tasks to each core parallelly.
+
+<div style="text-align:center">
+  <img style="width: 80%;" src ="/cstopics/assets/img/programming/os/4_singlecore.png" />
+  <img style="width: 55%;" src ="/cstopics/assets/img/programming/os/4_multicore.png" />
+  <div>[Silberschatz12]</div>
+</div>
+
+### Programming Challenges
+
+There are five areas that present challenges in parallel programming:
+
+* ***Identifying tasks***: Which task, or section of tasks, can be parallelized, for example:
+
+``` c
+// Can be parallelized:
+for(i=0; i<N; i++){
+    z[i] = z*x[i] + y[i];
+}
+
+// Can NOT be parallelized:
+for(i=0; i<N; i++){
+    z[i] = z*x[i] + z[i-1];
+}
+```
+
+* ***Balance***: Is it worth to parallelize?
+
+``` c
+// It could be worth it.
+for(i=0; i<10e8; i++){
+    z[i] = z*x[i] + y[i];
+}
+
+// It maybe not worth it.
+for(i=0; i<100s; i++){
+    z[i] = z*x[i] + y[i];
+}
+```
+
+* ***Data splitting***: How are you going to divide and assign the information to the threads.
+
+* ***Data dependency***: You must analyze if more than one thread uses the same information, if yes, you have to sync them.
+
+* ***Testing and debugging*** could be more difficult.
+
+So, parallel programming take advantage of the new computing systems, bit implies more
 
 ## References
 
