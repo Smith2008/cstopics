@@ -94,7 +94,25 @@ for(i=0; i<100s; i++){
 
 * ***Testing and debugging*** could be more difficult.
 
-So, parallel programming take advantage of the new computing systems, bit implies more
+So, parallel programming take advantage of the new computing systems, but implies more work and experience from the developer.
+
+### Parallelism Types
+
+* ***Data parallelism***: There are one task to be performed, and the data to be processes dis distributed in the threads.
+
+Example: Calculate the sum of an array *vec* of size *N*.
+
+*Thread A*: Sums from *vec[0]* to *vec[N/2-1]*.
+
+*Thread B*: Sums from *vec[N/2]* to *vec[N-1]*.
+
+* ***Taks parallelism***: There are multiple taks, that are distributed in the threads.
+
+Example: Calculate the mean and standard deviation of an array *vec*.
+
+*Thread A*: Calculate the mean of *vec*.
+
+*Thread B*: Calculate de standard deviation of *vec*.
 
 ## References
 
