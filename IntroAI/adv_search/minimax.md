@@ -142,3 +142,14 @@ Consider a node _n_ somewhere in the tree, such that MAX has a choice of moving 
 <img src ="/cstopics/assets/img/AI/introAI/ab.png" style="width:30%"/>
 <span style="font-size:70%">http://ai.berkeley.edu</span>
 </div>
+
+### The algorithm
+
+<div style="text-align:center">
+<img src ="/cstopics/assets/img/AI/introAI/alpha_beta_alg.jpeg" style="width:100%"/>
+<span style="font-size:70%">http://ai.berkeley.edu</span>
+</div>
+
+Example Alpha-Beta pruning [here](/cstopics/assets/code/introAI/alpha_beta_example.pdf)
+
+Animation of Alpha-Beta pruning [here](http://inst.eecs.berkeley.edu/~cs61b/fa14/ta-materials/apps/ab_tree_practice/)
