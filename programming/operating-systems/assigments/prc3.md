@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Homework 5
-permalink: /programming/operating-systems/assigments/hw5
+title: Practice 3
+permalink: /programming/operating-systems/assigments/prc3
 ---
 
-## Homework 5
+## Practice 3
 
 Write a C/C++ program, using the Qt api and gui tools, to play "***triqui***".
 
@@ -22,4 +22,4 @@ Create a new **private** Bitbucket repository named *"2018_2_d3_hw5_LastnameFirs
 
 When the repository is ready, download it as a *.zip* file and upload it to the appropriate link in moodle.
 
-Deadline: Sep 6
+Deadline: Sep 13
