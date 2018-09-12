@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Homework 5
-permalink: /programming/operating-systems/assigments/hw5
+title: Practice 3
+permalink: /programming/operating-systems/assigments/prc3
 ---
 
-## Homework 5
+## Practice 3
 
 Write a C/C++ program, using the Qt api and gui tools, to play "***triqui***".
 
@@ -18,8 +18,8 @@ Requirements:
 * At the end, the name and score of the winner must be shown.
 * Must exist a button to restart the game (in any moment), asking for the players' names again.
 
-Create a new **private** Bitbucket repository named *"2018_2_d3_hw5_LastnameFirstname"* (E.g. *"2018_2_d3_hw5_CamachoCamilo"*), share it with the account *"camilocamachousta"*, and add homework files.
+Create a new **private** Bitbucket repository named *"2018_2_d3_prc3_LastnameFirstname"* (E.g. *"2018_2_d3_prc3_CamachoCamilo"*), share it with the account *"camilocamachousta"*, and add homework files.
 
 When the repository is ready, download it as a *.zip* file and upload it to the appropriate link in moodle.
 
-Deadline: Sep 6
+Deadline: Sep 13
