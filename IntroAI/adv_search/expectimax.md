@@ -77,3 +77,4 @@ No, unless we have idea about bounds of the values/utilities of the bottom nodes
 
 
 ### What Probabilities to Use?
+We need a probabilistic model of how the opponent will behave in any state
