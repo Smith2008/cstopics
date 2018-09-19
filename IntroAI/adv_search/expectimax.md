@@ -77,4 +77,15 @@ No, unless we have idea about bounds of the values/utilities of the bottom nodes
 
 
 ### What Probabilities to Use?
-We need a probabilistic model of how the opponent will behave in any state
+We need a probabilistic model of how the opponent will behave in any state:
+- Could be a simple uniform distribution
+- Could be sophisticated and require a great deal of computation
+
+_For now, assume each chance node magically comes along with probabilities that specify the distribution over its outcomes_
+
+### Exercise
+Let’s say you know that your opponent is actually running a depth 2 minimax, using the result 80% of the time, and moving randomly otherwise. What tree search should you use?  
+
+<div style="text-align:center">
+  <img src ="/cstopics/assets/img/AI/introAI/expectimax6.png" style="width:50%"/>  
+</div>
