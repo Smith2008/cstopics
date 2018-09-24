@@ -9,7 +9,7 @@
 | 5 	| [Game Trees: Minimax](/cstopics/artificial-intelligence/adv_search/minimax) 	| [Russell10] Chap 6 ([slides](http://aima.eecs.berkeley.edu/slides-pdf/chapter06.pdf)) 	|  	|
 | 6 	| [Game Trees: Expectimax and Utilities](/cstopics/artificial-intelligence/adv_search/expectimax) 	|  	|[HW4: Adversarial search](/cstopics/assets/assignments/introAI/hw4/hw4_adversarial_search.zip)  	|
 |  	| **Reinforcement Learning** 	|  	|  	|
-| 7 	| [Markov Decision Processes]() 	| [Russell10] Chap 17 	|  	|
+| 7 	| [Markov Decision Processes](/cstopics/artificial-intelligence/mdp/mdp) 	| [Russell10] Chap 17 	|  	|
 | 8-9 	| [Reinforcement Learning]() 	| [Russell10] Chap 21 [Sutton98] ([book](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf)) 	|  	|
 |  	| **Reasoning under Uncertainty** 	|  	|  	|
 | 10 	| [Probability]() 	| [Russell10] Chap 13 ([slides](http://aima.eecs.berkeley.edu/slides-pdf/chapter13.pdf)) 	|  	|
