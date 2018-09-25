@@ -150,3 +150,26 @@ No, because:
 - **The value (utility) of a q-state (s,a):** <img src="https://latex.codecogs.com/gif.latex?  Q^{*}(s,a)"/> expected utility starting out having taken action _a_ from state _s_ and (thereafter) acting optimally-
 
 - **The optimal policy:** <img src="https://latex.codecogs.com/gif.latex?  \pi^{*}(s)"/> optimal action from state _s_.
+
+## The Bellman Equations
+How to be optimal:
+- Step 1: take correct first action
+- Step 2: keep being optimal
+
+Bellman equations can be derived via expectimax recurrence:
+<div style="text-align:center">
+  <img src ="/cstopics/assets/img/AI/introAI/val_iter.png" style="width:70%"/>  
+</div>
+
+To solve de MDP, is necessarily to know the optimal utility values for each state <img src="https://latex.codecogs.com/gif.latex?  V^{*}(s)"/>. To do so, there are two methods:
+- Value iteration
+- Policy iteration
+
+## Value iteration algorithm
+Method to solve systems of non-linear equations, though Bellman update rule:
+<img class="eq" src="https://latex.codecogs.com/gif.latex?  V_{k+1}(s) \leftarrow R(s) + \gamma \max_{a \in \mathcal{A}(s)} \sum_{s\prime}P(s\prime|s,a)V_{k}(s\prime)"/>
+
+<div style="text-align:center">
+  <img src ="/cstopics/assets/img/AI/introAI/val_iter_alg.png" style="width:70%"/>
+  <span style="font-size:70%">http://aima.eecs.berkeley.edu/algorithms.pdf</span>  
+</div>
