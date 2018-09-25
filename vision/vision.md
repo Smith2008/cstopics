@@ -41,13 +41,27 @@ Monday, whole day.
 
 ## Course content
 
-* [Digital Image Fundamentals](/cstopics/vision/0_fundamentals)
-* [Processing in the Spatial Domain](/cstopics/vision/1_spatial_domain)
-* [Filtering in the Frequency Domain](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/fourier.ipynb){:target="blank"}
-* [Image Thresholding](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/thresholding.ipynb){:target="blank"}
-* [Morphological Processing](/cstopics/vision/4_morpho)
-* [Template Matching](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/template_matching.ipynb)
-* [Geometric Transformations](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/geometric_transformation.ipynb)
+### Image processing
+
+* [0. Digital Image Fundamentals](/cstopics/vision/0_fundamentals)
+* [1. Processing in the Spatial Domain](/cstopics/vision/1_spatial_domain)
+* [2. Filtering in the Frequency Domain](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/fourier.ipynb){:target="blank"}
+* [3. Image Thresholding](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/thresholding.ipynb){:target="blank"}
+* [4. Morphological Processing](/cstopics/vision/4_morpho)
+* [5. Template Matching](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/template_matching.ipynb)
+* [6. Geometric Transformations](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/geometric_transformation.ipynb)
+
+### Video Processing
+
+* [7. Background & Foreground Extraction](/cstopics/vision/7_background)
+
+### Features Extraction
+
+### Classification
+
+### RGB-D Processing
+
+### Augmented Reality
 
 ## Assignments
 
