@@ -50,14 +50,14 @@ A process is Markovian if, in order to know the probability to reach the next st
 
 <img class="eq" src="https://latex.codecogs.com/gif.latex?  = P(S_{t+1} = s\prime | S_t = s_t, A_t=a_t) "/>
 
-# MDP Solution: a policy
+## MDP Solution: a policy
 We are looking for an **optimal policy** <img src="https://latex.codecogs.com/gif.latex?  \pi^{*}: \mathcal{S} \rightarrow \mathcal{A} "/>.
 
 - A policy <img src="https://latex.codecogs.com/gif.latex?  \pi "/> gives an action for each state
 
 - An optimal policy <img src="https://latex.codecogs.com/gif.latex?  \pi^{*} "/>  gives, for each state,  the action that maximizes the expected utility if followed.
 
-Notice that: expectimax didn’t compute entire policies. It computed the action for a single state only.
+Notice that: expectimax didn’t computes entire policies. It computed the action for a single state only.
 
 <div style="text-align:center">
   <img src ="/cstopics/assets/img/AI/introAI/optimal_policies.png" style="width:60%"/>  
@@ -76,3 +76,77 @@ Each MDP state projects an expectimax-like search tree:
 <div style="text-align:center">
   <img src ="/cstopics/assets/img/AI/introAI/mdp_tree.png" style="width:70%"/>  
 </div>
+
+Rewards are associated to the tuple _(s,a,s')_
+
+# Utilities of Sequences
+Preference of an agent over sequence of rewards
+- [1,2,2] or [2,3,4] -> The agent wants to maximize its rewards
+- [0,0,1] or [1,0,0] -> The agent would prefer to have information sooner than later (but this is not a rule)
+
+## Discounting
+- It’s reasonable to maximize the sum of rewards
+- It’s also reasonable to prefer rewards now to rewards later
+- One solution: values of rewards decay exponentially
+
+<div style="text-align:center">
+  <img src ="/cstopics/assets/img/AI/introAI/discounting.png" style="width:70%"/>  
+</div>
+
+Where: <img src="https://latex.codecogs.com/gif.latex?  \gamma \in (0,1) "/>
+
+Higher the exponential (usually in terms of _t_), less worth is the reward
+
+Each time we descend a level, we multiply in the discount once:
+<div style="text-align:center">
+  <img src ="/cstopics/assets/img/AI/introAI/discounting2.png" style="width:60%"/>  
+</div>
+
+_Why discount?:_ sooner rewards probably do have higher utility than later rewards. Also helps our algorithms converge.
+
+### Example:
+You have the reward's sequence [1,2,3], and your discounting rate is 0.5. What is your utility in _t=3_?
+
+<img src="https://latex.codecogs.com/gif.latex?  U([1,2,3]) = (1*1)+(0.5*2)+(0.5^2*3)=2.75 "/>
+
+### Exercises:
+
+| 10 	|   	|   	|   	| 1 	|
+|----	|:-:	|---	|--:	|---	|
+| a  	| b 	| c 	| d 	| e 	|
+
+- Actions: East, West, and Exit (only available in exit states a, e)
+- Transitions: deterministic
+- Rewards 0 for _(b,c,d)_, 10 for _a_ and 1 for _e_
+
+**1. For <img src="https://latex.codecogs.com/gif.latex?  \gamma=1.0 "/>, what is the optimal policy?**
+
+Answer: west in any state non-terminal states
+
+**2. For <img src="https://latex.codecogs.com/gif.latex?  \gamma=0.1 "/>, what is the optimal policy?**
+
+
+| From 	|                                           To a                                           	| To e                                                                                     	|
+|------	|:----------------------------------------------------------------------------------------:	|------------------------------------------------------------------------------------------	|
+| b    	|             <img src="https://latex.codecogs.com/gif.latex?  0+(0.1*10)=1 "/>            	| <img src="https://latex.codecogs.com/gif.latex?  0+(0.1*0)+(0.1^2*0)+(0.1^3*1)=0.001 "/> 	|
+| c    	| <img src="https://latex.codecogs.com/gif.latex?  0+(0.1*0)+(0.1^2*10)=0.1 "/>            	| <img src="https://latex.codecogs.com/gif.latex?  0+(0.1*0)+(0.1^2*1)=0.01 "/>            	|
+| d    	| <img src="https://latex.codecogs.com/gif.latex?  0+(0.1*0)+(0.1^2*0)+(0.1^3*10)=0.01 "/> 	| <img src="https://latex.codecogs.com/gif.latex?  0+(0.1*1)+=0.1 "/>                      	|
+
+**3. For which <img src="https://latex.codecogs.com/gif.latex?  \gamma"/> are West and East equally good when the agent is in state d?**
+
+<img src="https://latex.codecogs.com/gif.latex?  10\gamma^3 = \gamma"/>
+
+<img src="https://latex.codecogs.com/gif.latex?  \gamma = \frac{1}{\sqrt{10}}"/>
+
+## What if the game lasts forever?  Do we get infinite rewards?
+No, because:
+- We force a finite horizon: terminate episodes after a fixed T steps.
+- We use discounting rewards:
+<img class="eq" src="https://latex.codecogs.com/gif.latex?  U([r_0, \dots, r_\infty])=\sum_{t=0}^{\infty}\gamma^t r_t \leq R_{max}/(1-\gamma)"/>
+
+# Solving MDPs
+- **The value (utility) of a state s:** <img src="https://latex.codecogs.com/gif.latex?  V^{*}(s)"/> expected utility starting in _s_ and acting optimally.
+
+- **The value (utility) of a q-state (s,a):** <img src="https://latex.codecogs.com/gif.latex?  Q^{*}(s,a)"/> expected utility starting out having taken action _a_ from state _s_ and (thereafter) acting optimally-
+
+- **The optimal policy:** <img src="https://latex.codecogs.com/gif.latex?  \pi^{*}(s)"/> optimal action from state _s_.
