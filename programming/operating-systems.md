@@ -46,3 +46,4 @@ Below is a sample schedule for the course 2018-2.
 * [Practice 1](/cstopics/programming/operating-systems/assigments/prc1)
 * [Practice 2](/cstopics/programming/operating-systems/assigments/prc2)
 * [Practice 3](/cstopics/programming/operating-systems/assigments/prc3)
+* [Practice 4](/cstopics/programming/operating-systems/assigments/prc4)
