@@ -173,3 +173,33 @@ Method to solve systems of non-linear equations, though Bellman update rule:
   <img src ="/cstopics/assets/img/AI/introAI/val_iter_alg.png" style="width:70%"/>
   <span style="font-size:70%">http://aima.eecs.berkeley.edu/algorithms.pdf</span>  
 </div>
+
+<div style="text-align:center">
+<video width="720" height="490" controls>
+  <source src="/cstopics/assets/videos/introAI/value_iteration.mp4" type="video/mp4">
+</video>
+</div>
+The values of expected utility for each state in the 4x3 grid-world, with <img src="https://latex.codecogs.com/gif.latex?  \gamma=0.9 "/> and <img  src="https://latex.codecogs.com/gif.latex?  R(s)=-0.04 "/> for nonterminal states.
+
+# Policy iteration algorithm
+
+|                                                          Expectimax                                                          	|                                                       Fixed policy                                                      	|
+|:----------------------------------------------------------------------------------------------------------------------------:	|:-----------------------------------------------------------------------------------------------------------------------:	|
+| Max over all actions to compute the optimal values                                                                           	| <img src="https://latex.codecogs.com/gif.latex?  \pi(s) "/> says what action to do in each state                        	|
+|<img src ="/cstopics/assets/img/AI/introAI/pi_expectimax.png" style="width:80%"/> 	| <img src ="/cstopics/assets/img/AI/introAI/fixed_pi.png" style="width:80%"/> |
+
+If we have an initial policy <img src="https://latex.codecogs.com/gif.latex?  \pi_0 "/>, we could:
+- **Evaluate the policy:** given a policy <img src="https://latex.codecogs.com/gif.latex?  \pi_i"/>, calculate <img src="https://latex.codecogs.com/gif.latex?  U_i=U^{\pi_i} "/> , the utility of each state if <img src="https://latex.codecogs.com/gif.latex?  \pi_i"/> were to be executed.
+
+Due to <img src="https://latex.codecogs.com/gif.latex?  U_i=U^{\pi_i} "/> specifies the action in state _s_,  this means that we have a simplified version of the Bellman equation:
+<img class="eq" src="https://latex.codecogs.com/gif.latex?  U_{i+1}(s)=R(s)+\gamma \sum_{s\prime} P(s\prime | s, \pi_i(s))U_i(s\prime)"/>
+
+Note that the "max" operator has been removed, therefore, for _n_ states, we have _n_ linear equations with _n_ unknowns.
+
+- **Improve the policy:** get the new policy <img src="https://latex.codecogs.com/gif.latex?  \pi_{i+1}"/>, using one-step look-ahead based on <img src="https://latex.codecogs.com/gif.latex?  U_i"/>:
+<img class="eq" src="https://latex.codecogs.com/gif.latex?  \pi^{\star}(s)=argmax_{a \in \mathcal{A}(s)} \sum_{s\prime} P(s\prime|s,a)U(s\prime)"/>
+
+<div style="text-align:center">
+  <img src ="/cstopics/assets/img/AI/introAI/pol_iter_alg.png" style="width:70%"/>
+  <span style="font-size:70%">http://aima.eecs.berkeley.edu/algorithms.pdf</span>  
+</div>
