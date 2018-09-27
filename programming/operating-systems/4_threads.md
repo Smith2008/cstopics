@@ -150,6 +150,11 @@ This model creates user level threads, but when it is necessary to use blocking 
   <div>[Silberschatz12]</div>
 </div>
 
+# Examples
+
+* [Creating 1 thread](https://github.com/cstopics/cstopics/blob/gh-pages/assets/code/os/crear_hilo.cpp){:target="blank"}
+* [Creating N threads](https://github.com/cstopics/cstopics/blob/gh-pages/assets/code/os/crear_Nhilos.cpp){:target="blank"}
+
 ## References
 
 * [Silberschatz12] Silberschatz, A., Galvin, P. and Gagne G. Operating System Concepts, 8th Ed, Wiley, 2012
