@@ -203,3 +203,10 @@ Note that the "max" operator has been removed, therefore, for _n_ states, we hav
   <img src ="/cstopics/assets/img/AI/introAI/pol_iter_alg.png" style="width:70%"/>
   <span style="font-size:70%">http://aima.eecs.berkeley.edu/algorithms.pdf</span>  
 </div>
+
+<div style="text-align:center">
+<video width="713" height="512" controls>
+  <source src="/cstopics/assets/videos/introAI/policy_iteration.mp4" type="video/mp4">
+</video>
+</div>
+The values of expected utility for each state in the 4x3 grid-world, with <img src="https://latex.codecogs.com/gif.latex?  \gamma=0.9 "/> and <img  src="https://latex.codecogs.com/gif.latex?  R(s)=-0.04 "/> for nonterminal states. 
