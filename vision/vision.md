@@ -54,14 +54,11 @@ Monday, whole day.
 ### Video Processing
 
 * [7. Background & Foreground Extraction](/cstopics/vision/7_background)
+* [8. Kalman Filter](/cstopics/vision/8_kalman)
 
-### Features Extraction
+### Object Detection
 
-### Classification
-
-### RGB-D Processing
-
-### Augmented Reality
+* [9. Viola & Jones Algorithm](/cstopics/vision/9_violajones)
 
 ## Assignments
 
@@ -70,6 +67,7 @@ Monday, whole day.
     * [Homework 2](/cstopics/vision/assignments/hw2)
     * [Homework 3](/cstopics/vision/assignments/hw3)
 * [Lab 2](/cstopics/vision/assignments/lab2)
+* [Lab 3](/cstopics/vision/assignments/lab3)
 
 ## Python notebooks and code examples
 
