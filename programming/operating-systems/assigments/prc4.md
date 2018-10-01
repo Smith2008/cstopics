@@ -73,6 +73,16 @@ $ uos_node node1 master1
 >>
 ```
 
+If everything is okay, the master must show the INFO message too:
+
+```
+$ uos_master master1
+--- Welcome to UOS, the most useless operating system in the world ---
+[INFO]: Master created with the name "master1"
+[INFO]: Node "node1" subscribed
+...
+```
+
 ### Node errors
 
 The previous INFO message is going to be shown only if the "master1" master process exists and is running, otherwise, the process must show an error:
@@ -99,12 +109,32 @@ $ uos_node
 $
 ```
 
+The node process must also show an ERROR message if you are trying to subscribe to a master that already has a subscribed node with the same name (you can create same name nodes, but subscribed to different masters):
+
+```
+$ uos_node node1 master1
+--- Welcome to UOS, the most useless operating system in the world ---
+[ERROR]: Master "master2" has already a subscribed node with the name "node1".
+[INFO]: Finishing master process
+$
+```
+
+And the master must show the error too:
+
+```
+$ uos_master master1
+--- Welcome to UOS, the most useless operating system in the world ---
+[INFO]: Master created with the name "master1"
+[ERROR]: A node "node1" wants to subscribe, but there are a "node1" node already subscribed.
+...
+```
+
 ## Internodes messages
 
 Note that you can create multiple *masters*, and *nodes* can subscribe to any of them.
 
 When a node starts correctly, a prompt ">> " must appear, indicating that you can send messages to other nodes.
-There are three types of messages (that must be implemented as google protobuffers):
+There are three types of messages (that must be implemented as google protobuffers, one per type):
 
 * String ("str")
 * Double number ("num")
@@ -209,9 +239,62 @@ $ uos_master master1
 ...
 ```
 
-***INFORME!!!!***
+## Design tips
 
-Consider:
+You should consider:
 
 * Creating a shared memory when a master is created.
 * Creating one pipe from/to each new subscribed node to the master.
+
+## Report
+
+You must create a report, where you explain (without code):
+
+* Flow diagrams of master and node
+* Structure of shared memories
+* Architecture of pipes
+* Protobuffers (in this case you can include the protobuffers code)
+* Any other thing you think could be usefull
+
+## Score
+
+* Working (40%)
+    * The makefile works (in the teacher's computer), and the master and node processes execute without errors.
+    * Master shows all the established INFO and ERROR messages
+    * Node shows all the established INFO and ERROR messages
+    * Processes use correctly the command line arguments, and check associated errors
+    * Can't be created multiple masters with the same name
+    * Node detects if the master it want to subscribe to does not exist
+    * Node and master detects that the master it want to subscribe to already has a node with the same name
+    * Master detects and show that a node was subscribed
+    * Messages of type "str" are delivered correctly, and the master detects and shows it
+    * Messages of type "num" are delivered correctly, and the master detects and shows it
+    * Messages of type "numArray" are delivered correctly, and the master detects and shows it
+    * Node detects syntax errors in the message line
+    * Master detects and shows when a node tries to send a message to a non-existing node
+    * (x2 item) Current line backup works correctly
+* Report (30%)
+* Explanation (30%)
+
+The max score for the report and the explanation is the working one. For example, if you program only works in half, and your report and explanations are excellent. Your score is:
+
+<img class="eq" src="https://latex.codecogs.com/gif.latex?
+2.5 \times 40\% + (5.0 \times 50\%) \times 30\% + (5.0 \times 50\%) \times 30\% = 2.5
+"/>
+
+## Note
+
+The details that are not explicitly specified in this guide can be assumed to the developer's liking.
+
+## Submit
+
+Create a new **private** Bitbucket repository named *"2018_2_d3_prc4_LastnameFirstname"* (E.g. *"2018_2_d3_prc4_CamachoCamilo"*), share it with the account *"camilocamachousta"*, and add practice files:
+
+* *uos_master.cpp* with the *c++* code for the producer.
+* *uos_node.cpp* with the *c++* code for the consumer.
+* A *Makefile* with the rules *all*, *uos_master*, *uos_node* and *clean*. (Refer to the [C/C++ in Linux](/cstopics/programming/c-c++/c_c++_in_linux) guide)
+* The report in PDF format.
+
+When the repository is ready, download it as a *.zip* file and upload it to the appropriate link in moodle.
+
+Deadline: Oct 11, in class.
