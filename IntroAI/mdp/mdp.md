@@ -166,8 +166,13 @@ To solve de MDP, is necessarily to know the optimal utility values for each stat
 - Policy iteration
 
 ## Value iteration algorithm
-Method to solve systems of non-linear equations, though Bellman update rule:
-<img class="eq" src="https://latex.codecogs.com/gif.latex?  V_{k+1}(s) \leftarrow R(s) + \gamma \max_{a \in \mathcal{A}(s)} \sum_{s\prime}P(s\prime|s,a)V_{k}(s\prime)"/>
+Bellman equations characterize the optimal values:
+
+<img class="eq" src="https://latex.codecogs.com/gif.latex?  V^{\star}(s) = \max_{a \in \mathcal{A}(s)} \sum_{s\prime}T(s,a,s\prime)\left[R(s,a,s\prime)+\gamma V^{\star}(s\prime)\right]"/>
+
+
+Value iteration is a method to solve systems of non-linear equations, through Bellman update rule:
+<img class="eq" src="https://latex.codecogs.com/gif.latex?  V_{k+1}(s) \leftarrow \max_{a \in \mathcal{A}(s)} \sum_{s\prime}T(s,a,s\prime)\left[R(s,a,s\prime)+\gamma V_{k}(s\prime)\right]"/>
 
 <div style="text-align:center">
   <img src ="/cstopics/assets/img/AI/introAI/val_iter_alg.png" style="width:70%"/>
@@ -189,15 +194,22 @@ The values of expected utility for each state in the 4x3 grid-world, with <img s
 |<img src ="/cstopics/assets/img/AI/introAI/pi_expectimax.png" style="width:80%"/> 	| <img src ="/cstopics/assets/img/AI/introAI/fixed_pi.png" style="width:80%"/> |
 
 If we have an initial policy <img src="https://latex.codecogs.com/gif.latex?  \pi_0 "/>, we could:
-- **Evaluate the policy:** given a policy <img src="https://latex.codecogs.com/gif.latex?  \pi_i"/>, calculate <img src="https://latex.codecogs.com/gif.latex?  U_i=U^{\pi_i} "/> , the utility of each state if <img src="https://latex.codecogs.com/gif.latex?  \pi_i"/> were to be executed.
+- **Evaluate the policy:** given a policy <img src="https://latex.codecogs.com/gif.latex?  \pi_i"/>, calculate <img src="https://latex.codecogs.com/gif.latex?  V_i=V^{\pi_i} "/> , the utility of each state if <img src="https://latex.codecogs.com/gif.latex?  \pi_i"/> were to be executed.
 
-Due to <img src="https://latex.codecogs.com/gif.latex?  U_i=U^{\pi_i} "/> specifies the action in state _s_,  this means that we have a simplified version of the Bellman equation:
-<img class="eq" src="https://latex.codecogs.com/gif.latex?  U_{i+1}(s)=R(s)+\gamma \sum_{s\prime} P(s\prime | s, \pi_i(s))U_i(s\prime)"/>
+Due to <img src="https://latex.codecogs.com/gif.latex?  V_i=V^{\pi_i} "/> specifies the action in state _s_,  this means that we have a recursive and simplified version of the Bellman equation:
+
+<img class="eq" src="https://latex.codecogs.com/gif.latex?  V_{0}^{\pi}(s)=0"/>
+
+<img class="eq" src="https://latex.codecogs.com/gif.latex?  V_{k+1}^{\pi}(s)\leftarrow \sum_{s\prime}T(s,\pi(s),s\prime)\left[R(s,\pi(s),s\prime)+\gamma V_{k}^{\pi}(s\prime) \right]"/>
 
 Note that the "max" operator has been removed, therefore, for _n_ states, we have _n_ linear equations with _n_ unknowns.
 
-- **Improve the policy:** get the new policy <img src="https://latex.codecogs.com/gif.latex?  \pi_{i+1}"/>, using one-step look-ahead based on <img src="https://latex.codecogs.com/gif.latex?  U_i"/>:
-<img class="eq" src="https://latex.codecogs.com/gif.latex?  \pi^{\star}(s)=argmax_{a \in \mathcal{A}(s)} \sum_{s\prime} P(s\prime|s,a)U(s\prime)"/>
+
+- **Improve the policy:** get the new policy <img src="https://latex.codecogs.com/gif.latex?  \pi_{i+1}"/>, using one-step look-ahead based on <img src="https://latex.codecogs.com/gif.latex?  V^{\pi_i}"/>:
+<img class="eq" src="https://latex.codecogs.com/gif.latex?  \pi_{i+1}(s) = argmax_a \sum_{s\prime} T(s,a,s\prime)\left[R(s,a,s\prime)+\gamma V^{\pi_i}(s\prime) \right]"/>
+
+Therefore, our optimal policy would be:
+<img class="eq" src="https://latex.codecogs.com/gif.latex?  \pi^{\star}(s) = argmax_a Q^{\star}(s,a)"/>
 
 <div style="text-align:center">
   <img src ="/cstopics/assets/img/AI/introAI/pol_iter_alg.png" style="width:70%"/>
@@ -209,4 +221,4 @@ Note that the "max" operator has been removed, therefore, for _n_ states, we hav
   <source src="/cstopics/assets/videos/introAI/policy_iteration.mp4" type="video/mp4">
 </video>
 </div>
-The values of expected utility for each state in the 4x3 grid-world, with <img src="https://latex.codecogs.com/gif.latex?  \gamma=0.9 "/> and <img  src="https://latex.codecogs.com/gif.latex?  R(s)=-0.04 "/> for nonterminal states. 
+The values of expected utility for each state in the 4x3 grid-world, with <img src="https://latex.codecogs.com/gif.latex?  \gamma=0.9 "/> and <img  src="https://latex.codecogs.com/gif.latex?  R(s)=-0.04 "/> for nonterminal states.
