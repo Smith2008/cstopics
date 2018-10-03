@@ -11,7 +11,7 @@ permalink: /artificial-intelligence/introduction_AI
 > The science of making machines?
 
 <div style="text-align:center">
-  <iframe width="840" height="600" src="https://www.youtube.com/watch?v=e3Jy2vShroE&t=150s">
+  <iframe width="420" height="345" src="https://www.youtube.com/embed/b-bW0xcrsOo">
   </iframe>
 </div>
 

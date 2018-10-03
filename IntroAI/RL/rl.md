@@ -24,12 +24,12 @@ permalink: /artificial-intelligence/RL/rl
 
 ## Some examples
 <div style="text-align:center">
-  <iframe width="600" height="400" src="https://www.youtube.com/watch?v=e3Jy2vShroE&t=150s">
+  <iframe width="600" height="400" src="https://www.youtube.com/embed/e3Jy2vShroE">
   </iframe>
 </div>
 
 <div style="text-align:center">
   <iframe width="600" height="400"
-  src="https://www.youtube.com/watch?v=W_gxLKSsSIE">
+  src="https://www.youtube.com/embed/W_gxLKSsSIE">
   </iframe>
 </div>
