@@ -222,3 +222,7 @@ Therefore, our optimal policy would be:
 </video>
 </div>
 The values of expected utility for each state in the 4x3 grid-world, with <img src="https://latex.codecogs.com/gif.latex?  \gamma=0.9 "/> and <img  src="https://latex.codecogs.com/gif.latex?  R(s)=-0.04 "/> for nonterminal states.
+
+# Additional material
+You can download this material for further study:
+- [Value and policy iteration code implementation](/cstopics/assets/code/introAI/mdp_value_policy_iter.zip)
