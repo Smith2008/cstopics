@@ -80,3 +80,12 @@ The general idea is to learn and approximate model of the environment <img src="
   <img src ="/cstopics/assets/img/AI/introAI/model_based_learning_example.png" style="width:70%"/>
   <span style="font-size:70%">http://ai.berkeley.edu/course_schedule.html</span>  
 </div>
+
+The learned model would be:
+
+| <img src="https://latex.codecogs.com/gif.latex?  \hat{T}(s,a,s\prime) "/> 	| <img src="https://latex.codecogs.com/gif.latex?  \hat{R}(s,a,s\prime)"/> 	|
+|:-------------------------------------------------------------------------:	|:------------------------------------------------------------------------:	|
+| T(B, east, C) = 1.00                                                      	| R(B, east, C) = -1                                                       	|
+| T(C, east, D) = 0.75                                                      	| R(C, east, D) = -1                                                       	|
+| T(C, east, A) = 0.25                                                      	| R(D, exit, x) = +10                                                      	|
+| ...                                                                       	| ...                                                                      	|
