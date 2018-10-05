@@ -76,7 +76,7 @@ As you are going to learn, you will need sets of image samples, to 'teach' your 
 The process of creating a supervised learning model can be expressed as follows:
 
 <div class="picture">
-    <img style="width:40%;" src ="/cstopics/assets/img/vision/10_learning_process.png" />
+    <img style="width:90%;" src ="/cstopics/assets/img/vision/10_learning_process.png" />
     <div>https://blog.webkid.io/datasets-for-machine-learning/</div>
 </div>
 
