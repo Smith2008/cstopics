@@ -116,6 +116,8 @@ For this case, the learning process is omitted, when an image is to be classifie
 
 The squared root is added above because of the mathematical definition of the euclidean distance, but it is a *monotonic function*, that means that it preserves the order, so if you remove it, you are going to get the same result.
 
-Check the implementation in the [notebook]()
+Check the implementation in the [notebook](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision_notebooks/CNNs/10_NearestNeighbor.ipynb)
 
 ## Accuracy
+
+It is usually a number from 0.0 to 1.0 (0% to 100%), and indicates the percentage of samples of the test dataset that were correctly classified.
