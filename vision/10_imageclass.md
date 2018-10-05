@@ -94,7 +94,7 @@ The process of creating a supervised learning model can be expressed as follows:
 
 This algorithm is only a learning exercise, and is very rarely used in practice. Its idea is to generate a idea of the image classification problem.
 
-For this case, the learning process is omitted, when an image is to be classified, it is measured the distance between it and all the images of the dataset, and the label of the closest one would be the label of the tested image.
+For this case, the learning process is omitted, when an image is to be classified, it is measured the distance between it and all the images of the dataset, and the label of the closest one would be the label of the tested image.Nearest Neighbor Classifier
 
 * ***L1 Distance:*** The simples way to compare two images is with the **L1 distance**, where the difference, pixel to pixel, is computed, and the total sum is the distance between the images:
 
@@ -121,3 +121,7 @@ Check the implementation in the [notebook](https://github.com/cstopics/cstopics/
 ## Accuracy
 
 It is usually a number from 0.0 to 1.0 (0% to 100%), and indicates the percentage of samples of the test dataset that were correctly classified.
+
+# k - Nearest Neighbor Classifier
+
+The idea of choosing the nearest element can produce wrong labeling. The kNN classifier find the ***k*** nearest closest imsages, and from their labels, it is chosen the more repeated. So the *Nearest Neighbor Classifier* is a specific case with <img src=" https://latex.codecogs.com/gif.latex? k=1 "/>.
