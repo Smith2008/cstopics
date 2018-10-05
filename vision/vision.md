@@ -60,6 +60,10 @@ Monday, whole day.
 
 * [9. Viola & Jones Algorithm](/cstopics/vision/9_violajones)
 
+### Convolutional Neural Networks
+
+* [10. Image Classification](/cstopics/vision/10_imageclass)
+
 ## Assignments
 
 * Lab 1
