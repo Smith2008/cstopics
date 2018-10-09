@@ -4,6 +4,20 @@ title: Image Classification
 permalink: /vision/10_imageclass
 ---
 
+Table of contents:
+
+- [Introduction](#intro)
+    - [Challenges](#challenges)
+    - [Dataset](#dataset)
+    - [Learning Processes](#learning)
+    - [Accuracy](#accuracy)
+- [Nearest Neighbor Classifier](#nearest)
+- [k - Nearest Neighbor Classifier](#knearest)
+- [Validation Set](#validation)
+    - [Cross-Validation](#crossvalidation)
+- [Advantages and Drawbacks of the Nearest Neighbor Classifier](#proscons)
+
+<a name='intro'></a>
 <h1 style="text-align: center;">Image Classification</h1>
 
 The idea of classify images is to select a label that represents in the best way (in human terms) its content, giving the machines a taste of human interpretation or perception of the world, in a high abstraction level.
@@ -16,6 +30,7 @@ Consider the following image, where a car is in it. It has <img src=" https://la
     <img style="width:90%;" src ="/cstopics/assets/img/vision/10_carclass.png" />
 </div>
 
+<a name='challenges'></a>
 ## Challenges
 
 Considering that images are RAW 3D representations, there are some challenges that the classifiers must face:
@@ -62,6 +77,7 @@ Considering that images are RAW 3D representations, there are some challenges th
     <img style="width:40%;" src ="/cstopics/assets/img/vision/10_ch7_back.png" />
 </div>
 
+<a name='dataset'></a>
 ## Dataset
 
 As you are going to learn, you will need sets of image samples, to 'teach' your algorithm how each class looks. In the case of supervised learning (the one we are going to study), the datasets must be labeled, that means that for each image, you must know its label:
@@ -71,6 +87,7 @@ As you are going to learn, you will need sets of image samples, to 'teach' your 
     <div>https://blog.webkid.io/datasets-for-machine-learning/</div>
 </div>
 
+<a name='learning'></a>
 ## Learning process
 
 The process of creating a supervised learning model can be expressed as follows:
@@ -90,6 +107,12 @@ The process of creating a supervised learning model can be expressed as follows:
 
 * ***Store Model to for Production Using:*** Store the learned parameters of your model, to be used in the final application.
 
+<a name='accuracy'></a>
+## Accuracy
+
+It is usually a number from 0.0 to 1.0 (0% to 100%), and indicates the percentage of samples of the test dataset that were correctly classified.
+
+<a name='nearest'></a>
 # Nearest Neighbor Classifier
 
 This algorithm is only a learning exercise, and is very rarely used in practice. Its idea is to generate a idea of the image classification problem.
@@ -118,10 +141,56 @@ The squared root is added above because of the mathematical definition of the eu
 
 Check the implementation in the [notebook](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision_notebooks/CNNs/10_NearestNeighbor.ipynb){:target="blank"}
 
-## Accuracy
-
-It is usually a number from 0.0 to 1.0 (0% to 100%), and indicates the percentage of samples of the test dataset that were correctly classified.
-
+<a name='knearest'></a>
 # k - Nearest Neighbor Classifier
 
-The idea of choosing the nearest element can produce wrong labeling. The kNN classifier find the ***k*** nearest closest imsages, and from their labels, it is chosen the more repeated. So the *Nearest Neighbor Classifier* is a specific case with <img src=" https://latex.codecogs.com/gif.latex? k=1 "/>.
+The idea of choosing the nearest element can produce wrong labeling. The kNN classifier find the ***k*** nearest closest images, and from their labels, it is chosen the more repeated. So the *Nearest Neighbor Classifier* is a specific case with <img src=" https://latex.codecogs.com/gif.latex? k=1 "/>. Usually, bigger values of *k* produce more resistance to outliers in the classifier.
+
+The following example show the "boundaries" of the classification for <img src=" https://latex.codecogs.com/gif.latex? k=1 "/> (second plot) and <img src=" https://latex.codecogs.com/gif.latex? k=5 "/> (third plot). You can see that the second one has litle *islands* of green inside the red region. The third one removes that *islands* and makes the boundaries softter.
+
+<div class="picture">
+    <img style="width:32%;" src ="/cstopics/assets/img/vision/10_knn_1.png" />
+    <img style="width:32%;" src ="/cstopics/assets/img/vision/10_knn_2.png" />
+    <img style="width:32%;" src ="/cstopics/assets/img/vision/10_knn_3.png" />
+    <div>https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm</div>
+</div>
+
+<a name='validation'></a>
+# Validation Set
+
+If you want to use a kNN classifier, what number for *k* should you choose?, and which distance, between *L1* and *L2*, should you use?. These variables are called *hyperparameters*, and are the properties or parameters of you classification algorithm that are not learned in the training process.
+
+The first idea you could think is to train with each combination of *hyperparameters*, and choose the best, according to the performance, or accuracy, obtained with the *test dataset*. But be carefull, **you can not use the test dataset to choose the *hyperparameters**. The test dataset is a resource that you must only use for the final test, if not, you could be *overfitting* your model, becouse you are using you *test dataset* as a *train dataset*. Additionally, you would not have data to measure the *generalization* of your model.
+
+> Use the test dataset only one single time, at the end.
+
+The way to face this situation is to extract a small portion of the *training set*, and use it as a *validation set*. For example, if you have a *training set* with 50,000 samples, you can extract 1,000 for your *validation set*, and the rest for your new *training set* (49,000).
+
+<a name='crossvalidation'></a>
+## Cross-Validation
+
+If you have a small *trining set*, you can use a technique called *cross-validation* (with large dataset could become very computationally expensive). In this case, you split your training set in, for example, 5 parts or folds (6 including the test set). Then you train your model with 4 of the 5 folds, and validate it with the another one. Repeat this procedure 5 times, changing the validation fold, and average the 5 accuracy values. That is the accuracy with the selected combination of hyperparameters.
+
+<div class="picture">
+    <img style="width:100%;" src ="/cstopics/assets/img/vision/10_crossvalidation.png" />
+</div>
+
+<a name='proscons'></a>
+## Advantages and Drawbacks of the Nearest Neighbor Classifier
+
+Pros:
+- Simple to implement and understand.
+- No time to train.
+
+Cons:
+- So much time in predicting.
+
+Another problem is that L1 and L2 distances are not completely related to the content of the image, for example, the following images have he same objects, but some modification induce high mathematical distances.
+
+<div class="picture">
+    <img style="width:100%;" src ="/cstopics/assets/img/vision/10_cat.png" />
+</div>
+
+The pixel difference is usually related to background color, and brightness similarity. When you use a visualization technique called t-SNE (locate samples near to small distance pairs) to plot the similarity of the CIFAR-10 images, you get this [image](/cstopics/assets/img/vision/10_t-SNE.jpg).
+
+There, you can see that similar background and brightness images are close.
