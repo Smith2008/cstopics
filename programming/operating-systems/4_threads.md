@@ -3,6 +3,11 @@ layout: default
 title: Threads
 permalink: /programming/operating-systems/4_threads
 ---
+
+Previous pages:
+
+- [Operating Systems](/cstopics/programming/operating-systems)
+
 <h1 style="text-align: center;">Threads</h1>
 
 * [Thread Concept](/cstopics/programming/operating-systems/4_threads/4_0_threads)

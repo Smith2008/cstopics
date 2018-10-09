@@ -4,6 +4,11 @@ title: Threads with Posix
 permalink: /programming/operating-systems/4_threads/4_1_posix
 ---
 
+Previous pages:
+
+- [Operating Systems](/cstopics/programming/operating-systems)
+    - [Threads](/cstopics/programming/operating-systems/4_threads)
+
 <h1 style="text-align: center;">Threads with Posix</h1>
 
 You must include:

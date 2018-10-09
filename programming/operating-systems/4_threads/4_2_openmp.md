@@ -4,6 +4,11 @@ title: Threads with OpenMP
 permalink: /programming/operating-systems/4_threads/4_2_openmp
 ---
 
+Previous pages:
+
+- [Operating Systems](/cstopics/programming/operating-systems)
+    - [Threads](/cstopics/programming/operating-systems/4_threads)
+
 <h1 style="text-align: center;">Threads with OpenMP</h1>
 
 ## What is OpenMP?
