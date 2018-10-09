@@ -89,3 +89,42 @@ The learned model would be:
 | T(C, east, D) = 0.75                                                      	| R(C, east, D) = -1                                                       	|
 | T(C, east, A) = 0.25                                                      	| R(D, exit, x) = +10                                                      	|
 | ...                                                                       	| ...                                                                      	|
+
+### Exercise: compute expected age in this course
+We want to compute the expected age in Introduction to AI course.
+We collect N samples  <img src="https://latex.codecogs.com/gif.latex?  [a_0, a_1, \dots, a_N] "/>
+
+
+|                                               Model based                                              	|                                                     Model free                                                    	|
+|:------------------------------------------------------------------------------------------------------:	|:-----------------------------------------------------------------------------------------------------------------:	|
+| Estimate probability distribution:  <img src="https://latex.codecogs.com/gif.latex?  \hat{P}(a)=a/N"/> 	| Not relevat                                                                                                       	|
+| Expected age:  <img src="https://latex.codecogs.com/gif.latex?  E[A] \approx \hat{P}(a) \dot a  "/>    	| Expected age:   <img src="https://latex.codecogs.com/gif.latex?  E[A] \approx \frac{1}{N} \sum_{i=0}^{N} a_i  "/> 	|
+
+# Model-Free Reinforcement Learning
+## Temporal Difference Learning in Passive RL
+- Based on policy evaluation <img src="https://latex.codecogs.com/gif.latex?  \pi(s)"/>
+- Update <img src="https://latex.codecogs.com/gif.latex?  V^{\pi}(s) "/> every time we experience a transition <img src="https://latex.codecogs.com/gif.latex?  (s,a,s\prime,r)"/>
+- Likely outcomes <img src="https://latex.codecogs.com/gif.latex? s\prime"/>  will contribute updates more often.
+
+__Sample of V(s):__ <img src="https://latex.codecogs.com/gif.latex?  sample=R(s,\pi(s),s\prime)+\gamma V^{\pi}(s\prime)"/>
+
+__Update V(s):__ <img src="https://latex.codecogs.com/gif.latex?  V^{\pi}(s) \leftarrow (1-\alpha)V^{\pi}(s)+ (\alpha) sample"/>
+
+<img class="eq" src="https://latex.codecogs.com/gif.latex?  V^{\pi}(s) \leftarrow V^{\pi}(s)+ \alpha(sample-V^{\pi}(s))"/>
+
+### Learning rate
+Thet step-size parameter has influence in the learning rate of the states values. It must be in the interval <img src="https://latex.codecogs.com/gif.latex?  \alpha \in (0,1] ">.
+
+The step size can be a constant, but, for better convergence, it should be decreased over time.
+
+Let <img src="https://latex.codecogs.com/gif.latex?  \alpha_k(s)"/> denote the step-size parameter used to process the reward received after the *kth* selection of state *s*. The choice <img src="https://latex.codecogs.com/gif.latex?  \alpha_k(a)=1/k"/> results in the sample-average method, which is guaranteed to converge.
+
+### Exercise
+<div style="text-align:center">
+  <img src ="/cstopics/assets/img/AI/introAI/ex_td_learning.png" style="width:100%"/>
+  <span style="font-size:70%">http://ai.berkeley.edu/course_schedule.html</span>  
+</div>
+
+### Problems with TD value learning?
+- How to turn values into a policy?
+- Better idea: learn Q-values, not values -> Makes action selection model-free too!
