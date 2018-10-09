@@ -128,3 +128,24 @@ Let <img src="https://latex.codecogs.com/gif.latex?  \alpha_k(s)"/> denote the s
 ### Problems with TD value learning?
 - How to turn values into a policy?
 - Better idea: learn Q-values, not values -> Makes action selection model-free too!
+
+## Active Reinforcement Learning
+- Lerner makes choice and takes actions
+- Goal: learn the optimal policy / values
+- It is necessary a trade-off between exploration and exploitation
+- It is NOT offline planning!  Your agent actually takes actions in the environment and find out what happens…
+
+### Q-learning
+Based on Q-value iteration:
+
+<img class="eq" src="https://latex.codecogs.com/gif.latex?  Q_{k+1}(s,a) \leftarrow \sum_{s\prime} T(s,a,s\prime)\left[R(s,a,s\prime) + \gamma \max_{a\prime}Q_k(s\prime,a\prime)  \right]"/>
+
+You don't know T(s,a,s'), so learn Q-values as you go:
+- Receive a sample (s,a,s',r) at time k
+- Consider your old estimate <img src="https://latex.codecogs.com/gif.latex?  Q_{k-1}(s,a)"/>
+- Consider your new sample estimate:
+
+<img class="eq" src="https://latex.codecogs.com/gif.latex?  sample = R(s,a,s\prime) + \gamma \max_{a\prime}Q_{k-1}(s\prime,a\prime)  \right]"/>
+
+- Incorporate the new estimate into a running average:
+<img class="eq" src="https://latex.codecogs.com/gif.latex?  Q_{k+1}(s,a) \leftarrow (1-\alpha)Q_{k-1}(s,a)+(\alpha)sample"/>
