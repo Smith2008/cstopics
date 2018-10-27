@@ -19,8 +19,9 @@ This site offers you the theoretical concepts and practical examples to start in
 * [Artificial Vision](/cstopics/vision)
 * [Introduction to AI](/cstopics/artificial-intelligence/syllabusAI)
 
-# About the authors
+[Repository](https://github.com/cstopics/cstopics/){:target="blank"}
 
+# About the authors
 
 ### [Edgar Camilo Camacho Poveda](https://scholar.google.com/citations?hl=en&user=tJG988kAAAAJ){:target="blank"}
 [edgarcamacho@usantotomas.edu.co](mailto:edgarcamacho@usantotomas.edu.co)
