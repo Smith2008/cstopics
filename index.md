@@ -27,7 +27,7 @@ This site offers you the theoretical concepts and practical examples to start in
 
 Electronic Engineer (Universidad Pedagógica y Tecnológica de Colombia - UPTC, 2015)
 
-MSc in Electronic Enginnering (Universidad Nacional de Colombia, 2017)
+MSc in Electronic Engineering (Universidad Nacional de Colombia, 2017)
 
 Current position as lecturer in Universidad Santo Tomás. Member of research group in robotics GED.
 
@@ -36,6 +36,6 @@ Current position as lecturer in Universidad Santo Tomás. Member of research gro
 
 Electronic Engineer (Universidad Pedagógica y Tecnológica de Colombia - UPTC, 2015)
 
-MSc in Electronic Enginnering and Computers (Universidad de los Andes, 2017)
+MSc in Electronic Engineering and Computers (Universidad de los Andes, 2017)
 
 Current position as lecturer in Universidad Santo Tomás. Member of research group in robotics GED.
