@@ -32,12 +32,9 @@ Previous pages:
 
 ``` bash
 $ export CC=gcc
-$ export FC=gfortran
 $ export CFLAGS=-fopenmp
-$ export FFLAGS=-fopenmp
 $ export OMP_NUM_THREADS=4
 $ gcc -fopenmp foo.c -o foo
-$ gfortran -fopenmp foo.c -o foo
 ```
 
 ## OpenMP Functions
