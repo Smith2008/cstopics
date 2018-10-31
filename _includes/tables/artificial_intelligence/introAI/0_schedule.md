@@ -12,7 +12,7 @@
 | 7 	| [Markov Decision Processes](/cstopics/artificial-intelligence/mdp/mdp) 	| [Russell10] Chap 17 	|  	|
 | 8-9 	| [Reinforcement Learning](/cstopics/artificial-intelligence/RL/rl) 	| [Russell10] Chap 21 [Sutton98] ([book](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf)) 	|  	|
 |  	| **Reasoning under Uncertainty** 	|  	|  	|
-| 10 	| [Probability]() 	| [Russell10] Chap 13 ([slides](http://aima.eecs.berkeley.edu/slides-pdf/chapter13.pdf)) 	|  	|
+| 10 	| [Probability](/cstopics/artificial-intelligence/prob_reasoning/probability) 	| [Russell10] Chap 13 ([slides](http://aima.eecs.berkeley.edu/slides-pdf/chapter13.pdf)) 	|  	|
 | 11-12 	| [Probabilistic reasoning]() 	| [Russell10] Chap 14 ([slides](http://aima.eecs.berkeley.edu/slides-pdf/chapter14.pdf)) 	|  	|
 | 13-14 	| [Hidden Markov Models]() 	| [Russell10] Chap 15 ([slides](http://aima.eecs.berkeley.edu/slides-pdf/chapter15.pdf)) 	|  	|
 |  	| **Special Topics** 	|  	|  	|
