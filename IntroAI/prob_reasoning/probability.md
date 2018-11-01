@@ -124,3 +124,14 @@ There are a set of tables for all possible values for some random variables
   <img src ="/cstopics/assets/img/AI/introAI/cond_dis.png" style="width:70%"/>
   <span style="font-size:40%">http://ai.berkeley.edu/course_schedule.html</span>  
 </div>
+
+## Probabilistic Inference
+To compute a desired probability from other known probabilities
+
+**We generally compute conditional probabilities:** these represent the agent’s beliefs given the evidence
+
+Observing new evidence causes beliefs to be updated
+
+- P(on time | no accidents) = 0.9
+- P(on time | no accidents, 5am) = 0.95
+- P(on time | no accidents, 5am, raining) = 0.8
