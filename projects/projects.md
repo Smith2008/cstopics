@@ -22,7 +22,7 @@ This is our implementation of the (include the poppy torso git link) ...
 
 * [OpenCM 9.04 Controller](https://github.com/cstopics/opencm9.04_controller){:target="blank"} for Dynamixel Motors: Python library for controlling dynamixel motors via OpenCM 9.04 board.
 
-### RBG-D Movements Dataset
+### RGB-D Movements Dataset
 
 * [Realsense Dataset Recorder](https://github.com/cstopics/realsense_dataset_recorder){:target="blank"}: Software to record RGB-D datasets via Realsense D435
 
