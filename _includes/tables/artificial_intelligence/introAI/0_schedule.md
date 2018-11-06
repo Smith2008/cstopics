@@ -17,4 +17,4 @@
 | 13-14 	| [Hidden Markov Models]() 	| [Russell10] Chap 15 ([slides](http://aima.eecs.berkeley.edu/slides-pdf/chapter15.pdf)) 	|  	|
 |  	| **Special Topics** 	|  	|  	|
 | 15 	| [Advanced Applications: (Robotics and Computer Vision)]() 	|  	|  	|
-| 16 	| [Project's presentation]() 	|  	|  	|
+| 16 	| [Project's presentation](/cstopics/vision/assignments/final_project) 	| Submission specifications [here](/cstopics/vision/assignments/final_project) 	|  	|

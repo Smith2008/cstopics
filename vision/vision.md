@@ -72,6 +72,7 @@ Monday, whole day.
     * [Homework 3](/cstopics/vision/assignments/hw3)
 * [Lab 2](/cstopics/vision/assignments/lab2)
 * [Lab 3](/cstopics/vision/assignments/lab3)
+* [Final Project](/cstopics/vision/assignments/final_project)
 
 ## Python notebooks and code examples
 
