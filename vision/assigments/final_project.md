@@ -44,6 +44,33 @@ All members must appear on the video explaining the sections above. The video sh
 
 The maximum length for the video is 5 minutes.
 
+The video description must contain:
+
+- Name of the project.
+- Name of the group members (Optional: Link to your google scholar profiles).
+- Main technique used.
+- *This project was developed in the Universidad Santo Tomás, in Bogotá Colombia.*
+- Include the name of the course(s), and the corresponding link.
+- Include the link to your repository.
+
+For example:
+
+> Project name: Pacman solution via Dijkstra algorithm
+
+> Members: Homer Simpson and Moe Szyslak
+
+> Main technique used: Dijkstra algorithm
+
+> This project was developed in the Universidad Santo Tomás, in Bogotá Colombia.
+
+> For the courses following courses:
+
+> Introduction to Artificial Intelligence (https://cstopics.github.io/cstopics/artificial-intelligence/syllabusAI)
+
+> Artificial Vision (https://cstopics.github.io/cstopics/vision)
+
+> Source: https://github.com/cstopics/pacman_dijkstra
+
 ## Socialization
 Each group must socialize the project to their partners and teachers on 21st November.
 

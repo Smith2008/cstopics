@@ -35,3 +35,14 @@ This is our implementation of the (include the poppy torso git link) ...
 ## Course Projects
 
 ### 2018-2
+
+## Other Developments
+
+### Dijkstra algorithm based pacman solution
+
+[Dijkstra Pacman](https://github.com/cstopics/pacman_dijkstra){:target="blank"} is an implementation of the Dijkstra algorithm, used to find the solution in pacman game.
+
+<div style="text-align:center">
+  <iframe width="420" height="345" src="https://www.youtube.com/embed/Nilsue5zjbY">
+  </iframe>
+</div>
