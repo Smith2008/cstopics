@@ -55,21 +55,21 @@ The video description must contain:
 
 For example:
 
-> Project name: Pacman solution via Dijkstra algorithm
+```
+Project name: Pacman solution via Dijkstra algorithm
+Members: Homer Simpson and Moe Szyslak
+Main technique used: Dijkstra algorithm
 
-> Members: Homer Simpson and Moe Szyslak
+This project was developed in the Universidad Santo Tomás, in Bogotá Colombia.
+In the following courses:
+    * Introduction to Artificial Intelligence
+        (https://cstopics.github.io/cstopics/artificial-intelligence/syllabusAI)
+    * Artificial Vision
+        (https://cstopics.github.io/cstopics/vision)
 
-> Main technique used: Dijkstra algorithm
-
-> This project was developed in the Universidad Santo Tomás, in Bogotá Colombia.
-
-> For the courses following courses:
-
-> Introduction to Artificial Intelligence (https://cstopics.github.io/cstopics/artificial-intelligence/syllabusAI)
-
-> Artificial Vision (https://cstopics.github.io/cstopics/vision)
-
-> Source: https://github.com/cstopics/pacman_dijkstra
+Source code:
+    https://github.com/cstopics/pacman_dijkstra
+```
 
 ## Socialization
 Each group must socialize the project to their partners and teachers on 21st November.
