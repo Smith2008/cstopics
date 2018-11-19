@@ -7,7 +7,7 @@ permalink: /vision/assignments/final_project
 # Final Project Presentation Conditions
 
 ## Deadline
-November 21st 2018
+November 28th 2018
 
 Hour: 10:00 - 13:00
 
