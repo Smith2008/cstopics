@@ -11,7 +11,8 @@ November 21st 2018
 
 Hour: 10:00 - 13:00
 
-Place: ETM XX
+Place: ETM 13
+
 
 ## Submission Files
 Each group must create a public GitHub repository to store the code and resources needed to run the project. The repository has to have a markdown formatted Readme that presents:
