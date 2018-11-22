@@ -32,3 +32,22 @@ Deben usar un robot diferencial que cuente con lo siguiente:
 </div>
 
 Todos los periféricos (motores, sensor y cámara) deben ser conectados al sistema embebido utilizado (Raspberry o Beaglebone), haciendo las interfaces necesarias (puente h, buffer, etc), asegurándose de no dañar las entradas y salidas digitales. Todo se debe alimentar con fuentes que permitan el desplazamiento del robot (por ejemplo baterías), tener en cuenta el voltaje de alimentación de cada elemento.
+
+### Implementación del USO con el robot diferencial
+
+En la siguiente figura se sintetiza el sistema a implementar a partir de nodos de UOS:
+
+Cada nodo debe ser implementado y se debe subscribir al máster a través de la librería *uos_client*, escrita por ustedes.
+
+Explicación del funcionamiento de cada nodo:
+
+***Nodos en el robot***
+* *motors_controller:* debe recibir un mensaje de tipo *num_array*, el debe contener dos números que representan el movimiento de cada motor [motor_derecho, motor_izquierdo], donde 1.0 representa movimieto hacia adelante, -1.0 hacia atrás, y 0.0 detenido.
+* *sensor_controller:* envía un mensaje tipo *num* con un 1.0 si hay un objeto frente al robot, o un 0.0 si no lo hay. Éste mensaje debe ser de tipo *broadcast*.
+* *camera_controller:* espera un mensaje de tipo *str* con la palabra 'SHOT', cuando lo recibe, toma una foto y la envía por *ssh* al computador.
+
+***Nodos en el computador***
+* *controller:* realiza toda la lógica explicada más adelante (no se debe ejecutae en simultánea con *manual_controller*).
+* *manual_controller:* a través de teclas, controla manualmente el sentido de los motores de forma independiente (no se debe ejecutar en simultánea con *controller*).
+* *gui:* Gui en Qt que muestre:
+  * 
