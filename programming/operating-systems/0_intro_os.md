@@ -104,7 +104,7 @@ En al mayoría de los casos, el BUS únicamente permite el tráfico de datos ent
 </div><br>
 
 <div style="text-align:center">
-  <img src ="/cstopics/assets/img/programming/os/0_arbitro.png" />
+  <img  style="width:80%; src ="/cstopics/assets/img/programming/os/0_arbitro.png" />
   <div style="font-size:70%">Ejemplo de periféricos conectados a un mismo bus. Tomado de [Ruiz12]</div>
 </div>
 
