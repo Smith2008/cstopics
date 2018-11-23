@@ -13,6 +13,7 @@ permalink: /programming/operating-systems/assigments/prcFinal
 Se deberán agregar las siguientes características al USO que ya desarrollaron:
 
 * La capacidad de enviar mensajes *broadcast*, es decir, que los envíe un nodo, y éste llegue a todos los demás nodos conectados al máster.
+* Los nodos pueden estar ejecutándose en diferentes equipos, conectándose a través de TCP-IP.
 * El máster seguirá siendo un proceso independiente, el cual será ejecutado una única vez para conectar los nodos correspondientes, sin embargo, los clientes ya no serán el mismo proceso. Cualquier programa podrá ser un cleinte UOS, siempre que incluya la librería correspondiente (*uos_client.h* y "uos_client.cpp"), la cual será escrita por ustedes, y debería tener funcinoes como por ejemplo:
     * *connect_to_master(IP_ADDRESS);*
     * *send_str_message(DESTINATION_NODE)*
@@ -37,6 +38,11 @@ Todos los periféricos (motores, sensor y cámara) deben ser conectados al siste
 
 En la siguiente figura se sintetiza el sistema a implementar a partir de nodos de UOS:
 
+<div style="text-align:center">
+  <img style="width:70%;" src ="/cstopics/assets/img/programming/os/UOS.png" />
+  <div style="font-size:70%">Esquema a los nodos a implementar.</div>
+</div>
+
 Cada nodo debe ser implementado y se debe subscribir al máster a través de la librería *uos_client*, escrita por ustedes.
 
 Explicación del funcionamiento de cada nodo:
@@ -50,4 +56,14 @@ Explicación del funcionamiento de cada nodo:
 * *controller:* realiza toda la lógica explicada más adelante (no se debe ejecutae en simultánea con *manual_controller*).
 * *manual_controller:* a través de teclas, controla manualmente el sentido de los motores de forma independiente (no se debe ejecutar en simultánea con *controller*).
 * *gui:* Gui en Qt que muestre:
-  * 
+  * El estado los dos motores.
+  * El estado del sensor.
+  * La última foto tomada.
+  * Demás variables que considere relevantes.
+
+El sistema debe cumplir los siguientes requisitos:
+* Se puede apagar cualquier nodo (cerrar el proceso), sin que los demás nodos fallen, simpemente su función se deja de ejecutar.
+
+## Recomendaciones
+
+* Estudiar y aplicar apuntadores a funciones, para implementar *callbacks* cuando lleguen mensajes.
