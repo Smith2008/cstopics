@@ -64,6 +64,12 @@ Explicación del funcionamiento de cada nodo:
 El sistema debe cumplir los siguientes requisitos:
 * Se puede apagar cualquier nodo (cerrar el proceso), sin que los demás nodos fallen, simpemente su función se deja de ejecutar.
 
+## Nodo *controller*
+
+Este nodo debe realizar el siguiente funcionamiento en el robot:
+
+El robot debe avanzar hacia adelante, cuando el sensor encuentre un obstáculo, debe tomar una foto y enviarla, luego evade el obstáculo girando hacia una dirección aleatoria, y vuelve a avanzar hacia adelante.
+
 ## Recomendaciones
 
 * Estudiar y aplicar apuntadores a funciones, para implementar *callbacks* cuando lleguen mensajes.
