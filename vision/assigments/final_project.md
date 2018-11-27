@@ -7,11 +7,11 @@ permalink: /vision/assignments/final_project
 # Final Project Presentation Conditions
 
 ## Deadline
-November 28th 2018
+November 29th 2018
 
-Hour: 10:00 - 13:00
+Hour: 8:00 - 11:00
 
-Place: ETM 13
+Place: ETM 11
 
 
 ## Submission Files
@@ -73,6 +73,6 @@ Source code:
 ```
 
 ## Socialization
-Each group must socialize the project to their partners and teachers on 21st November.
+Each group must socialize the project to their partners and teachers on 29th November.
 
 The groups have 10 minutes, using their own Readme, to show the development and working of the project.
