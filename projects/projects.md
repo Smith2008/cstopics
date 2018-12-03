@@ -37,53 +37,61 @@ This is our implementation of the (include the poppy torso git link) ...
 ### 2018-2
 
 * __Solving Critical Path:__ [link to repository](https://github.com/Karen11P/20182_cstopics_CriticalPath)
+
 <div style="text-align:center">
-  <iframe width="420" height="345" src="https://youtu.be/FDXqOAf8Aek">
+  <iframe width="420" height="345" src="https://www.youtube.com/embed/FDXqOAf8Aek">
   </iframe>
 </div>
 
 * __Connect Four AI:__ [link to repository](https://github.com/andres0820m/20182_cstopics_ConnectFourAI)
+
 <div style="text-align:center">
-  <iframe width="420" height="345" src="https://youtu.be/abIrOX-Xmjc">
+  <iframe width="420" height="345" src="https://www.youtube.com/embed/abIrOX-Xmjc">
   </iframe>
 </div>
 
 * __Resistance Finder:__ [link to repository](https://github.com/leonardoo1256/20182_cstopics_ResistanceFinder)
+
 <div style="text-align:center">
-  <iframe width="420" height="345" src="https://youtu.be/_9Pf9-miGmw">
+  <iframe width="420" height="345" src="https://www.youtube.com/embed/_9Pf9-miGmw">
   </iframe>
 </div>
 
 * __Sudoku Solving by CSP:__ [link to repository](https://github.com/pabnas/20182_cstopics_Sudoku_by_CSP)
+
 <div style="text-align:center">
-  <iframe width="420" height="345" src="https://youtu.be/WQ5SRFg-p04?t=54">
+  <iframe width="420" height="345" src="https://www.youtube.com/embed/WQ5SRFg-p04">
   </iframe>
 </div>
 
 * __Reinforcement Learning in an Inverted Pendulum:__ [link to repository](https://github.com/Yeisonint/20182_cstopics_Inverted_Pendulum)
+
 <div style="text-align:center">
-  <iframe width="420" height="345" src="https://youtu.be/euT3hSjFBfg">
+  <iframe width="420" height="345" src="https://www.youtube.com/embed/euT3hSjFBfg">
   </iframe>
 </div>
 
 * __Cursor Control with Hand Detection:__ [link to repository](https://github.com/MiguelJ1/20182_cstopics_HandDetect_MoveCursor)
+
 <div style="text-align:center">
-  <iframe width="420" height="345" src="https://youtu.be/4wgnDpHvBiI">
+  <iframe width="420" height="345" src="https://www.youtube.com/embed/4wgnDpHvBiI">
   </iframe>
 </div>
 
 * __Scheduling by CSP:__ [link to repository](https://github.com/Sebastorojas/20182_cstopics_CPS_Fish_JR)
+
 <div style="text-align:center">
-  <iframe width="420" height="345" src="https://youtu.be/BOgySJoH1Zkv">
+  <iframe width="420" height="345" src="https://www.youtube.com/embed/BOgySJoH1Zk">
   </iframe>
 </div>
 
 * __Tool Road:__ [link to repository](https://github.com/Josean11/20182_cstopics_tool_road)
 
 <div style="text-align:center">
-  <iframe width="420" height="345" src="https://www.youtube.com/watch?time_continue=1&v=GiqK-qqpFHw">
+  <iframe width="420" height="345" src="https://www.youtube.com/embed/GiqK-qqpFHw">
   </iframe>
 </div>
+
 
 
 
