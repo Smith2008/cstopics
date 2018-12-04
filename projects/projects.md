@@ -11,7 +11,7 @@ This section shows the artificial intelligence projects, for robotic application
 ## Main Projects
 
 Projects developed by the research group.
-
+ 
 ### Poppy Torso
 
 This is our implementation of the (include the poppy torso git link) ...
