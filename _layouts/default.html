@@ -51,58 +51,81 @@
     .dropdown:hover .dropbtn {
         background-color: #3e8e41;
     }
+
+    .dropbtn {
+        margin: 0px;
+    }
+
     .header {
         margin: auto;
         width: 100%;
         /*border: 3px solid green;*/
         padding: 10px;
-        background-color:#000000;
+        background-color:#3e8e41;
         text-align: center;
+        display: none;
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
-    .sticky {
-          position: fixed;
-          top: 0;
-          width: 100%;
-        }
-    .sticky + .content {
-      padding-top: 102px;
+    tr{
+        text-align: center;
     }
   </style>
   <body>
-    <div class="page-header" role="banner">
+    <div class="page-header" role="banner" id="banner">
       <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+      <div class="dropdown">
+          <a href="/cstopics/" class="btn dropbtn">Home</a>
+      </div>
+      <div class="dropdown">
+          <a href="/cstopics/programming" class="btn dropbtn">Programming</a>
+          <div class="dropdown-content">
+              <a href="/cstopics/programming/c-c++">C/C++</a>
+              <a href="/cstopics/programming/python">Python</a>
+              <a href="/cstopics/programming/operating-systems">Operating Systems</a>
+          </div>
+      </div>
+      <div class="dropdown">
+         <a href="/cstopics/artificial-intelligence" class="btn dropbtn">Artificial Intelligence</a>
+         <div class="dropdown-content">
+             <a href="/cstopics/vision">Artificial Vision</a>
+             <a href="/cstopics/artificial-intelligence/syllabusAI">Introduction to AI</a>
+         </div>
+      </div>
+      <div class="dropdown">
+          <a href="/cstopics/projects" class="btn dropbtn">Projects</a>
+          <div class="dropdown-content">
+              <a href="/cstopics/projects#researchProjects">Research Projects</a>
+              <a href="/cstopics/projects#courseProjects">Course Projects</a>
+          </div>
+      </div>
     </div>
-    <div class="header">
+    <div class="page-header header" id="myHeader">
         <div class="dropdown">
-            <a href="/cstopics/" class="btn">Home</a>
-            <div class="dropdown-content">
-                <a href="#">Education</a>
-                <a href="#">Projects</a>
-                <a href="#">About the authors</a>
-            </div>
+            <a href="/cstopics/" class="btn dropbtn">Home</a>
         </div>
         <div class="dropdown">
-            <a href="/cstopics/programming" class="btn">Programming</a>
+            <a href="/cstopics/programming" class="btn dropbtn">Programming</a>
             <div class="dropdown-content">
-                <a href="#">C/C++</a>
-                <a href="#">Python</a>
-                <a href="#">Operating Systems</a>
+                <a href="/cstopics/programming/c-c++">C/C++</a>
+                <a href="/cstopics/programming/python">Python</a>
+                <a href="/cstopics/programming/operating-systems">Operating Systems</a>
             </div>
         </div>
         <div class="dropdown">
            <a href="/cstopics/artificial-intelligence" class="btn dropbtn">Artificial Intelligence</a>
            <div class="dropdown-content">
-               <a href="#">Artificial Vision</a>
-               <a href="#">Introduction to AI</a>
+               <a href="/cstopics/vision">Artificial Vision</a>
+               <a href="/cstopics/artificial-intelligence/syllabusAI">Introduction to AI</a>
            </div>
         </div>
         <div class="dropdown">
             <a href="/cstopics/projects" class="btn dropbtn">Projects</a>
             <div class="dropdown-content">
-                <a href="#">Research Projects</a>
-                <a href="#">Course Projects</a>
-                <a href="#">Other Developments</a>
+                <a href="/cstopics/projects#researchProjects">Research Projects</a>
+                <a href="/cstopics/projects#courseProjects">Course Projects</a>
             </div>
         </div>
     </div>
@@ -119,13 +142,15 @@
     window.onscroll = function() {myFunction()};
 
     var header = document.getElementById("myHeader");
-    var sticky = header.offsetTop;
+    var sticky = 0.8 * document.getElementById("banner").clientHeight;
+    console.log(sticky)
 
     function myFunction() {
       if (window.pageYOffset > sticky) {
-          
+          header.style.display = "block";
         //header.classList.add("sticky");
       } else {
+          header.style.display = "none";
         //header.classList.remove("sticky");
       }
   }
