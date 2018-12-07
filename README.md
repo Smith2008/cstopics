@@ -1,1 +1,1 @@
-Vitit our [page](https://cstopics.github.io/cstopics/)
+Visit our [page](https://cstopics.github.io/cstopics/)
