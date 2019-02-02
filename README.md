@@ -1,6 +1,6 @@
 Visit our [page](https://cstopics.github.io/cstopics/)
 
-## Editing steps:
+## Instalation:
 
 Install Jekyll:
 
@@ -26,6 +26,8 @@ Install necesary gems:
 ``` bash
 $ source installAll.sh
 ```
+
+## Editing steps:
 
 Start server:
 ``` bash
