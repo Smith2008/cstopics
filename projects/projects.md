@@ -16,7 +16,28 @@ Projects developed by the research group.
 
 ### Poppy Torso
 
-This is our implementation of the (include the poppy torso git link) ...
+This is our implementation of the [Poppy Torso Robot](https://www.poppy-project.org/en/robots/poppy-torso){:target="blank"}.
+
+<table style="width:100%">
+  <tr>
+    <th>Simulation with v-rep</th>
+    <th>Real Robot</th>
+  </tr>
+  <tr>
+    <td>
+        <div style="text-align:center">
+          <iframe  width="350" height="400" src="https://www.youtube.com/embed/PdLTn28FL_w" allowfullscreen>
+          </iframe>
+        </div>
+    </td>
+    <td>
+        <div style="text-align:center">
+          <iframe  width="350" height="400" src="https://www.youtube.com/embed/e9uOjp1yBxQ" allowfullscreen>
+          </iframe>
+        </div>
+    </td>
+  </tr>
+</table>
 
 * [Poppy Torso ROS Interface](https://github.com/cstopics/poppy_ros){:target="blank"}: ROS nodes to control Poppy Torso.
 
@@ -43,8 +64,7 @@ This is our implementation of the (include the poppy torso git link) ...
 
 <a name='courseProjects'></a>
 
-[Open Inverted Pendulum](https://github.com/cstopics/inverted_pendulum){:target="blank"} is an implementation of an ...
-
+[Inverted Pendulum](https://github.com/cstopics/inverted_pendulum){:target="blank"} implementation for educational purposes.
 
 ## Course Projects
 
