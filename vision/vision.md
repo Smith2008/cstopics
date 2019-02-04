@@ -6,9 +6,9 @@ permalink: /vision
 
 <h1 style="text-align: center;">Artificial Vision</h1>
 
-## Course Description
+# Course Description
 
-## Evaluation
+# Evaluation
 
 {% include tables/vision/0_evaluation.md %}
 
@@ -16,7 +16,7 @@ permalink: /vision
 - Every group is the same for the assignments and Final Project
 - Deadline for presenting the proposal for Final Project: 28/09 23:00
 
-## Course resources
+# Course resources
 
 In the library:
 * [Cuevas10]Cuevas E., Zaldívar D., Pérez M., Procesamiento digital de imágenes con MATLAB y Simulink. 1st Ed. Alfaomega. 2010
@@ -35,11 +35,11 @@ Others:
 * [Baggio12] Baggio D., Millán D., Mahmood N., Shilkrot R., Emami S., Levgen K., Saragih J., Mastering OpenCV with Practical Computer Vision Projects. 1 Ed. Packt Publihing. 2012.
 * [Howse13] Howse J. OpenCV Computer Vision with Python. 1 Ed. Packt Publihing. 2013.
 
-## Office hours
+# Office hours
 
 Monday, whole day.
 
-## Course content
+# Course content
 
 ### Image processing
 
@@ -64,7 +64,7 @@ Monday, whole day.
 
 * [10. Image Classification](/cstopics/vision/10_imageclass)
 
-## Assignments
+# Assignments
 
 * Lab 1
     * [Homework 1](/cstopics/vision/assignments/hw1)
@@ -74,10 +74,16 @@ Monday, whole day.
 * [Lab 3](/cstopics/vision/assignments/lab3)
 * [Final Project](/cstopics/vision/assignments/final_project)
 
-## Python notebooks and code examples
+# Python notebooks and code examples
 
 * [Importing Images](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/import_image.ipynb){:target="blank"}
 * [Fourier Analysis](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/fourier.ipynb){:target="blank"}
 * [Video in OpenCV](https://github.com/cstopics/cstopics/blob/gh-pages/assets/code/vision/video.py){:target="blank"}
 * [Blue color detection in OpenCV](https://github.com/cstopics/cstopics/blob/gh-pages/assets/code/vision/color.py){:target="blank"}
 * [Ball Tracking Example](https://github.com/cstopics/cstopics/blob/gh-pages/assets/code/vision/ball_tracking.py)
+
+# Useful links
+
+* [Image Kernels - Explained Visually](http://setosa.io/ev/image-kernels/){:target="blank"}
+* [Stanford - CS231n Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/){:target="blank"}
+* [2D Visualization of a Convolutional Neural Network](http://scs.ryerson.ca/~aharley/vis/conv/flat.html){:target="blank"}
