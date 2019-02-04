@@ -39,17 +39,19 @@ This is our implementation of the [Poppy Torso Robot](https://www.poppy-project.
   </tr>
 </table>
 
+Next, the repositories that belong to this project:
+
+* [IODynamixel](https://github.com/cstopics/IODynamixel){:target="blank"}: API to control Dynamixel motors.
+
 * [Poppy Torso ROS Interface](https://github.com/cstopics/poppy_ros){:target="blank"}: ROS nodes to control Poppy Torso.
 
 * [Poppy Eyes](https://github.com/cstopics/poppy_eyes){:target="blank"}: Open design for Poppy Project Robot eyes.
-
-* [OpenCM 9.04 Controller](https://github.com/cstopics/opencm9.04_controller){:target="blank"} for Dynamixel Motors: Python library for controlling dynamixel motors via OpenCM 9.04 board.
 
 ### RGB-D Movements Dataset
 
 * [Realsense Dataset Recorder](https://github.com/cstopics/realsense_dataset_recorder){:target="blank"}: Software to record RGB-D datasets via Realsense D435
 
-* [Pose Extraction](https://github.com/cstopics/pose_extraction_rgbd){:target="blank"}:
+* [Pose Extraction](https://github.com/cstopics/pose_extraction_rgbd){:target="blank"}: Software to extract poses from RGB-D videos.
 
 ### Dijkstra algorithm based pacman solution
 
