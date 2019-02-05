@@ -85,5 +85,6 @@ Monday, whole day.
 # Useful links
 
 * [Image Kernels - Explained Visually](http://setosa.io/ev/image-kernels/){:target="blank"}
+* [A Neural Network Playground](http://playground.tensorflow.org){:target="blank"}
 * [Stanford - CS231n Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/){:target="blank"}
 * [2D Visualization of a Convolutional Neural Network](http://scs.ryerson.ca/~aharley/vis/conv/flat.html){:target="blank"}
