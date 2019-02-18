@@ -1,10 +1,10 @@
 ---
 layout: default
-title: C/C++ with Linux
-permalink: /programming/c-c++/c_c++_in_linux
+title: C++ with Linux
+permalink: /programming/c-c++/2_c++_in_linux
 ---
 
-<h1 style="text-align: center;">C/C++ in Linux</h1>
+<h1 style="text-align: center;">C++ in Linux</h1>
 
 When you are used to program in Windows, you almost always open a program (called IDE), that allows you to code, press a button, and magically your code are compiled and running. The goal of this tutorial is to teach the process that occurs when you press that button, for that reason, we are not going to use IDEs. You can edit the text files the any text editor (nano, sublime, atom, gedit, etc.).
 
