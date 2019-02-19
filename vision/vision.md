@@ -64,7 +64,7 @@ Monday, whole day.
 
 * [10. Image Classification](/cstopics/vision/10_imageclass)
 
-# Assignments
+# Old Assignments
 
 * Lab 1
     * [Homework 1](/cstopics/vision/assignments/hw1)
