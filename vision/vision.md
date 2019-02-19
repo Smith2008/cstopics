@@ -25,7 +25,7 @@ Monday, whole day.
 ### Image processing
 
 * [0. Digital Image Fundamentals](/cstopics/vision/0_fundamentals)
-* [1. Processing in the Spatial Domain](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision_notebooks/01_Spatial_Domain.ipynb){:target="blank")
+* [1. Processing in the Spatial Domain](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision_notebooks/01_Spatial_Domain.ipynb){:target="blank"}
 * [2. Filtering in the Frequency Domain](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/fourier.ipynb){:target="blank"}
 * [3. Image Thresholding](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/thresholding.ipynb){:target="blank"}
 * [4. Morphological Processing](/cstopics/vision/4_morpho)
