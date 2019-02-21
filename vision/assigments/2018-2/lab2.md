@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Lab 2
-permalink: /vision/assignments/2019-1/lab1
+permalink: /vision/assignments/2018-2/lab2
 ---
 
 # Lab 1
