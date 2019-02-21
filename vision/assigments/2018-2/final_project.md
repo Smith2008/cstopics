@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Final Project Presentation Conditions
-permalink: /vision/assignments/final_project
+permalink: /vision/assignments/2018-2/final_project
 ---
 
 # Final Project Presentation Conditions

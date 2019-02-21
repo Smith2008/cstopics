@@ -22,53 +22,26 @@ Monday, whole day.
 
 # Course content
 
-### Image processing
-
-* [0. Digital Image Fundamentals](/cstopics/vision/0_fundamentals)
-* [1. Processing in the Spatial Domain](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision_notebooks/01_Spatial_Domain.ipynb){:target="blank"}
-* [2. Filtering in the Frequency Domain](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/fourier.ipynb){:target="blank"}
-* [3. Image Thresholding](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/thresholding.ipynb){:target="blank"}
-* [4. Morphological Processing](/cstopics/vision/4_morpho)
-* [5. Template Matching](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/template_matching.ipynb)
-* [6. Geometric Transformations](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/geometric_transformation.ipynb)
-
-### Video Processing
-
-* [7. Background & Foreground Extraction](/cstopics/vision/7_background)
-* [8. Kalman Filter](/cstopics/vision/8_kalman)
-
-### Object Detection
-
-* [9. Viola & Jones Algorithm](/cstopics/vision/9_violajones)
-
-### Convolutional Neural Networks
-
-* [10. Image Classification](/cstopics/vision/10_imageclass)
-
-# Old Assignments
-
-* Lab 1
-    * [Homework 1](/cstopics/vision/assignments/hw1)
-    * [Homework 2](/cstopics/vision/assignments/hw2)
-    * [Homework 3](/cstopics/vision/assignments/hw3)
-* [Lab 2](/cstopics/vision/assignments/lab2)
-* [Lab 3](/cstopics/vision/assignments/lab3)
-* [Final Project](/cstopics/vision/assignments/final_project)
-
-# Python notebooks and code examples
-
-* [Importing Images](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/import_image.ipynb){:target="blank"}
-* [Fourier Analysis](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/fourier.ipynb){:target="blank"}
-* [Video in OpenCV](https://github.com/cstopics/cstopics/blob/gh-pages/assets/code/vision/video.py){:target="blank"}
-* [Blue color detection in OpenCV](https://github.com/cstopics/cstopics/blob/gh-pages/assets/code/vision/color.py){:target="blank"}
-* [Ball Tracking Example](https://github.com/cstopics/cstopics/blob/gh-pages/assets/code/vision/ball_tracking.py)
-
-# Useful links
-
-* [Image Kernels - Explained Visually](http://setosa.io/ev/image-kernels/){:target="blank"}
-* [A Neural Network Playground](http://playground.tensorflow.org){:target="blank"}
-* [Stanford - CS231n Convolutional Neural Networks for Visual Recognition](http://cs231n.github.io/){:target="blank"}
-* [2D Visualization of a Convolutional Neural Network](http://scs.ryerson.ca/~aharley/vis/conv/flat.html){:target="blank"}
+| Week | Topic | Additional Resources | Assignments / <br>Lab Practices |
+|:-:|:-:|:-:|:-:|
+|  | **Image Processing** |  |  |
+| 1 | [Digital Image Fundamentals](/cstopics/vision/0_fundamentals) |  [Importing Images](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/import_image.ipynb){:target="blank"} <br> [Video in OpenCV](https://github.com/cstopics/cstopics/blob/gh-pages/assets/code/vision/video.py){:target="blank"} |  |
+| 2 | [Processing in the Spatial Domain](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision_notebooks/01_Spatial_Domain.ipynb){:target="blank"} | [Image Kernels - Explained Visually](http://setosa.io/ev/image-kernels/){:target="blank"} | [Lab 1: Image Restoration](/cstopics/vision/assignments/2019-1/lab1) |
+| 3 | [Filtering in the Frequency Domain](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/fourier.ipynb){:target="blank"} |  |  |
+| 4 | [Image Thresholding](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/thresholding.ipynb){:target="blank"} | [Blue color detection in OpenCV](https://github.com/cstopics/cstopics/blob/gh-pages/assets/code/vision/color.py){:target="blank"} |  |
+| 5 | [Morphological Processing](/cstopics/vision/4_morpho) |  |  |
+| 6 | [Template Matching](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/template_matching.ipynb) |  |  |
+| 7 | [Geometric Transformations](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/geometric_transformation.ipynb) |  |  |
+|  | **Video Processing** |  |  |
+| 8 | [Background & Foreground Extraction](/cstopics/vision/7_background) |  |  |
+| 9 | [Kalman Filter](/cstopics/vision/8_kalman) | [Ball Tracking Example](https://github.com/cstopics/cstopics/blob/gh-pages/assets/code/vision/ball_tracking.py){:target="blank"} |  |
+|  | **Object Detection** |  |  |
+| 10 | [Viola & Jones Algorithm](/cstopics/vision/9_violajones)) |  |  |
+|  | **Convolutional Neural Networks** | [Stanford - CS231n](http://cs231n.github.io/){:target="blank"} |  |
+| 11 | [Image Classification](/cstopics/vision/10_imageclass) |  |  |
+| 12 | [Neural Networks]() | [A Neural Network Playground](http://playground.tensorflow.org){:target="blank"} |  |
+| 13 | [CNNs]() | [2D Visualization of a Convolutional Neural Network](http://scs.ryerson.ca/~aharley/vis/conv/flat.html){:target="blank"} |  |
+|  | *In progress...* |  |  |
 
 # Course resources
 

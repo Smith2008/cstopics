@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Lab 2
-permalink: /vision/assignments/lab2
+permalink: /vision/assignments/2019-1/lab1
 ---
 
-# Lab 2
+# Lab 1
 
 Create a python program that counts colored balls simultaneously, between red, blue and green, on a white platform. When the script starts, you must "teach" it the three colors to read, placing some balls of the same color on the platform, and pressing ***R***, ***G*** or ***B*** key correspondly. Once the three colors are learned, the program starts counting the balls it sees passing from right to left.
 

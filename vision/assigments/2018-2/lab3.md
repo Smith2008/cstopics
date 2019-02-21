@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Lab 3
-permalink: /vision/assignments/lab3
+permalink: /vision/assignments/2018-2/lab3
 ---
 
 # Lab 3

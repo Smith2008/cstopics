@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Homework 2
-permalink: /vision/assignments/hw2
+permalink: /vision/assignments/2018-2/hw2
 ---
 
 # Homework 2
