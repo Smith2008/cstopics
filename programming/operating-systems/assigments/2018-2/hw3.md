@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Homework 3
-permalink: /programming/operating-systems/assigments/hw3
+permalink: /programming/operating-systems/assigments/2018-2/hw3
 ---
 
 ## Homework 3

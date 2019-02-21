@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Practice 3
-permalink: /programming/operating-systems/assigments/prc3
+permalink: /programming/operating-systems/assigments/2018-2/prc3
 ---
 
 ## Practice 3

@@ -6,4 +6,4 @@ permalink: /programming/operating-systems/7_memory
 
 # Memory Management
 
-Bla bla bla...
+In progress..

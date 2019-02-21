@@ -19,7 +19,7 @@ This course aims to introduce the student to operating systems, it's relationshi
 ## Evaluation
 
 {% include tables/programming/os/0_evaluation.md %}
-* Groups of 2 students, maximum 1 group of 3 students.
+* Groups of maximum 3 students.
 
 ## Course resources
 
@@ -35,19 +35,3 @@ Monday, whole day.
 Below is a sample schedule for the course 2018-2.
 
 {% include tables/programming/os/0_schedule.md %}
-
-## Assignments
-
-* [Homework 1](/cstopics/programming/operating-systems/assigments/hw1)
-* [Homework 2](/cstopics/programming/operating-systems/assigments/hw2)
-* [Homework 3](/cstopics/programming/operating-systems/assigments/hw3)
-* [Homework 4](/cstopics/programming/operating-systems/assigments/hw4)
-* [Homework 5](/cstopics/programming/operating-systems/assigments/hw5)
-* [Homework 6](/cstopics/programming/operating-systems/assigments/hw6)
-
-* [Practice 1](/cstopics/programming/operating-systems/assigments/prc1)
-* [Practice 2](/cstopics/programming/operating-systems/assigments/prc2)
-* [Practice 3](/cstopics/programming/operating-systems/assigments/prc3)
-* [Practice 4](/cstopics/programming/operating-systems/assigments/prc4)
-* [Practice 5](/cstopics/programming/operating-systems/assigments/prc5)
-* [Final Practice](/cstopics/programming/operating-systems/assigments/prcFinal)

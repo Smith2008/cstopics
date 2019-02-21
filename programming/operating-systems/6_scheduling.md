@@ -6,4 +6,4 @@ permalink: /programming/operating-systems/6_scheduling
 
 # Scheduling
 
-Bla bla bla...
+In progress..

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Práctica Final
-permalink: /programming/operating-systems/assigments/prcFinal
+permalink: /programming/operating-systems/assigments/2018-2/prcFinal
 ---
 
 # Práctica Final

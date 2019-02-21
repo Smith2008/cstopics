@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Homework 4
-permalink: /programming/operating-systems/assigments/hw4
+permalink: /programming/operating-systems/assigments/2018-2/hw4
 ---
 
 ## Homework 4

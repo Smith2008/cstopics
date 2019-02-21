@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Practice 5
-permalink: /programming/operating-systems/assigments/prc5
+permalink: /programming/operating-systems/assigments/2018-2/prc5
 ---
 
 # Practice 5

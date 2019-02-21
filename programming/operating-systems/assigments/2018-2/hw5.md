@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Homework 5
-permalink: /programming/operating-systems/assigments/hw5
+permalink: /programming/operating-systems/assigments/2018-2/hw5
 ---
 
 ## Homework 5

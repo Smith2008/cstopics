@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Practice 2
-permalink: /programming/operating-systems/assigments/prc2
+permalink: /programming/operating-systems/assigments/2018-2/prc2
 ---
 
 ## Practice 2
