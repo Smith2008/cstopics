@@ -17,3 +17,4 @@ This is a practical guide to learn C++:
 7. [Strings](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/programming/c%2B%2B/07_Strings.ipynb)
 8. [Structures and Classes](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/programming/c%2B%2B/08_Structures_Classes.ipynb)
 9. I/O & Standard Library
+10. [Files Organization and Makefiles](/cstopics/programming/c-c++/10_makefiles)
