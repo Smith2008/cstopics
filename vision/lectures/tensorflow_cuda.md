@@ -98,9 +98,9 @@ Follow the instructions, and install examples and symbolic links. Then install t
 
 ``` bash
 $ sudo bash cuda_9.0.176.1_linux.run
-$ sudo bash cuda_9.0.176.1_linux.run
-$ sudo bash cuda_9.0.176.1_linux.run
-$ sudo bash cuda_9.0.176.1_linux.run
+$ sudo bash cuda_9.0.176.2_linux.run
+$ sudo bash cuda_9.0.176.3_linux.run
+$ sudo bash cuda_9.0.176.4_linux.run
 ```
 Follow the instructions each installer. Now, let's test the installation, go to the Nvidia samples folder and run the *deviceQuery* sample:
 
