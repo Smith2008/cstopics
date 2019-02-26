@@ -21,11 +21,6 @@ This course aims to introduce the student to operating systems, it's relationshi
 {% include tables/programming/os/0_evaluation.md %}
 * Groups of maximum 3 students.
 
-## Course resources
-
-* [Tanenbaum15] Tanenbaum, A. [Modern Operating Systems](https://usta-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=57UST_Aleph000147433&context=L&vid=57UST&lang=es_ES&search_scope=57UST&adaptor=Local%20Search%20Engine&tab=57ust_tab&query=any,contains,operating%20systems&sortby=rank&mode=Basic){:target="blank"},  2nd Ed, Prentice-Hall, 2015
-* [Silberschatz12] Silberschatz, A., Galvin, P. and Gagne G. Operating System Concepts, 8th Ed, Wiley, 2012
-
 ## Office hours
 
 Monday, whole day.
@@ -38,10 +33,15 @@ Below is a sample schedule for the course 2018-2.
 |:-:|:-:|:-:|:-:|
 |  1-2  | [C/C++ Review](/cstopics/programming/c-c++) |  | [LAB1: C++ Review](/cstopics/programming/operating-systems/assigments/2019-1/prc1) |
 |  3  | [Python Introduction](/cstopics/programming/python) |  |  |
-|  4  | [Introduction to Operating Systems](/cstopics/programming/operating-systems/0_intro_os) | [Silberschatz12] Chap 1. <br> [Tanenbaum15] Sections 1.1, 1.2 & 1.4 |  |
+|  4  | [Introduction to Operating Systems](/cstopics/programming/operating-systems/0_intro_os) | [Silberschatz12] Chap 1. <br> [Tanenbaum15] Sections 1.1, 1.2 & 1.4 | [GUIDE: Introduction to Linux](/cstopics/programming/operating-systems/0_z0_into_linux_es) |
 |  4  |  [Operating Systems Structure](/cstopics/programming/operating-systems/2_os_structure)  |    [Silberschatz12] Chap 2. <br> [Tanenbaum15] Sections 1.5 & 1.6   |  |
 |  5-6  |             [Processes](/cstopics/programming/operating-systems/3_processes)            |       [Silberschatz12] Chap 3. <br> [Tanenbaum15] Sections 2.1      |                                                                                                                                                                             |
 |  7-9 |               [Threads](/cstopics/programming/operating-systems/4_threads)              |       [Silberschatz12] Chap 4. <br> [Tanenbaum15] Sections 2.2      |                                                                                                                                                                             |
 | 10-12 |            [Synchronization](/cstopics/programming/operating-systems/5_sync)            |       [Silberschatz12] Chap 5. <br> [Tanenbaum15] Sections 2.3      |                                                                                                                                                                             |
 | 13-14 |            [Scheduling](/cstopics/programming/operating-systems/6_scheduling)           |       [Silberschatz12] Chap 6. <br> [Tanenbaum15] Sections 2.4      |                                                                                                                                                                             |
 | 15-16 |          [Memory Management](/cstopics/programming/operating-systems/7_memory)          |       [Silberschatz12] Chap 8 & 9. <br> [Tanenbaum15] Chap 3.       |                                                                                                                                                                             |
+
+## Course resources
+
+* [Tanenbaum15] Tanenbaum, A. [Modern Operating Systems](https://usta-primo.hosted.exlibrisgroup.com/primo-explore/fulldisplay?docid=57UST_Aleph000147433&context=L&vid=57UST&lang=es_ES&search_scope=57UST&adaptor=Local%20Search%20Engine&tab=57ust_tab&query=any,contains,operating%20systems&sortby=rank&mode=Basic){:target="blank"},  2nd Ed, Prentice-Hall, 2015
+* [Silberschatz12] Silberschatz, A., Galvin, P. and Gagne G. Operating System Concepts, 8th Ed, Wiley, 2012
