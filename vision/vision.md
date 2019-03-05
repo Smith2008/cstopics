@@ -14,7 +14,6 @@ permalink: /vision
 
 - Groups of maximum 2 students
 - Every group is the same for the assignments and Final Project
-- Deadline for presenting the proposal for Final Project: 28/09 23:00
 
 # Office hours
 
@@ -27,11 +26,11 @@ Monday, whole day.
 |  | **Image Processing** |  |  |
 | 1 | [Digital Image Fundamentals](/cstopics/vision/0_fundamentals) |  [Importing Images](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/import_image.ipynb){:target="blank"} <br> [Video in OpenCV](https://github.com/cstopics/cstopics/blob/gh-pages/assets/code/vision/video.py){:target="blank"} |  |
 | 2 | [Processing in the Spatial Domain](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision_notebooks/01_Spatial_Domain.ipynb){:target="blank"} | [Image Kernels - Explained Visually](http://setosa.io/ev/image-kernels/){:target="blank"} | [Lab 1: Image Restoration](/cstopics/vision/assignments/2019-1/lab1) |
-| 3 | [Filtering in the Frequency Domain](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/fourier.ipynb){:target="blank"} |  |  |
-| 4 | [Image Thresholding](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/thresholding.ipynb){:target="blank"} | [Blue color detection in OpenCV](https://github.com/cstopics/cstopics/blob/gh-pages/assets/code/vision/color.py){:target="blank"} |  |
+| 3 | [Filtering in the Frequency Domain](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/fourier.ipynb){:target="blank"} |  | [Lab 2: Auto Focus](/cstopics/vision/assignments/2019-1/lab2) |
+| 4 | [Image Thresholding](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/thresholding.ipynb){:target="blank"} | [Blue color detection in OpenCV](https://github.com/cstopics/cstopics/blob/gh-pages/assets/code/vision/color.py){:target="blank"} | [Lab 3: Red color detection](/cstopics/vision/assignments/2019-1/lab3) |
 | 5 | [Morphological Processing](/cstopics/vision/4_morpho) |  |  |
 | 6 | [Template Matching](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/template_matching.ipynb) |  |  |
-| 7 | [Geometric Transformations](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/geometric_transformation.ipynb) |  |  |
+| 7 | [Geometric Transformations](https://github.com/cstopics/cstopics/blob/gh-pages/assets/notebooks/vision/geometric_transformation.ipynb) |  | [Lab 4: Exam](/cstopics/vision/assignments/2019-1/lab4) |
 |  | **Video Processing** |  |  |
 | 8 | [Background & Foreground Extraction](/cstopics/vision/7_background) |  |  |
 | 9 | [Kalman Filter](/cstopics/vision/8_kalman) | [Ball Tracking Example](https://github.com/cstopics/cstopics/blob/gh-pages/assets/code/vision/ball_tracking.py){:target="blank"} |  |

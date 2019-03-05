@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Lab 2
+title: Lab 1
 permalink: /vision/assignments/2019-1/lab1
 ---
 
