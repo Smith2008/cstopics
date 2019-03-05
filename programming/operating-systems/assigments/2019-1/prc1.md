@@ -80,4 +80,6 @@ Create a new **private** GitHub repository named *"2019_1_d3_prc1_Lastname1First
 * client.cpp & client.h
 * README.md: The report
 
+Then, download it as *zip* and upload it to the corresponding *moodle* task. **Important**: when submitting the task to moodle, include the *github* repository link, and the name of all the members of the team.
+
 Deadline: Feb 28 / Mar 01
