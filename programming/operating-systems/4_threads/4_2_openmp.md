@@ -43,7 +43,7 @@ $ gcc -fopenmp foo.c -o foo
 
 ## Directives
 
-Is always a *pragma* directive. The *omp* word indicates to the compiler that it is a OpenMP directive or construct, to not be ignored.
+There is always a *pragma* directive. The *omp* word indicates to the compiler that it is a OpenMP directive or construct, to not be ignored.
 
 ``` c++
 #pragma omp ...
