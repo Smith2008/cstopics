@@ -152,3 +152,7 @@ int main()
     return 0;
 }
 ```
+
+### More about OpenMP
+
+Visit [this document](https://github.com/cstopics/cstopics/tree/gh-pages/assets/docs/os/OpenMPTutorial.pdf){:target="blank"}.
