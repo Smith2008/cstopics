@@ -12,7 +12,7 @@ permalink: /vision/9_violajones
 
 ### Example
 
-[Link](https://github.com/cstopics/assets/code/vision/examples/violajones){:target="blank"}
+[Link](https://github.com/cstopics/cstopics/tree/gh-pages/assets/code/vision/examples/violajones){:target="blank"}
 
 ### How to train
 
