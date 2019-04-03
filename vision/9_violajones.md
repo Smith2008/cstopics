@@ -10,6 +10,10 @@ permalink: /vision/9_violajones
 
 ## Vioja Jones Algorithm in OpenCV
 
+### Method paper
+
+[Link](http://www.face-rec.org/algorithms/Boosting-Ensemble/16981346.pdf){:target="blank"}
+
 ### Example
 
 [Link](https://github.com/cstopics/cstopics/tree/gh-pages/assets/code/vision/examples/violajones){:target="blank"}

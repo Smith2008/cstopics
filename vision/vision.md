@@ -35,7 +35,7 @@ Monday, whole day.
 | 8 | [Background & Foreground Extraction](/cstopics/vision/7_background) |  |  |
 | 9 | [Kalman Filter](/cstopics/vision/8_kalman) | [Ball Tracking Example](https://github.com/cstopics/cstopics/blob/gh-pages/assets/code/vision/ball_tracking.py){:target="blank"} |  |
 |  | **Object Detection** |  |  |
-| 10 | [Viola & Jones Algorithm](/cstopics/vision/9_violajones)) |  |  |
+| 10 | [Viola & Jones Algorithm](/cstopics/vision/9_violajones)) |  | [Lab 5: Detection of letters](/cstopics/vision/assignments/2019-1/lab5) |
 |  | **Convolutional Neural Networks** | [Stanford - CS231n](http://cs231n.github.io/){:target="blank"} | [GUIDE: Installation of Tensoflow & Cuda](/cstopics/vision/lectures/tensorflow_cuda) |
 | 11 | [Image Classification](/cstopics/vision/10_imageclass) |  |  |
 | 12 | [Neural Networks]() | [A Neural Network Playground](http://playground.tensorflow.org){:target="blank"} |  |
