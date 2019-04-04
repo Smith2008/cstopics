@@ -59,6 +59,8 @@ Al descartar los errores anteriores, se debe confirmar que dicha tubería no est
 [P] Esperando suscripciones...
 ```
 
+La bandera de resultado tiene, por defecto, un 0, y el servidor escribirá un 1 si logró realizar la suscripción, o un 2 si no lo logró.
+
 Luego de dichas verificaciones, el servidor debe ser capaz de monitorear datos entrantes de todas las tuberías suscritas, además de estar a la espera de nuevas suscripciones.
 
 ## Servicios Ofrecidos
