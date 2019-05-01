@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Tensoflow & Cuda Installation
+title: TensorFlow & Cuda Installation
 permalink: /vision/lectures/tensorflow_cuda
 ---
 
-# Tensoflow & Cuda Installation
+# Installation of Tensoflow with GPU (Cuda)
 
 This guide was tested with **Ubuntu 16.04** and a **Nvidia GeForce GTX 1070 Ti**.
 
