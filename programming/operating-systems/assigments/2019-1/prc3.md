@@ -4,7 +4,7 @@ title: Práctica 3
 permalink: /programming/operating-systems/assigments/2019-1/prc3
 ---
 
-# Práctica 2
+# Práctica 3
 
 Debe escribir en C/C++, un servidor que ofrezca servicios de *cálculo avanzado* a otros procesos.
 
