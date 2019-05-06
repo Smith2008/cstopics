@@ -12,7 +12,7 @@ Be sure you have your OS updated:
 
 ``` bash
 $ sudo apt-get update
-$ sudo apt-get updgrade
+$ sudo apt-get upgrade
 ```
 
 And install some dependencies:
@@ -169,7 +169,7 @@ pip install --upgrade pip
 
 ``` bash
 $ source activate tensorflow-gpu  
-$ pip install --upgrade tensorflow-gpu
+$ pip install tensorflow-gpu==1.12
 ```
 
 Test:
