@@ -30,6 +30,8 @@ $ ./cliente "Pepito Perez" "1025485665"
 
 Éste proceso no necesita interfaz gráfica, su función es "hacer la cola", cuando exista una caja libre, pasar a ella (a través de la única memoria compartida o tubería), durar un tiempo aleatorio en la caja (entre 5 y 20) segundos, y finalizar.
 
+Se pueden lanzar todos los procesos que se deseen, ya que si las cajas están ocupadas, éstos "harán fila" mientras se desocupa alguna.
+
 ## Requerimientos
 
 * Utilizar semaforos para todas las sincronizaciones necesarias.
