@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Práctica 6
-permalink: /programming/operating-systems/assigments/2019-1/prc6
+title: Práctica 5
+permalink: /programming/operating-systems/assigments/2019-1/prc5
 ---
 
-# Práctica 6
+# Práctica 5
 
 Escriba un programa en C/C++ que emule las cajas de un banco. Todo el banco se debe ver como un único recurso al que más de un proceso (cliente) puede acceder, es decir, que un único semáforo controlaría el acceso a las cajas.
 
