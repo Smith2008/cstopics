@@ -38,7 +38,7 @@ Monday, whole day.
 | 10 | [Viola & Jones Algorithm](/cstopics/vision/9_violajones)) |  | [Lab 5: Detection of letters](/cstopics/vision/assignments/2019-1/lab5) |
 |  | **Convolutional Neural Networks** | [Stanford - CS231n](http://cs231n.github.io/){:target="blank"} | [GUIDE: Installation of Tensoflow in Anaconda](/cstopics/vision/lectures/tensorflow_env) <br> [GUIDE: Installation of Tensoflow with GPU (Cuda)](/cstopics/vision/lectures/tensorflow_cuda) |
 | 11 | [Image Classification](/cstopics/vision/10_imageclass) |  |  |
-| 12 | [Neural Networks]() | [A Neural Network Playground](http://playground.tensorflow.org){:target="blank"} | [Lab 6: Exam](/cstopics/vision/assignments/2019-1/lab6) |
+| 12 | [Neural Networks]() | [A Neural Network Playground](http://playground.tensorflow.org){:target="blank"} | [Lab 6: Tensorflow & Neural Networks](/cstopics/vision/assignments/2019-1/lab6) |
 | 13 | [CNNs]() | [2D Visualization of a Convolutional Neural Network](http://scs.ryerson.ca/~aharley/vis/conv/flat.html){:target="blank"} |  |
 |  | *In progress...* |  |  |
 
